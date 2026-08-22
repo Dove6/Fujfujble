@@ -18,6 +18,9 @@ Fujfujble mechanika
 
 
 :: Credits {"position":"150,275","size":"100,100"}
+Gra przygotowana w ramach (link-repeat: "Growego Dżemu Przygód Reksia 2026")[(open-url: "https://itch.io/jam/prgj-2026-growy-dem-przygd-reksia")] przez zespół w składzie: (link-repeat: "''Valiola''")[(open-url: "https://valiola.itch.io/")] i (link-repeat: "''Dove''")[(open-url: "https://dove6.itch.io/")].
+<hr>
+
 The ''Save System and Settings'' template was created by (link-repeat: "manonamora ⎘")[(open-url:"https://manonamora.itch.io/")] on Twine 2 with Harlowe (v3.3.9).
 <hr>
 ''It was made possible thanks to:''
@@ -43,7 +46,7 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
       (link-repeat: "SETTINGS")[
         <script>$(".popup").removeClass("open");$("#popup-settings").addClass("open");</script>
       ] — 
-      (link-repeat: "CREDITS")[
+      (link-repeat: "AUTORZY")[
         <script>$(".popup").removeClass("open");$("#popup-credits").addClass("open");</script>
       ]
     }</tw-footer>]
@@ -76,7 +79,7 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
 </div>
 <div id="popup-credits" class="popup">
   <div id="popup-titlebar">
-  	<h2 id="popup-title">CREDITS</h2>
+  	<h2 id="popup-title">AUTORZY</h2>
     <span id="popup-close">
       (link-repeat: "&times;")[
         <script>$("#popup-credits").removeClass("open");</script>
