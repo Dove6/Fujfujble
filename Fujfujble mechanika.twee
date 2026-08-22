@@ -44,21 +44,21 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
 </thead>
 <tbody>
 <tr><td>($wypiszSzambolanskiNr: 1)</td><td>($edytujTlumaczenieNr: 1)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 2)</td><td>($wypiszTlumaczenieNr: 2)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 3)</td><td>($wypiszTlumaczenieNr: 3)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 4)</td><td>($wypiszTlumaczenieNr: 4)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 5)</td><td>($wypiszTlumaczenieNr: 5)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 6)</td><td>($wypiszTlumaczenieNr: 6)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 7)</td><td>($wypiszTlumaczenieNr: 7)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 8)</td><td>($wypiszTlumaczenieNr: 8)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 9)</td><td>($wypiszTlumaczenieNr: 9)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 10)</td><td>($wypiszTlumaczenieNr: 10)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 11)</td><td>($wypiszTlumaczenieNr: 11)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 12)</td><td>($wypiszTlumaczenieNr: 12)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 13)</td><td>($wypiszTlumaczenieNr: 13)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 14)</td><td>($wypiszTlumaczenieNr: 14)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 15)</td><td>($wypiszTlumaczenieNr: 15)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 16)</td><td>($wypiszTlumaczenieNr: 16)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 2)</td><td>($edytujTlumaczenieNr: 2)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 3)</td><td>($edytujTlumaczenieNr: 3)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 4)</td><td>($edytujTlumaczenieNr: 4)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 5)</td><td>($edytujTlumaczenieNr: 5)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 6)</td><td>($edytujTlumaczenieNr: 6)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 7)</td><td>($edytujTlumaczenieNr: 7)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 8)</td><td>($edytujTlumaczenieNr: 8)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 9)</td><td>($edytujTlumaczenieNr: 9)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 10)</td><td>($edytujTlumaczenieNr: 10)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 11)</td><td>($edytujTlumaczenieNr: 11)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 12)</td><td>($edytujTlumaczenieNr: 12)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 13)</td><td>($edytujTlumaczenieNr: 13)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 14)</td><td>($edytujTlumaczenieNr: 14)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 15)</td><td>($edytujTlumaczenieNr: 15)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 16)</td><td>($edytujTlumaczenieNr: 16)</td></tr>
 </tbody>
 </table>
 
@@ -1064,18 +1064,14 @@ Finally, we will set up an interactive element so the player can pick the theme 
 
 
 :: Start [no-return] {"position":"700,200","size":"100,100"}
-(align:"=><=")[<h2>Saves and Settings in Harlowe</h2>]
-This template was created to help Harlowe game creators incorporate Accessibility Settings and more compehensive Save systems in their project. It also includes a mini-guide, explaining how to create a Save System and add Settings, with examples.
+Tutaj zaczyna się opowieść...
 
-Since Harlowe does not have built-in Settings or easy-to-install Save systems, the guide section provides multiple ways of doing those, so anyone can pick-n-choose what they prefer or what works best for their project. 
-(text-indent:36)[The guide is organised into two blocks: [[Saves]] and [[Settings]]. For each code is provided directly on the screen, and the Harlowe or Twine manual is referrenced for "invisible" elements.]
+- ($wypiszPrzelaczaneNr: 1) ($wypiszPrzelaczaneNr: 2) ($wypiszPrzelaczaneNr: 3)? - spytał ambasador Państwa Szambolańskiego.
+Co mu odpowiesz?
 
-The actual template only includes one way for the Save System and the Settings, showcasing in real-time what both can do. It is not meant to be used as a visual template.
-(text-indent:36)[I recommend using only the aspects that make sense for your project, edit those to fit, and discarding the rest.]
-
-Please see the (link-repeat: "CREDITS")[<script>$("#popup-settings").addClass("open");</script>] for elements of this template taken from libraries, tutorials, and answers available on the net.
-
-If certain elements are missing, please let me know so I can include it in a future version.
+[[- ($wypiszSzambolanskiNr: 1) ($wypiszSzambolanskiNr: 2) ($wypiszSzambolanskiNr: 3)->Saves]]
+[[- Ptaki latają kluczem.->Settings]]
+(link-repeat: "- Takiemu to dobrze.")[<script>$("#popup-credits").addClass("open");</script>]
 
 
 :: Variable startup [startup] {"position":"25,25","size":"100,100"}
@@ -1119,7 +1115,6 @@ If certain elements are missing, please let me know so I can include it in a fut
         (a: "slowo16", "fujfuj16"),
     ))
     (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
-    (set: $tlumaczeniaGracza's 1st to "początkowa wartość")
     (set: const-type $slownik to (dm:
         $slowa's 1st's 1st, 1,
         $slowa's 2nd's 1st, 2,
@@ -1151,7 +1146,6 @@ If certain elements are missing, please let me know so I can include it in a fut
     (set: $zaktualizujTlumaczenie to (macro: str-type _slowo, str-type _znaczenie, [
         (set: $tlumaczeniaGracza's (_slowo of $slownik) to _znaczenie)
         (out: )[]
-        
     ]))
     (set: $wypiszSzambolanskiNr to (macro: num-type _nrSlowa, [
         (set: _doWypisania to $slowa's _nrSlowa's 2nd)
@@ -1165,12 +1159,28 @@ If certain elements are missing, please let me know so I can include it in a fut
         (set: $tlumaczeniaGracza's _nrSlowa to _znaczenie)
         (out: )[]
     ]))
-    (set: $edytujTlumaczenieNr to (macro: num-type _nrSlowa, [
-        (out: )[
+    (set: $edytujTlumaczenieNr to (macro: num-type _nrSlowa, [{=
+        (out: )[{=
             (input: 2bind _doWypisania)
             (set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)
-            (link-repeat: "✓")[(set: $tlumaczeniaGracza's _nrSlowa to _doWypisania)]
-            (link-repeat: "✗")[(set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)]
+            (align: "==>")[{=
+                (link-repeat: "✓")[(set: $tlumaczeniaGracza's _nrSlowa to _doWypisania)]
+                (link-repeat: "✗")[(set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)]
+            ]
+        ]
+    ]))
+    (set: $wypiszPrzelaczaneNr to (macro: num-type _nrSlowa, [
+        (set: bool-type _czyTlumaczyc to false)
+        (set: _doWypisaniaSzambolanskie to $slowa's _nrSlowa's 2nd)
+        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's _nrSlowa)
+        (if: _doWypisaniaTlumaczenie is an empty)[
+            (out: )[_doWypisaniaSzambolanskie]
+        ]
+        (else: )[
+            (out: )[{=
+                |slowo>[(cond: _czyTlumaczyc, _doWypisaniaTlumaczenie, _doWypisaniaSzambolanskie)]
+                (click-rerun:?slowo)[(set: _czyTlumaczyc to not it)(rerun:?slowo)]
+            ]
         ]
     ]))
  
@@ -1745,6 +1755,18 @@ table#settings td {
 table#settings th {
   text-align: right;
   width: 150px;
+}
+
+#popup-dictionary table thead th {
+  border-bottom: 3px double black;
+}
+
+#popup-dictionary table tbody tr + tr td {
+  border-top: 1px solid black;
+}
+
+#popup-dictionary table {
+  border-collapse: collapse;
 }
 
   /***** SETTINGS *****/
