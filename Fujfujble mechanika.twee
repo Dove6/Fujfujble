@@ -37,9 +37,38 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
 <h5>You can find my other Twine templates and guides (link-repeat: "here ⎘")[(open-url:"https://itch.io/c/2917452/")]
 
 
+:: Dictionary {"position":"25,400","size":"100,100"}
+<table>
+<thead>
+<tr><th>Szambolański</th><th>Uniwersalny</th></tr>
+</thead>
+<tbody>
+<tr><td>($wypiszSzambolanskiNr: 1)</td><td>($wypiszTlumaczenieNr: 1)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 2)</td><td>($wypiszTlumaczenieNr: 2)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 3)</td><td>($wypiszTlumaczenieNr: 3)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 4)</td><td>($wypiszTlumaczenieNr: 4)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 5)</td><td>($wypiszTlumaczenieNr: 5)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 6)</td><td>($wypiszTlumaczenieNr: 6)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 7)</td><td>($wypiszTlumaczenieNr: 7)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 8)</td><td>($wypiszTlumaczenieNr: 8)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 9)</td><td>($wypiszTlumaczenieNr: 9)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 10)</td><td>($wypiszTlumaczenieNr: 10)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 11)</td><td>($wypiszTlumaczenieNr: 11)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 12)</td><td>($wypiszTlumaczenieNr: 12)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 13)</td><td>($wypiszTlumaczenieNr: 13)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 14)</td><td>($wypiszTlumaczenieNr: 14)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 15)</td><td>($wypiszTlumaczenieNr: 15)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 16)</td><td>($wypiszTlumaczenieNr: 16)</td></tr>
+</tbody>
+</table>
+
+
 :: Footer-Menu [footer] {"position":"25,275","size":"100,100"}
 {(append: ?SideBar)
     [<tw-footer>{
+      (link-repeat: "SŁOWNIK")[
+        <script>$(".popup").removeClass("open");$("#popup-dictionary").addClass("open");</script>
+      ] — 
       (link-repeat: "SAVES")[
         <script>$(".popup").removeClass("open");$("#popup-save").addClass("open");</script>
       ] — 
@@ -51,6 +80,19 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
       ]
     }</tw-footer>]
 {
+<div id="popup-dictionary" class="popup">
+  <div id="popup-titlebar">
+  	<h2 id="popup-title">SŁOWNIK</h2>
+	  <span id="popup-close">
+		  (link-repeat: "&times;")[
+			  <script>$("#popup-dictionary").removeClass("open");</script>
+		  ]
+	  </span>
+  </div>
+	<div id="popup-body">
+		(display: "Dictionary")<!-- [[Dictionary]] -->
+	</div>
+</div>
 <div id="popup-save" class="popup">
   <div id="popup-titlebar">
   	<h2 id="popup-title">SAVES</h2>
@@ -61,7 +103,7 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
 	  </span>
   </div>
 	<div id="popup-body">
-		(display: "SAVELOADSYSTEM")
+		(display: "SAVELOADSYSTEM")<!-- [[SAVELOADSYSTEM]] -->
 	</div>
 </div>
 <div id="popup-settings" class="popup">
@@ -74,7 +116,7 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
     </span>
 	</div>
 	<div id="popup-body">
-		(display: "SETTINGSSYSTEM")
+		(display: "SETTINGSSYSTEM")<!-- [[SETTINGSSYSTEM]] -->
 	</div>
 </div>
 <div id="popup-credits" class="popup">
@@ -87,7 +129,7 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
     </span>
 	</div>
 	<div id="popup-body">
-		(display: "Credits")
+		(display: "Credits")<!-- [[Credits]] -->
 	</div>
 </div>
 }
@@ -1042,8 +1084,8 @@ If certain elements are missing, please let me know so I can include it in a fut
     (set: $lastpassage to "Start")
 
   <!-- Dane nagłówka -->
-    (set: $numerDniaStart to 1)
-    (set: $pozostaleKrokiStart to 5)
+    (set: const-type $numerDniaStart to 1)
+    (set: const-type $pozostaleKrokiStart to 5)
     (set: $numerDnia to $numerDniaStart)
     (set: $pozostaleKroki to $pozostaleKrokiStart)
     
@@ -1058,77 +1100,74 @@ If certain elements are missing, please let me know so I can include it in a fut
   ]))
 
   <!-- Dane słownika -->
-    (set: $slownik to (dm:
-        "spanie", (dm:
-            "szambolanski", "fujfuj1",
-            "graczowy", ""
-        ),
-        "jedzenie", (dm:
-            "szambolanski", "fujfuj2",
-            "graczowy", ""
-        ),
-        "niedobre", (dm:
-            "szambolanski", "fujfuj3",
-            "graczowy", ""
-        ),
-        "pies", (dm:
-            "szambolanski", "fujfuj4",
-            "graczowy", ""
-        ),
-        "być", (dm:
-            "szambolanski", "fujfuj5",
-            "graczowy", ""
-        ),
-        "bogini", (dm:
-            "szambolanski", "fujfuj6",
-            "graczowy", ""
-        ),
-        "kali", (dm:
-            "szambolanski", "fujfuj7",
-            "graczowy", ""
-        ),
-        "zostać", (dm:
-            "szambolanski", "fujfuj8",
-            "graczowy", ""
-        ),
-        "cela", (dm:
-            "szambolanski", "fujfuj9",
-            "graczowy", ""
-        ),
-        "ty", (dm:
-            "szambolanski", "fujfuj10",
-            "graczowy", ""
-        ),
-        "[TU WPISZ SLOWO 11]", (dm:
-            "szambolanski", "fujfuj11",
-            "graczowy", ""
-        ),
-        "[TU WPISZ SLOWO 12]", (dm:
-            "szambolanski", "fujfuj12",
-            "graczowy", ""
-        ),
-        "[TU WPISZ SLOWO 13]", (dm:
-            "szambolanski", "fujfuj13",
-            "graczowy", ""
-        ),
-        "[TU WPISZ SLOWO 14]", (dm:
-            "szambolanski", "fujfuj14",
-            "graczowy", ""
-        ),
-        "[TU WPISZ SLOWO 15]", (dm:
-            "szambolanski", "fujfuj15",
-            "graczowy", ""
-        ),
-        "[TU WPISZ SLOWO 16]", (dm:
-            "szambolanski", "fujfuj16",
-            "graczowy", ""
-        ),
+    (set: const-type $slowa to (a:
+        (a: "spanie", "fujfuj1"),
+        (a: "jedzenie", "fujfuj2"),
+        (a: "niedobre", "fujfuj3"),
+        (a: "pies", "fujfuj4"),
+        (a: "być", "fujfuj5"),
+        (a: "bogini", "fujfuj6"),
+        (a: "slowo7", "fujfuj7"),
+        (a: "slowo8", "fujfuj8"),
+        (a: "slowo9", "fujfuj9"),
+        (a: "slowo10", "fujfuj10"),
+        (a: "slowo11", "fujfuj11"),
+        (a: "slowo12", "fujfuj12"),
+        (a: "slowo13", "fujfuj13"),
+        (a: "slowo14", "fujfuj14"),
+        (a: "slowo15", "fujfuj15"),
+        (a: "slowo16", "fujfuj16"),
     ))
+    (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
+    (set: const-type $slownik to (dm:
+        $slowa's 1st's 1st, 1,
+        $slowa's 2nd's 1st, 2,
+        $slowa's 3rd's 1st, 3,
+        $slowa's 4th's 1st, 4,
+        $slowa's 5th's 1st, 5,
+        $slowa's 6th's 1st, 6,
+        $slowa's 7th's 1st, 7,
+        $slowa's 8th's 1st, 8,
+        $slowa's 9th's 1st, 9,
+        $slowa's 10th's 1st, 10,
+        $slowa's 11th's 1st, 11,
+        $slowa's 12th's 1st, 12,
+        $slowa's 13th's 1st, 13,
+        $slowa's 14th's 1st, 14,
+        $slowa's 15th's 1st, 15,
+        $slowa's 16th's 1st, 16,
+    ))
+
+  <!-- Makra pomocnicze do wypisywania i modyfikacji słów. -->
+    (set: $wypiszSzambolanski to (macro: str-type _slowo, [
+        (set: _doWypisania to $slowa's (_slowo of $slownik)'s 2nd)
+        (out: )[_doWypisania]
+    ]))
+    (set: $wypiszTlumaczenie to (macro: str-type _slowo, [
+        (set: _doWypisania to $tlumaczeniaGracza's (_slowo of $slownik))
+        (out: )[_doWypisania]
+    ]))
+    (set: $zaktualizujTlumaczenie to (macro: str-type _slowo, str-type _znaczenie, [
+        (set: $tlumaczeniaGracza's (_slowo of $slownik) to _znaczenie)
+        (out: )[]
+    ]))
+    (set: $wypiszSzambolanskiNr to (macro: num-type _nrSlowa, [
+        (set: _doWypisania to $slowa's _nrSlowa's 2nd)
+        (out: )[_doWypisania]
+    ]))
+    (set: $wypiszTlumaczenieNr to (macro: num-type _nrSlowa, [
+        (set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)
+        (out: )[_doWypisania]
+    ]))
+    (set: $zaktualizujTlumaczenieNr to (macro: num-type _nrSlowa, str-type _znaczenie, [
+        (set: $tlumaczeniaGracza's _nrSlowa to _znaczenie)
+        (out: )[]
+    ]))
  
   <!-- Sprawdzenie, czy nie ma powtórzeń w słowach po szambolańsku. -->
     (set: _slownikSprawdzenie to (macro: [
-        (set: _ileJestRoznychSzambolanskich to (unique: ...(dm-values: (dm-altered: _slowo via _slowo's value's szambolanski, $slownik)))'s length)
-        (set: _ileJestRoznychSlow to (dm-entries: $slownik)'s length)
+        (set: _ileJestRoznychSzambolanskich to (unique: ...(altered: _slowo via _slowo's 2nd, ...$slowa))'s length)
+        (set: _ileJestRoznychSlow to $slowa's length)
         (if: _ileJestRoznychSzambolanskich < _ileJestRoznychSlow)[(error: "Więcej niż jedno słowo tłumaczy się na to samo po szambolańsku!")]
         (out: )[]
     ]))
@@ -1632,7 +1671,7 @@ tw-footer {
 /* 
   With every custom popup you create, you need to add the new ID below, or it won't open. 
 */
-#popup-save.open, #popup-settings.open, #popup-credits.open, #popup-save1.open {
+#popup-dictionary.open, #popup-save.open, #popup-settings.open, #popup-credits.open, #popup-save1.open {
   visibility: visible;
   z-index: 110;
   display: block;
