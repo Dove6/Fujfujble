@@ -43,7 +43,7 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
 <tr><th>Szambolański</th><th>Uniwersalny</th></tr>
 </thead>
 <tbody>
-<tr><td>($wypiszSzambolanskiNr: 1)</td><td>($wypiszTlumaczenieNr: 1)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 1)</td><td>($edytujTlumaczenieNr: 1)</td></tr>
 <tr><td>($wypiszSzambolanskiNr: 2)</td><td>($wypiszTlumaczenieNr: 2)</td></tr>
 <tr><td>($wypiszSzambolanskiNr: 3)</td><td>($wypiszTlumaczenieNr: 3)</td></tr>
 <tr><td>($wypiszSzambolanskiNr: 4)</td><td>($wypiszTlumaczenieNr: 4)</td></tr>
@@ -1119,6 +1119,7 @@ If certain elements are missing, please let me know so I can include it in a fut
         (a: "slowo16", "fujfuj16"),
     ))
     (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
+    (set: $tlumaczeniaGracza's 1st to "początkowa wartość")
     (set: const-type $slownik to (dm:
         $slowa's 1st's 1st, 1,
         $slowa's 2nd's 1st, 2,
@@ -1150,6 +1151,7 @@ If certain elements are missing, please let me know so I can include it in a fut
     (set: $zaktualizujTlumaczenie to (macro: str-type _slowo, str-type _znaczenie, [
         (set: $tlumaczeniaGracza's (_slowo of $slownik) to _znaczenie)
         (out: )[]
+        
     ]))
     (set: $wypiszSzambolanskiNr to (macro: num-type _nrSlowa, [
         (set: _doWypisania to $slowa's _nrSlowa's 2nd)
@@ -1162,6 +1164,14 @@ If certain elements are missing, please let me know so I can include it in a fut
     (set: $zaktualizujTlumaczenieNr to (macro: num-type _nrSlowa, str-type _znaczenie, [
         (set: $tlumaczeniaGracza's _nrSlowa to _znaczenie)
         (out: )[]
+    ]))
+    (set: $edytujTlumaczenieNr to (macro: num-type _nrSlowa, [
+        (out: )[
+            (input: 2bind _doWypisania)
+            (set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)
+            (link-repeat: "✓")[(set: $tlumaczeniaGracza's _nrSlowa to _doWypisania)]
+            (link-repeat: "✗")[(set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)]
+        ]
     ]))
  
   <!-- Sprawdzenie, czy nie ma powtórzeń w słowach po szambolańsku. -->
