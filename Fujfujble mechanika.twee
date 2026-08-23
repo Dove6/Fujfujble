@@ -134,10 +134,10 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
 :: Intro {"position":"675,250","size":"100,100"}
 Tutaj zaczyna się opowieść...
 
-- ($wypiszPrzelaczaneNr: 1) ($wypiszPrzelaczaneNr: 2) ($wypiszPrzelaczaneNr: 3)? - spytał ambasador Państwa Szambolańskiego.
+- ($wypiszRubyNr: 1) ($wypiszRubyNr: 2) ($wypiszRubyNr: 3)? - spytał ambasador Państwa Szambolańskiego.
 Co mu odpowiesz?
 
-[[- ($wypiszSzambolanskiNr: 1) ($wypiszSzambolanskiNr: 2) ($wypiszSzambolanskiNr: 3)->Saves]]
+[[- ($wypiszRubyNr: 1) ($wypiszRubyNr: 2) ($wypiszRubyNr: 3)->Saves]]
 [[- Ptaki latają kluczem.->Settings]]
 (link-repeat: "- Takiemu to dobrze.")[<script>$("#popup-credits").addClass("open");</script>]
 
@@ -1193,6 +1193,22 @@ Finally, we will set up an interactive element so the player can pick the theme 
     (set: $wyczyscTlumaczenia to (macro: [
         (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
         (out: )[]
+    ]))
+    (set: $wypiszRubyNr to (macro: num-type _nrSlowa, [
+        (set: _doWypisaniaSzambolanskie to $slowa's _nrSlowa's 2nd)
+        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's _nrSlowa)
+        (out: )[<ruby>
+            _doWypisaniaSzambolanskie
+            <rp>(</rp><rt>_doWypisaniaTlumaczenie</rt><rp>)</rp>
+        </ruby>]
+    ]))
+    (set: $wypiszRuby to (macro: str-type _slowo, [
+        (set: _doWypisaniaSzambolanskie to $slowa's (_slowo of $slownik)'s 2nd)
+        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's $tlumaczeniaGracza's (_slowo of $slownik))
+        (out: )[<ruby>
+            _doWypisaniaSzambolanskie
+            <rp>(</rp><rt>_doWypisaniaTlumaczenie</rt><rp>)</rp>
+        </ruby>]
     ]))
  
   <!-- Sprawdzenie, czy nie ma powtórzeń w słowach po szambolańsku. -->
