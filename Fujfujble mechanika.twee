@@ -37,39 +37,11 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
 <h5>You can find my other Twine templates and guides (link-repeat: "here ⎘")[(open-url:"https://itch.io/c/2917452/")]
 
 
-:: Dictionary {"position":"25,400","size":"100,100"}
-<table>
-<thead>
-<tr><th>Szambolański</th><th>Uniwersalny</th></tr>
-</thead>
-<tbody>
-<tr><td>($wypiszSzambolanskiNr: 1)</td><td>($edytujTlumaczenieNr: 1)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 2)</td><td>($edytujTlumaczenieNr: 2)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 3)</td><td>($edytujTlumaczenieNr: 3)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 4)</td><td>($edytujTlumaczenieNr: 4)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 5)</td><td>($edytujTlumaczenieNr: 5)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 6)</td><td>($edytujTlumaczenieNr: 6)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 7)</td><td>($edytujTlumaczenieNr: 7)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 8)</td><td>($edytujTlumaczenieNr: 8)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 9)</td><td>($edytujTlumaczenieNr: 9)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 10)</td><td>($edytujTlumaczenieNr: 10)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 11)</td><td>($edytujTlumaczenieNr: 11)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 12)</td><td>($edytujTlumaczenieNr: 12)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 13)</td><td>($edytujTlumaczenieNr: 13)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 14)</td><td>($edytujTlumaczenieNr: 14)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 15)</td><td>($edytujTlumaczenieNr: 15)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 16)</td><td>($edytujTlumaczenieNr: 16)</td></tr>
-</tbody>
-</table>
-
-
 :: Footer-Menu [footer] {"position":"25,275","size":"100,100"}
 {(append: ?SideBar)
     [<tw-footer>{
       (if: (passage:)'s name is not "Start")[{=
-          (link-repeat: "SŁOWNIK")[
-            <script>$(".popup").removeClass("open");$("#popup-dictionary").addClass("open");</script>
-          ] — 
+          (if: (passage:)'s name is not "Słownik")[[[SŁOWNIK->Słownik]] — ]
           (link-repeat: "RESET GRY")[(restart: )] — 
       ]
       (link-repeat: "SAVES")[
@@ -83,19 +55,6 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
       ]
     }</tw-footer>]
 {
-<div id="popup-dictionary" class="popup">
-  <div id="popup-titlebar">
-  	<h2 id="popup-title">SŁOWNIK</h2>
-	  <span id="popup-close">
-		  (link-repeat: "&times;")[
-			  <script>$("#popup-dictionary").removeClass("open");</script>
-		  ]
-	  </span>
-  </div>
-	<div id="popup-body">
-		(display: "Dictionary")<!-- [[Dictionary]] -->
-	</div>
-</div>
 <div id="popup-save" class="popup">
   <div id="popup-titlebar">
   	<h2 id="popup-title">SAVES</h2>
@@ -149,6 +108,7 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
   (prepend:?SideBar)[{=
       <tw-header>
           (if: (passage:)'s name is "Start")[FUJFUJBLE!]
+          (else-if: (passage:)'s name is "Słownik")[SŁOWNIK]
           (else: )[DZIEŃ $numerDnia ($poraDnia)]
       </tw-header>
   ]
@@ -1094,6 +1054,37 @@ Finally, we will set up an interactive element so the player can pick the theme 
 ]
 
 
+:: Słownik {"position":"150,400","size":"100,100"}
+(link-goto: "Powrót", (history: )'s last)
+(link-repeat: "Wyczyść słownik")[($wyczyscTlumaczenia: )(rerun: ?pola)]
+
+|pola>[{=
+<table id="dictionary-table">
+<thead>
+<tr><th>Szambolański</th><th>Uniwersalny</th></tr>
+</thead>
+<tbody>
+<tr><td>($wypiszSzambolanskiNr: 1)</td><td>($edytujTlumaczenieNr: 1)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 2)</td><td>($edytujTlumaczenieNr: 2)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 3)</td><td>($edytujTlumaczenieNr: 3)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 4)</td><td>($edytujTlumaczenieNr: 4)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 5)</td><td>($edytujTlumaczenieNr: 5)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 6)</td><td>($edytujTlumaczenieNr: 6)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 7)</td><td>($edytujTlumaczenieNr: 7)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 8)</td><td>($edytujTlumaczenieNr: 8)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 9)</td><td>($edytujTlumaczenieNr: 9)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 10)</td><td>($edytujTlumaczenieNr: 10)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 11)</td><td>($edytujTlumaczenieNr: 11)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 12)</td><td>($edytujTlumaczenieNr: 12)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 13)</td><td>($edytujTlumaczenieNr: 13)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 14)</td><td>($edytujTlumaczenieNr: 14)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 15)</td><td>($edytujTlumaczenieNr: 15)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 16)</td><td>($edytujTlumaczenieNr: 16)</td></tr>
+</tbody>
+</table>
+]
+
+
 :: Variable startup [startup] {"position":"25,25","size":"100,100"}
 { <!--This is limited to what the template needs.-->
     (set: $namePC to "Jane Doe")
@@ -1176,14 +1167,13 @@ Finally, we will set up an interactive element so the player can pick the theme 
         (set: $tlumaczeniaGracza's _nrSlowa to _znaczenie)
         (out: )[]
     ]))
-    (set: $edytujTlumaczenieNr to (macro: num-type _nrSlowa, [{=
+    (set: $edytujTlumaczenieNr to (macro: num-type _nrSlowa, [
         (out: )[{=
-            (input: 2bind _doWypisania)
-            (set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)
-            (align: "==>")[{=
-                (link-repeat: "✓")[(set: $tlumaczeniaGracza's _nrSlowa to _doWypisania)]
-                (link-repeat: "✗")[(set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)]
-            ]
+          <div class="translation-editor">
+            (input: 2bind _doWypisania, "X", $tlumaczeniaGracza's _nrSlowa)
+            (link-repeat: "✓")[(set: $tlumaczeniaGracza's _nrSlowa to _doWypisania)]
+            (link-repeat: "✗")[(set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)]
+          </div>
         ]
     ]))
     (set: $wypiszPrzelaczaneNr to (macro: num-type _nrSlowa, [
@@ -1199,6 +1189,10 @@ Finally, we will set up an interactive element so the player can pick the theme 
                 (click-rerun:?slowo)[(set: _czyTlumaczyc to not it)(rerun:?slowo)]
             ]
         ]
+    ]))
+    (set: $wyczyscTlumaczenia to (macro: [
+        (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
+        (out: )[]
     ]))
  
   <!-- Sprawdzenie, czy nie ma powtórzeń w słowach po szambolańsku. -->
@@ -1769,21 +1763,32 @@ table#settings td {
   min-width: 200px;
   text-align: right;
 }
+
 table#settings th {
   text-align: right;
   width: 150px;
 }
 
-#popup-dictionary table thead th {
+#dictionary-table {
+  border-collapse: collapse;
+}
+
+#dictionary-table th, #dictionary-table td {
+  padding-inline: 0.5em
+}
+
+#dictionary-table thead th {
   border-bottom: 3px double black;
 }
 
-#popup-dictionary table tbody tr + tr td {
+#dictionary-table tbody tr + tr td {
   border-top: 1px solid black;
 }
 
-#popup-dictionary table {
-  border-collapse: collapse;
+#dictionary-table .translation-editor > :first-child {
+  display: inline-block !important;
+  width: unset !important;
+  margin-right: 0.25em;
 }
 
   /***** SETTINGS *****/
