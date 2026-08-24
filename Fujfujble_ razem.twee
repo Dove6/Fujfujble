@@ -10,12 +10,13 @@ Fujfujble! razem
   "start": "Start",
   "tag-colors": {
     "tresc": "yellow",
-    "2-run": "red",
+    "2-run": "blue",
     "opis": "blue",
     "lore": "purple",
     "startup": "orange",
     "footer": "orange",
-    "header": "orange"
+    "header": "orange",
+    "dead-end": "red"
   },
   "zoom": 0.6
 }
@@ -25,7 +26,7 @@ Fujfujble! razem
 
 
 
-:: 2 RUN {"position":"1675,1100","size":"100,100"}
+:: 2 RUN {"position":"1725,1350","size":"100,100"}
 
 
 
@@ -87,23 +88,23 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
 
 
 
-:: DZIEŃ 3 {"position":"1000,2250","size":"100,100"}
+:: DZIEŃ 3 {"position":"975,2350","size":"100,100"}
 
 
 
-:: DZIEŃ 3a {"position":"1725,2250","size":"100,100"}
+:: DZIEŃ 3a {"position":"1700,2350","size":"100,100"}
 
 
 
-:: DZIEŃ 4 {"position":"1000,2925","size":"100,100"}
+:: DZIEŃ 4 {"position":"975,3100","size":"100,100"}
 
 
 
-:: DZIEŃ 4a {"position":"1725,2875","size":"100,100"}
+:: DZIEŃ 4a {"position":"1700,3050","size":"100,100"}
 
 
 
-:: DZIEŃ 5 {"position":"1400,3800","size":"100,100"}
+:: DZIEŃ 5 {"position":"1400,4000","size":"100,100"}
 
 
 
@@ -126,7 +127,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 
 :: Nagłówek [header] {"position":"25,150","size":"100,100"}
 {
-  <!-- Code to send the player back to a story passage -->
+  <!-- Autozapis -->
   (if: (passage:)'s name is "Start")[($wczytajAutozapis: )]
   (else: )[($zapiszAutozapis: )]
   <!--The title Header-->
@@ -135,9 +136,12 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
           (if: (passage:)'s name is "Start")[FUJFUJBLE!]
           (else-if: (passage:)'s name is "Słownik")[SŁOWNIK]
           (else: )[DZIEŃ $numerDnia ($poraDnia)]
+          <small>(print: (passage: )'s name of $liczbaOdwiedzin)</small>
       </tw-header>
   ]
-  <!--The Settings Autoloader-->
+  <!-- Liczba odwiedzin -->
+    (if: (passage:)'s name is not in (a: "Start", "Słownik"))[(set: $liczbaOdwiedzin's (history: )'s last to it + 1)]
+  <!--Ustawienia wyglądu-->
   (if: $chosenTheme is "Dark Theme")[
     <script>settingThemeChange(1)</script>
   ](else:)[
@@ -154,7 +158,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 }
 
 
-:: Rzeka 0 [2-run] {"position":"625,1500","size":"100,100"}
+:: Rzeka 0 [2-run] {"position":"625,1475","size":"100,100"}
 (opis palisady zagradzającej pójście dalej, na bramie wyjściowej stoją szambolanie, którzy jej strzegą. Za bramą słyszy nurt rzeki)
 
 Smakowicie wyglądające ryby z koszów Szambolan, którzy właśnie ją minęły zachęciły Kari Matę do poszukania miejsca, skąd pochodzą. Piorytetem dla suczki było najpierw znalezienie pożywienia, a potem obmyślanie planu ucieczki. Na pustym żołądku mogła szybko stracić siły i stać się jeszcze łatwiejszą ofiarą dla okolicznych zagrożeń.
@@ -166,7 +170,7 @@ Kari Mata Hari zza palisady usłyszała wartki nurt rzeki. Westchnęła. Próba 
 [[Na ten moment bohaterka postanowiła wycofać się z tej lokacji i pójść tam, gdzie poszli spotkani wcześniej Szambolanie...->wioskamapa1b]]
 
 
-:: Rzeka 3 [2-run] {"position":"2150,3125","size":"100,100"}
+:: Rzeka 3 [2-run] {"position":"2125,3300","size":"100,100"}
 Podążając pod osłoną dziko rosnącej roślinności Kari Mata po raz kolejny udała się w okolice wyjścia z wioski z nadzieją, że może strażnicy bramy sobie poszli. Bądź śpią na tyle głęboko by mogła niezauważona wyjść w stronę wątłego światełka, które widniało za bramą.
 
 Gdy wydawać się mogło, że będzie to kolejny dzień bezowocnego czekania na przełom, nagle Kari Mata usłyszała wrzask. Przez bramę jak strzała wyleciała dwójka szambolan. Byli to dokładnie ci sami osobnicy, co zwykle wracali z rybami i wieźli je na targ. Zaaferowani niecodziennymi wrzaskami szambolanie szczegący bramy wioski zatrzymali ich i rozpoczęli z nimi rozmowę. Zapewne pytając o to, co ich tak wystraszyło.
@@ -181,7 +185,7 @@ Bohaterka...
 [[postanowiła nie podejmować ryzyka i wrócić do swojej kryjówki, by pomyśleć nad innym rozwiazaniem.->mapanoc 3b]]
 
 
-:: Rzeka dzien [2-run] {"position":"2150,2325","size":"100,100"}
+:: Rzeka dzien [2-run] {"position":"2125,2425","size":"100,100"}
 Podążając pod osłoną dziko rosnącej roślinności Kari Mata po raz kolejny udała się w okolice wyjścia z wioski z nadzieją, że może strażnicy bramy sobie poszli. Bądź śpią na tyle głęboko by mogła niezauważona wyjść w stronę wątłego światełka, które widniało za bramą.
 
 Suczka czatując w krzakach na cień szansy, by się wyslizgnąć niepostrzeżenie z wioski przez główną bramę odnotowała pewne zwyczaje Szambolan. Między innymi każdego ranka dwójka szambolan wychodziła przez bramę z pustymi koszami.
@@ -189,7 +193,7 @@ Suczka czatując w krzakach na cień szansy, by się wyslizgnąć niepostrzeżen
 [[Niestety, dziś nie było dane Kari Macie zobaczyć, co znajduje się po drugiej stronie palisady. Postanowiła wrócić do swojej kyjówki i odpocząć->mapa noc 1b]]
 
 
-:: Rzeka noc [2-run] {"position":"2150,2475","size":"100,100"}
+:: Rzeka noc [2-run] {"position":"2125,2575","size":"100,100"}
 Podążając pod osłoną dziko rosnącej roślinności Kari Mata po raz kolejny udała się w okolice wyjścia z wioski z nadzieją, że może strażnicy bramy sobie poszli. Bądź śpią na tyle głęboko by mogła niezauważona wyjść w stronę wątłego światełka, które widniało za bramą.
 
 Suczka czatując w krzakach na cień szansy, by się wyslizgnąć niepostrzeżenie z wioski przez główną bramę odnotowała pewne zwyczaje Szambolan. Zauważyła, że każdego wieczoru przez bramę wchodzi dwójka Szambolan. Na swoim prostym wózku wieźli kosze zapakowane aż po brzegi świeżymi rybami. Kierowali się zawsze w stronę wioskowego targu. 
@@ -239,7 +243,7 @@ Suczka czatując w krzakach na cień szansy, by się wyslizgnąć niepostrzeżen
 	</div>
 </div>
 }
-<!-- You can obviously change the popups for actual passages, but I personally like this vibe best for myself ~ -->}
+}
 
 
 :: Start [no-return] {"position":"600,300","size":"100,100"}
@@ -280,15 +284,11 @@ Suczka czatując w krzakach na cień szansy, by się wyslizgnąć niepostrzeżen
 ]
 
 
-:: TARGTRUEEND [tresc] {"position":"1400,2600","size":"100,100"}
+:: TARGTRUEEND [tresc] {"position":"1375,2700","size":"100,100"}
 (KARI MATA MUSI PÓJŚĆ 3 DNIA WIECZÓR NA TARG I WCZOŁGAĆ SIE DO WOZU)
 
 
 [[Jedzie nad rzekę RANKIEM->trueend]]
-
-
-:: Untitled Passage 13 {"position":"3050,2675","size":"100,100"}
-
 
 
 :: Ustawienia {"position":"150,150","size":"100,100"}
@@ -525,10 +525,27 @@ Suczka czatując w krzakach na cień szansy, by się wyslizgnąć niepostrzeżen
         (save-game: $nazwaZapisu)
         (out: )[]
     ]))
+
+  <!-- Wizyty -->
+    (set: _nazwyStron to (altered: via its name, ...(passages:)))
+    (set: $liczbaOdwiedzin to (dm: ...(interlaced: _nazwyStron, (repeated: _nazwyStron's length, 0))))
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
-:: dead2 [2-run] {"position":"2275,3250","size":"100,100"}
+:: dead2 [dead-end 2-run] {"position":"2250,3425","size":"100,100"}
 Niestety, szybkie przemknięcie się koło szambolan nie było dobrym pomysłem. Istoty te cechowały sie nadzwyczajnie dobrym słuchem. Gdy tylko Kari Mata Hari próbowała się przekraść wokół nich, natychmiast zdali sobie sprawę z jej obecności.
 
 Suczka z łatwością została obezwładniona, Nie miała szans w starciu z czwórką dorosłych szambolan.  Znalazła się z powrotem w ohydnej, obleśnej celi. 
@@ -540,7 +557,7 @@ KONIEC
 ($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
 
 
-:: dead3 [2-run] {"position":"1400,2450","size":"100,100"}
+:: dead3 [dead-end 2-run] {"position":"1375,2550","size":"100,100"}
 Kari Mata po wejściu do kosza nagle poczuła, że ktoś ją podnosi. Po dłuższej chwili, została gwałtownie wyrzucona z kosza. Spełniła się jej największa obawa. Dwójka szambolan patrzyła na nia z góry swoimi małymi, czarnymi oczami.
 
 Suczka z łatwością została obezwładniona, Nie miała szans w starciu z dwójką dorosłych szambolan.  Znalazła się z powrotem w ohydnej, obleśnej celi. 
@@ -552,7 +569,7 @@ KONIEC
 ($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
 
 
-:: deadend1 {"position":"1400,1000","size":"100,100"}
+:: deadend1 [dead-end] {"position":"1400,900","size":"100,100"}
 - ($wypiszRuby: "ja") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")?! ($wypiszRuby: "ja")?! - tajemniczy rozmówca naszej bohaterki zaczął się irytować. Bardzo mocno irytować. Cokolwiek powiedziała Kari Mata, musiało nie być to zbyt uprzejme. 
 
 Istota następnie otworzyła cele suczki i zamachnęła się w celu wymierzenia ciosu. Mata Hari nie zdążyła niestety uchronić się przed uderzeniem. Gwałtowne pchnięcie sprawiło, że Kari Mata osunęła się na ziemię i straciła przytomność. Niestety, już nigdy miała jej nie odzyskać.
@@ -562,7 +579,7 @@ KONIEC
 ($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
 
 
-:: end1 {"position":"1400,4075","size":"100,100"}
+:: end1 [dead-end] {"position":"1400,4275","size":"100,100"}
 Z minuty na minutę idąc w wyznaczonym kierunku chód Kari Maty stawał się coraz wolniejszy. Oddech stawał się coraz cięższy a ciało odmawiało posłuszeństwa. 
 W końcu ciało bohaterki podddało się i upadło bezwiednie na ziemię. Kilka dni funkcjonowania w ciagłym stresie przed wykryciem, bez regularnego dostępu do pożywienia znacząco osłabiło organizm suczki. 
 
@@ -594,7 +611,7 @@ Podobno mowa jest srebrem, a milczenie złotem, lecz w tym wypadku bohaterka stw
 [[...wskazać na siebie i powiedzieć ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "jedzenie")->hahabeka]]
 
 
-:: firstszambo {"position":"975,1300","size":"100,100"}
+:: firstszambo {"position":"975,1250","size":"100,100"}
 Kari Mata wyjrzała na powierzchnię. Na szczęście krajobraz wokół niej już nie przypominał słynnego obrazu "Kair Nocą". Na zewnątrz panował półmrok, w którym względnie łatwo było kobiecie rozeznać się. Znajdowała się w pewnego rodzaju wiosce ukrytej w liściach gęstej dżungli. Z żalem stwierdziła, że wszędobylski smród nadal sie utrzymywał i był jeszcze gorszy niż w więzieniu, z którego się wydostała. 
 
 Nim zdążyła obmyśleć swój kolejny ruch, naraz usłyszała znajomy obcy język. W przypływie adrenaliny suczka postanowiła...
@@ -603,7 +620,7 @@ Nim zdążyła obmyśleć swój kolejny ruch, naraz usłyszała znajomy obcy ję
 [[...szybko pobiec w kierunku przeciwnym od tego, z którego dobiegają głosy.->firstszambodeath]]
 
 
-:: firstszambodeath {"position":"1200,1400","size":"100,100"}
+:: firstszambodeath [dead-end] {"position":"1200,1350","size":"100,100"}
 Nie było czasu do stracenia. Ktoś sie zbliżał i na pewno nie miał wobec bohaterki dobrych zamiarów. Trzeba było szybko uciekać.
 
 W panicznym biegu Kari Mata nastąpiła na coś, co wydało dość głośny dźwięk. Przystanęła na chwilę zaalarmowana nagłym zrobieniem hałasu po czym wznowiła ucieczkę.
@@ -614,19 +631,19 @@ KONIEC
 ($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
 
 
-:: hahabeka {"position":"1200,1000","size":"100,100"}
+:: hahabeka {"position":"1200,900","size":"100,100"}
 - ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre") - istota porząsnęła głową i głośno sie zaśmiała. Kari Mata Hari stwierdziła, że pewnie musiała powiedzieć coś wyjątkowo głupiego.
 
 [[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz->escapemap]]
 
 
-:: hahaneutral {"position":"1100,1000","size":"100,100"}
+:: hahaneutral {"position":"1100,900","size":"100,100"}
 - ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "cela")! - zaśmiała się głośno istota. Coś, co powiedziała nasza bohaterka musiało ją bardzo mocno rozbawić.
 
 [[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz->escapemap]]
 
 
-:: koncept {"position":"2625,2075","size":"100,100"}
+:: koncept {"position":"2600,2100","size":"100,100"}
 Koncept: gry NIE DA SIĘ przejść za pierwszym runem.
 
 RUN 1
@@ -664,7 +681,7 @@ Po rozglądnięciu się po celi, Kari Mata postanowiła...
 [[...zrobić coś innego.->Intro]]
 
 
-:: map0 {"position":"975,1150","size":"100,100"}
+:: map0 {"position":"975,1100","size":"100,100"}
 Mówiąc to, Kari Mata Hari teatralnie złapała się za głowe i przymknęła oczy. Miała nadzieję, że jej zdolności aktorskie do tej sztuczki wystarczą.
 - ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! ($wypiszRuby: "niedobre")! - krzyknęła przejętym głosem istota, po czym gwałtownie sie podniosła, upuszczając przy tym pewną rzecz, wybiegając prędko z pomieszczenia, w którym Kari Mata była pilnowana.  Bohaterka słysząc brzdęk przedmiotu wypadającego z kieszeni zafrasowanego "strażnika" domyśliła się, co mógł upuścić. Schyliła się i przez szparę w dole celi sięgnęła po to. Szczęśliwym trafem, klucz, bo to o nim była mowa, pasował jak ulał do zamka w jej celi. Kari Mata uwolniła się. 
 
@@ -681,7 +698,16 @@ Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata 
 (lokacja odwiedzona rano jest niedostepna, do wyboru tylko 2)
 
 
-:: mapanoc 3b {"position":"1725,3125","size":"100,100"}
+:: mapanoc {"position":"300,2500","size":"100,100"}
+<!-- [[mapanoc1a]] -->
+<!-- [[mapa noc 1b]] -->
+<!-- [[mapanoc2a]] -->
+<!-- [[mapanoc2b]] -->
+<!-- [[mapanoc3a]] -->
+<!-- [[mapanoc 3b]] -->
+
+
+:: mapanoc 3b {"position":"1700,3300","size":"100,100"}
 Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
 
 [[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman3b]]
@@ -702,7 +728,7 @@ Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata 
 (lokacja odwiedzona rano jest niedostepna, do wyboru tylko 2)
 
 
-:: mapanoc2a {"position":"1000,2450","size":"100,100"}
+:: mapanoc2a {"position":"975,2550","size":"100,100"}
 Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
 
 [[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman2a (bogini)]]
@@ -712,7 +738,7 @@ Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata 
 (lokacja odwiedzona rano jest niedostepna, do wyboru tylko 2)
 
 
-:: mapanoc2b {"position":"1725,2450","size":"100,100"}
+:: mapanoc2b {"position":"1700,2550","size":"100,100"}
 Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
 
 [[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman2b]]
@@ -721,7 +747,7 @@ Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata 
 [[...sprawdzić raz jeszcze bramę do wioski->Rzeka noc]] //WYBÓR POJAWIA SIĘ TYLKO JAK KARI odwiedzi RZEKA 0
 
 
-:: mapanoc3a {"position":"1000,3150","size":"100,100"}
+:: mapanoc3a {"position":"975,3325","size":"100,100"}
 Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
 
 [[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman3a]]
@@ -729,6 +755,16 @@ Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata 
 [[...pójść tam, skąd wyszli szambolanie przez nią spotkani/iść na szambolański targ.->targ3a ]]
 
 (lokacja odwiedzona rano jest niedostepna, do wyboru tylko 2)
+
+
+:: mieszka {"position":"300,1900","size":"100,100"}
+<!-- [[mieszka0]] -->
+<!-- [[mieszka1a (metal)]] -->
+<!-- [[mieszka1b]] -->
+<!-- [[mieszka2a (rzeka)]] -->
+<!-- [[mieszka2b]] -->
+<!-- [[mieszka3a]] -->
+<!-- [[mieszka3b]] -->
 
 
 :: mieszka0 {"position":"1275,1600","size":"100,100"}
@@ -757,7 +793,7 @@ Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejsc
 (nawiązanie do rytuału sati)
 
 
-:: mieszka2a (rzeka) {"position":"800,2575","size":"100,100"}
+:: mieszka2a (rzeka) {"position":"775,2675","size":"100,100"}
 Nasza bohaterka ponownie postanowiła się zapuścić do części wioski zamieszkałej przez prostych Szambolan. Szczęśliwie dla niej, mieszkańcy Szambo-La byli na tyle zajęci sprawami dnia codziennego, że nie zwracali za bardzo uwagi co się dzieje dookoła nich.
 Kari Mata mając za swoich sprzymierzeńców gęste zarośla i bajora mogła spokojnie podróżować nimi w ukryciu po wiosce.
 
@@ -775,11 +811,11 @@ Starsza szambolanka pokręciła głową przecząco. Na twarzy malucha pojawił s
 Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]]
 
 
-:: mieszka2b [lore] {"position":"1925,2575","size":"100,100"}
+:: mieszka2b [lore] {"position":"1900,2675","size":"100,100"}
 
 
 
-:: mieszka3a {"position":"775,3325","size":"100,100"}
+:: mieszka3a {"position":"750,3500","size":"100,100"}
 Nasza bohaterka ponownie postanowiła się zapuścić do części wioski zamieszkałej przez prostych Szambolan. Szczęśliwie dla niej, mieszkańcy Szambo-La byli na tyle zajęci sprawami dnia codziennego, że nie zwracali za bardzo uwagi co się dzieje dookoła nich.
 Kari Mata mając za swoich sprzymierzeńców gęste zarośla i bajora mogła spokojnie podróżować nimi w ukryciu po wiosce.
 
@@ -793,7 +829,7 @@ Ta pierwsza przytaknęła głową i zabrała się z powrotem do swoich obowiązk
 Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc3a]]
 
 
-:: mieszka3b [lore] {"position":"1900,3325","size":"100,100"}
+:: mieszka3b [lore] {"position":"1875,3500","size":"100,100"}
 
 
 
@@ -822,6 +858,21 @@ Nie było to wiele, lecz dało bohaterce do zrozumienia, że ktoś tu przed nią
 (opis, jak rybacy idą w stronę wodza, jednak wejście do niego blokuje zbyt wiele straży, nijak nie przejdzie)
 
 
+:: rzeka {"position":"300,2200","size":"100,100"}
+<!-- [[Rzeka 0]] -->
+<!-- [[Rzeka dzien]] -->
+<!-- [[Rzeka noc]] -->
+<!-- [[Rzeka 3]] -->
+
+
+:: sen {"position":"300,2600","size":"100,100"}
+<!-- [[sen2]] -->
+<!-- [[sen2a]] -->
+<!-- [[sen3]] -->
+<!-- [[sen3a]] -->
+<!-- [[sen4]] -->
+
+
 :: sen2 {"position":"1000,2100","size":"100,100"}
 Nastała noc. Mrok nieustannie spowijający Szambo-La zdawał się być jeszcze ciemniejszy i groźniejszy, niż za dnia. Kari Mata, czując jak jej powieki same zamykają jej sie ze zmęczenia postanowiła wrócić do swojej kryjówki. Przemykając się pomiędzy pojedyńczymi Szambolanami bezpiecznie dotarła do swojej niepewnej oazy. Wiedziała, że poczyniła dziś niezłe postępy. Lecz wciąż brakowało jej sposobu na wydostanie się z tego impasu. 
 Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy podczas snu jest bezbronny, zwłaszcza na wrogim terenie!) zmęczenie fizyczne wzięło nad nią górę. Po chwili już spała. 
@@ -836,14 +887,14 @@ Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy
 [[Oby kolejny dzień przybliżył Kari Matę Hari do wolności...->wioskamapa2b]]
 
 
-:: sen3 {"position":"1000,2750","size":"100,100"}
+:: sen3 {"position":"975,2850","size":"100,100"}
 Nastała noc. Mrok nieustannie spowijający Szambo-La zdawał się być jeszcze ciemniejszy i groźniejszy, niż za dnia. Kari Mata, czując jak jej powieki same zamykają jej sie ze zmęczenia postanowiła wrócić do swojej kryjówki. Przemykając się pomiędzy pojedyńczymi Szambolanami bezpiecznie dotarła do swojej niepewnej oazy. Wiedziała, że poczyniła dziś niezłe postępy. Lecz wciąż brakowało jej sposobu na wydostanie się z tego impasu. 
 Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy podczas snu jest bezbronny, zwłaszcza na wrogim terenie!) zmęczenie fizyczne wzięło nad nią górę. Po chwili już spała. 
 
 [[Oby kolejny dzień przybliżył Kari Matę Hari do wolności...->wioskamapa3a]]
 
 
-:: sen3a {"position":"1725,2725","size":"100,100"}
+:: sen3a {"position":"1700,2825","size":"100,100"}
 Nastała noc. Mrok nieustannie spowijający Szambo-La zdawał się być jeszcze ciemniejszy i groźniejszy, niż za dnia. Kari Mata, czując jak jej powieki same zamykają jej sie ze zmęczenia postanowiła wrócić do swojej kryjówki. Przemykając się pomiędzy pojedyńczymi Szambolanami bezpiecznie dotarła do swojej niepewnej oazy. Wiedziała, że poczyniła dziś niezłe postępy. Lecz wciąż brakowało jej sposobu na wydostanie się z tego impasu. 
 Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy podczas snu jest bezbronny, zwłaszcza na wrogim terenie!) zmęczenie fizyczne wzięło nad nią górę. Po chwili już spała. 
 
@@ -852,7 +903,7 @@ Nad ranem wybudziło ją ze snu głośne buczenie, przypominające syrenę statk
 [[Oby kolejny dzień przybliżył Kari Matę Hari do wolności...->wioskamapa3b]]
 
 
-:: sen4 {"position":"1400,3625","size":"100,100"}
+:: sen4 {"position":"1400,3825","size":"100,100"}
 Nastała noc. Mrok nieustannie spowijający Szambo-La zdawał się być jeszcze ciemniejszy i groźniejszy, niż za dnia. Kari Mata, czując jak jej powieki same zamykają jej sie ze zmęczenia postanowiła wrócić do swojej kryjówki. Przemykając się pomiędzy pojedyńczymi Szambolanami bezpiecznie dotarła do swojej niepewnej oazy. Wiedziała, że poczyniła dziś niezłe postępy. Lecz wciąż brakowało jej sposobu na wydostanie się z tego impasu. 
 
 Gdy układała się do snu, po raz kolejny usłyszała syrenę statku. Dokładnie tę sama, która poruszyła całe społeczeństwo Szambolan. Syrena przez chwilę wyła jak opętana, a potem stawała się coraz bardziej oddalona, i oddalona. W końcu na dobre umilkła.
@@ -870,6 +921,17 @@ Mimo, że Kari Mata nie do końca rozumiała, co sie do niej mówi, dało się w
 [[(wskazała na siebie) ($wypiszRuby: "pies")?->4tak]]
 [[(wskazała na postać) ($wypiszRuby: "pies")?->4nie]]
 [[($wypiszRuby: "cela")?->9]]
+
+
+:: szaman {"position":"300,2100","size":"100,100"}
+<!-- [[szaman0]] -->
+<!-- [[szaman1a]] -->
+<!-- [[szaman1b]] -->
+<!-- [[szaman2a (bogini)]] -->
+<!-- [[szaman2b]] -->
+<!-- [[szaman3a]] -->
+<!-- [[szaman3aa]] -->
+<!-- [[szaman3b]] -->
 
 
 :: szaman0 {"position":"1525,1600","size":"100,100"}
@@ -897,7 +959,7 @@ Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejsc
 
 
 
-:: szaman2a (bogini) {"position":"1175,2575","size":"100,100"}
+:: szaman2a (bogini) {"position":"1150,2675","size":"100,100"}
 W chacie Szamana Kari Mata zauważyła samego jej właściciela odprawiającego swoje codzienne rytuały. Skupienie z jakim wykonywał swoje religijne obowiązki było godne podziwu. Kari Mata stwierdziła, że nawet stado przebiegających słoni nie mogłoby go rozproszyć.
 
 Po dłuższej chwili medytacji Kari Mata zauważyła, jak kapłan wstaje i podchodzi do prostego ołtarzyka. Na nim znajdowały sie świece, które dawały słabe oświetlenie na obrazek znajdujący się między nimi. Obraz ten wydawał się Kari Macie pewnego rodzaju ikoną religijną. Mogła dostrzec na nim sylwetkę suczki w bojowej pozie ubranej w piękne szaty. W jednej ze swoich 8 rąk dzierżyła włócznie. Groźne spojrzenie jakie posyłała ta wojowniczka z obrazu wydawało sie Kari Macie bardziej powodem do odwracania wzroku od tego obrazu. Mimo to, szaman już od dłuższej chwili głeboko się nad nim skłaniaj powtarzając jak mantrę:
@@ -907,11 +969,11 @@ Po dłuższej chwili medytacji Kari Mata zauważyła, jak kapłan wstaje i podch
 Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]]
 
 
-:: szaman2b [lore] {"position":"1725,2600","size":"100,100"}
+:: szaman2b [lore] {"position":"1700,2700","size":"100,100"}
 
 
 
-:: szaman3a {"position":"1225,3325","size":"100,100"}
+:: szaman3a {"position":"1200,3500","size":"100,100"}
 Ciekawa tego, co mogło tak wystarszyć szambolan trudniących sie rybactwem, Kari Mata zakradła się do chaty szamana. Zeknęła przez okno chaty do jej środka. 
 Ujrzała dwójkę Szambolanów rozmawiających z wyraźnym poddenerwowaniem z szamanem. 
 
@@ -926,7 +988,7 @@ Szambolanie łowiący ryby skłonili się i opuścili chatę szamana. Bohaterka 
 (TEN DIALOG POJAWIA SIĘ TYLKO RANO TEGO DNIA!)
 
 
-:: szaman3aa {"position":"1350,3325","size":"100,100"}
+:: szaman3aa {"position":"1325,3500","size":"100,100"}
 W chacie Szamana Kari Mata zauważyła samego jej właściciela odprawiającego swoje codzienne wieczorne modlitwy. Skupienie z jakim wykonywał swoje religijne obowiązki było godne podziwu. Kari Mata stwierdziła, że nawet stado przebiegających słoni nie mogłoby go rozproszyć.
 
 
@@ -937,11 +999,11 @@ Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejsc
 (TEN DIALOG TYLKO JAK PÓJDZIEMY DO SZAMANA WIECZOREM TEGO DNIA)
 
 
-:: szaman3b [lore] {"position":"1750,3325","size":"100,100"}
+:: szaman3b [lore] {"position":"1725,3500","size":"100,100"}
 
 
 
-:: szambopass {"position":"775,1400","size":"100,100"}
+:: szambopass {"position":"775,1350","size":"100,100"}
 Nie chcąc ryzykować wykrycia i ponownego wsadzenia do więzienia Kari Mata ukryła sie za najbliższymi krzakami, jakie zauważyła. Miała nadzieję, że to wystarczy, by pozostać niewidoczną.
 
 Suczka poczekała cierpliwie na nadejście właścicieli głosów, które przed chwila słyszała. Pomiędzy liściami w krzakach była dogodna luka służąca bohaterce za obserwacje otoczenia.  Kari Mata postanowiła jej użyć niczym lornetki.
@@ -966,6 +1028,17 @@ Kari Mata postanowiła...
 [[...potrząsnąć kratami, by hałas doszedł do uszu istoty..->shakegates]]
 [[...spróbować przechyrzyć istotę->escapemap]]
 [[...zrobić coś innego->Intro]]
+
+
+:: targ {"position":"300,2000","size":"100,100"}
+<!-- [[targ0]] -->
+<!-- [[targ1a]] -->
+<!-- [[targ1b]] -->
+<!-- [[targ2a (wioska)]] -->
+<!-- [[targ2bRANO]] -->
+<!-- [[TARGTRUEEND]] -->
+<!-- [[targ3a ]] -->
+<!-- [[targ3b (ryba)]] -->
 
 
 :: targ0 {"position":"1400,1600","size":"100,100"}
@@ -996,7 +1069,7 @@ Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejsc
 
 
 
-:: targ2a (wioska) {"position":"1000,2600","size":"100,100"}
+:: targ2a (wioska) {"position":"975,2700","size":"100,100"}
 Kari Mata Hari poszła ponownie na mały, lecz gwarny szambolański targ. Ukryta między krzakami bohaterka wyteżyła wzrok panujący w półmroku wioski, by dostrzec coś, co mogło by jej się przydać by przetrwać w obozie nieprzyjaciela.
 
 Biegnący szambolan dość pokaźnej postury biegał od straganu do straganu wyraźnie zaaferowany. Stworzenie pytało o coś swoich pobratymców:
@@ -1008,7 +1081,7 @@ Zawsze na pytanie zadawane przez strażnika inni Szambolanie odpowiadali przecz�
 Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]]
 
 
-:: targ2bRANO [2-run] {"position":"1525,2325","size":"100,100"}
+:: targ2bRANO [2-run] {"position":"1500,2425","size":"100,100"}
 Kari Mata Hari poszła ponownie na mały, lecz gwarny szambolański targ. Ukryta między krzakami bohaterka wyteżyła wzrok panujący w półmroku wioski, by dostrzec coś, co mogło by jej się przydać by przetrwać w obozie nieprzyjaciela.
 
 Bohaterka zaobserwowała za straganem rybaków puste kosze po rybach. Upewniając się, że nikogo nie ma w ich pobliżu przyjrzała im sie z bliska. Kosze były na tyle duże i głebokie, że suczka spokojnie mogła się w nich zmieścić, gdyby tylko mogła.
@@ -1019,7 +1092,7 @@ Biorąc pod uwage wszystkie zebrane informacje do tej pory, Mata Hari postanowi�
 [[...pójść po kolejną świeżą rybę ze wczorajszego stosu i udać się na odpoczynek.->mapanoc2b]]
 
 
-:: targ3a\  {"position":"1000,3325","size":"100,100"}
+:: targ3a\  {"position":"975,3500","size":"100,100"}
 Kari Mata Hari poszła ponownie na mały, lecz gwarny szambolański targ. Ukryta między krzakami bohaterka wyteżyła wzrok panujący w półmroku wioski, by dostrzec coś, co mogło by jej się przydać by przetrwać w obozie nieprzyjaciela.
 
 Dziś na straganie było nader spokojnie. Kari Mata Hari nie odnotowała niczego przydatnego podczas tej wizyty.
@@ -1027,7 +1100,7 @@ Dziś na straganie było nader spokojnie. Kari Mata Hari nie odnotowała niczego
 Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc3a]]
 
 
-:: targ3b (ryba) [tresc] {"position":"1575,3325","size":"100,100"}
+:: targ3b (ryba) [tresc] {"position":"1550,3500","size":"100,100"}
 
 
 
@@ -1056,7 +1129,7 @@ Mając nadal w rękach swoją wątpliwej jakości strawę, Mata Hari...
 [[...odłożyła to wstrętne danie i zrobić coś innego->Intro]]
 
 
-:: tastedeath {"position":"600,1000","size":"100,100"}
+:: tastedeath [dead-end] {"position":"600,1000","size":"100,100"}
 Z wielkim trudem Kari Mata Hari połykała kolejne kęsy najgorszego dania jakie kiedykolwiek w życiu jadła. Niestety, z każdym kolejny kęsem zaczęła czuć się coraz dziwniej. Gdy zaczęło jej sie kręcić w głowie przestała jeść i odłożyła miskę. Po chwili świat zawirował, a jej powieki zaczęły się robić ciężkie. 
 
 - ($wypiszRuby: "pies")?! ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! - zaczął ktoś przed jej celą krzyczeć w tym niezrozumiałym przez nią języku. Choć nie zdawała sobie z tego sprawy, były to ostatnie słowa, jakie usłyszała w swoim pieskim życiu.
@@ -1075,8 +1148,18 @@ KONIEC
 Kari Mata Hari stwierdziła, że nie jest już specjalnie głodna i [[postanowiła zrobić coś innego->Intro]]
 
 
-:: trueend [tresc] {"position":"1350,2850","size":"100,100"}
+:: trueend [tresc] {"position":"1325,2950","size":"100,100"}
 
+
+
+:: wioskamapa {"position":"300,2400","size":"100,100"}
+<!-- [[wioskamapa1a]] -->
+<!-- [[wioskamapa1b]] -->
+<!-- [[wioskamapa2a]] -->
+<!-- [[wioskamapa2b]] -->
+<!-- [[wioskamapa3a]] -->
+<!-- [[wioskamapa3b]] -->
+<!-- [[wioskamapa4a]] -->
 
 
 :: wioskamapa1a {"position":"1000,1600","size":"100,100"}
@@ -1104,7 +1187,7 @@ Istniała jeszcze jedna możliwość - suczka mogła sie udać tam, gdzie poszli
 [[...sprawdzić raz jeszcze bramę do wioski->Rzeka dzien]] //WYBÓR POJAWIA SIĘ TYLKO JAK KARI odwiedzi RZEKA 0
 
 
-:: wioskamapa2a {"position":"1000,2325","size":"100,100"}
+:: wioskamapa2a {"position":"975,2425","size":"100,100"}
 Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozglądnęła się uważnie po swoim otoczeniu. Bohaterka zdecydowała... 
 
 [[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman2a (bogini)]]
@@ -1114,7 +1197,7 @@ Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari
 (w zależności od tego, czy KMH widziała daną kolacje dzień wcześniej tak ja nazywa, nazwy po ukośniku to te, co powinny być używane, jak udaje się do nich po raz kolejny)
 
 
-:: wioskamapa2b {"position":"1725,2325","size":"100,100"}
+:: wioskamapa2b {"position":"1700,2425","size":"100,100"}
 Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozglądnęła się uważnie po swoim otoczeniu. Bohaterka zdecydowała... 
 
 [[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman2b]]
@@ -1125,7 +1208,7 @@ Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari
 (w zależności od tego, czy KMH widziała daną kolacje dzień wcześniej tak ja nazywa, nazwy po ukośniku to te, co powinny być używane, jak udaje się do nich po raz kolejny)
 
 
-:: wioskamapa3a {"position":"1000,3000","size":"100,100"}
+:: wioskamapa3a {"position":"975,3175","size":"100,100"}
 Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozglądnęła się uważnie po swoim otoczeniu. 
 
 Wtem w oddali rozległo się głośne buczenie, przypominające syrenę statku. Szambolanie natychmiast wyjrzeli ze swoich domów, by zbadać źródło hałasu. Kari Mata Hari, mimo lęku przed odkryciem jej kryjówki, zdecydowała się jej nie opuszczać do czasu, aż zamieszanie w osadzie nie ustanie. Po dłuższej chwili dostrzegła, jak pewni Szambolanie z wrzaskiem wbiegają do chatki szamana. 
@@ -1139,7 +1222,7 @@ Bohaterka zdecydowała...
 (w zależności od tego, czy KMH widziała daną kolacje dzień wcześniej tak ja nazywa, nazwy po ukośniku to te, co powinny być używane, jak udaje się do nich po raz kolejny)
 
 
-:: wioskamapa3b {"position":"1725,2950","size":"100,100"}
+:: wioskamapa3b {"position":"1700,3125","size":"100,100"}
 Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozglądnęła się uważnie po swoim otoczeniu. 
 
 
@@ -1153,7 +1236,7 @@ Bohaterka zdecydowała...
 (w zależności od tego, czy KMH widziała daną kolacje dzień wcześniej tak ja nazywa, nazwy po ukośniku to te, co powinny być używane, jak udaje się do nich po raz kolejny)
 
 
-:: wioskamapa4a {"position":"1400,3875","size":"100,100"}
+:: wioskamapa4a {"position":"1400,4075","size":"100,100"}
 Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozglądnęła się uważnie po swoim otoczeniu. 
 
 Suczka czuła się naprawdę źle. Brak regularnego dostępu do pokarmu, środków czystości i innych rzeczy, które mogły zaspokoić jej podstawowe potrzeby fizjologiczne dziś dał jej bardzo we znaki. Mimo wszystko z wielkim trudem postanowiła nie poddawać się i zrobić kolejny krok w stronę wolności. Postanowiła...
