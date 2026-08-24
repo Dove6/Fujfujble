@@ -46,7 +46,7 @@ Kari Mata....
 
 
 :: 9 {"position":"1300,700","size":"100,100"}
-Istota zaśmiała się i potrząsnęła metalowymi kratami, piskliwym głosem mówiąc przy tym: ($wypiszRuby: "cela"). Kari Mata Hari pomyślała, że pewnie nabija się z niej.
+Istota zaśmiała się i potrząsnęła metalowymi kratami, piskliwym głosem mówiąc przy tym: ($wypiszRuby: "więzienie"). Kari Mata Hari pomyślała, że pewnie nabija się z niej.
 
 Kari Mata....
 
@@ -505,7 +505,7 @@ Podobno mowa jest srebrem, a milczenie złotem, lecz w tym wypadku bohaterka stw
 
 [[...wskazać na siebie i powiedzieć ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")->map0]]
 [[...wskazać na istotę i powiedzieć ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")->deadend1]]
-[[...wskazać na istote i powiedzieć ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "cela")->hahaneutral]]
+[[...wskazać na istote i powiedzieć ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "więzienie")->hahaneutral]]
 [[...wskazać na siebie i powiedzieć ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "jedzenie")->hahabeka]]
 
 
@@ -536,7 +536,7 @@ KONIEC
 
 
 :: hahaneutral {"position":"1100,900","size":"100,100"}
-- ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "cela")! - zaśmiała się głośno istota. Coś, co powiedziała nasza bohaterka musiało ją bardzo mocno rozbawić.
+- ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "więzienie")! - zaśmiała się głośno istota. Coś, co powiedziała nasza bohaterka musiało ją bardzo mocno rozbawić.
 
 [[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz->escapemap]]
 
@@ -614,7 +614,7 @@ Patrząc na część wioski zamieszkałą przez zwykłych Szambolan do uszu Kari
 
 Po chwili zauważyła krępego Szambolana o mocno pomarszczonym ryjku, ubranym w fartuch. W jednej łapie trzymał ciężki młot a w drugiej szczypce kowalskie. W szczypcach znajdował się kawał metalu, który był poddawany obróbce. Rytmicznie uderzał młotem w kawał stali, który pod wpływem narzędzia zmieniał swój kształt. Naraz, szambolański Kowal  przerwał prace, wnikliwie popatrzył na swoją robótkę i krzyknął:
 
--  ($wypiszRuby: "metal") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! ($wypiszRuby: "metal") ($wypiszRuby: "być") ($wypiszRuby: "nowy")... ($wypiszRuby: "metal") ($wypiszRuby: "zostać") ($wypiszRuby: "niedobre")?!
+-  ($wypiszRuby: "metal") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! ($wypiszRuby: "metal") ($wypiszRuby: "zostać") ($wypiszRuby: "niedobre")?!
 
 Szambolan przeklnął jeszcze kilka razy pod nosem w swoim języku i wyrzucił swoją pracę gdzieś w kąt i zajął się czymś innym.
 ]
@@ -734,13 +734,13 @@ Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy
 
 
 :: shakegates {"position":"1200,525","size":"100,100"}
-- ($wypiszRuby: "pies") ($wypiszRuby: "zostać") ($wypiszRuby: "cela")!
+- ($wypiszRuby: "pies") ($wypiszRuby: "zostać") ($wypiszRuby: "więzienie")!
 
 Mimo że Kari Mata nie do końca rozumiała, co się do niej mówi, była w stanie wyczuć w tonie istoty rozkaz. Mając już jednak jej uwagę, bohaterka chciała podjąć próbę porozumienia się z postacią. Z naciskiem na próbę. Wzięła wdech i...
 
 [[(wskazała na siebie) ($wypiszRuby: "pies")?->4tak]]
 [[(wskazała na postać) ($wypiszRuby: "pies")?->4nie]]
-[[($wypiszRuby: "cela")?->9]]
+[[($wypiszRuby: "więzienie")?->9]]
 
 
 :: szaman [lokacja] {"position":"1400,2000","size":"100,100"}
@@ -780,11 +780,11 @@ Po dłuższej chwili medytacji Kari Mata zauważyła, jak kapłan wstaje i podch
 Ciekawa tego, co mogło tak wystarszyć szambolan trudniących sie rybactwem, Kari Mata zakradła się do chaty szamana. Zeknęła przez okno chaty do jej środka. 
 Ujrzała dwójkę Szambolanów rozmawiających z wyraźnym poddenerwowaniem z szamanem. 
 
-- ($wypiszRuby: "ja") ($wypiszRuby: "iść") ($wypiszRuby: "rzeka"). ($wypiszRuby: "ja") ($wypiszRuby: "brać") ($wypiszRuby: "ryba"). ($wypiszRuby: "rzeka") ($wypiszRuby: "być") ($wypiszRuby: "ryba"). ($wypiszRuby: "ryba") ($wypiszRuby: "być") ($wypiszRuby: "metal")! - wyrzucił z siebie jeden z nich w stronę szamana, a drugi z nich potakiwał gorliwie, zapewniając o prawdziwości tych słów
+- ($wypiszRuby: "ja") ($wypiszRuby: "iść") ($wypiszRuby: "rzeka"). ($wypiszRuby: "ja") ($wypiszRuby: "być") ($wypiszRuby: "praca") ($wypiszRuby: "ryba"). ($wypiszRuby: "rzeka") ($wypiszRuby: "być") ($wypiszRuby: "ryba"). ($wypiszRuby: "ryba") ($wypiszRuby: "być") ($wypiszRuby: "metal")! - wyrzucił z siebie jeden z nich w stronę szamana, a drugi z nich potakiwał gorliwie, zapewniając o prawdziwości tych słów
 
 Szaman milczał przez chwilę a nastepnie przemówił:
 
-- ($wypiszRuby: "rzeka") ($wypiszRuby: "być") ($wypiszRuby: "niedobre"). ($wypiszRuby: "ty") ($wypiszRuby: "iść") ($wypiszRuby: "jutro"). ($wypiszRuby: "jutro") ($wypiszRuby: "być") ($wypiszRuby: "dobre"). ($wypiszRuby: "rzeka") ($wypiszRuby: "być") ($wypiszRuby: "dobre").
+- ($wypiszRuby: "rzeka") ($wypiszRuby: "być") ($wypiszRuby: "niedobre"). ($wypiszRuby: "ty") ($wypiszRuby: "iść") ($wypiszRuby: "jutro"). ($wypiszRuby: "rzeka") ($wypiszRuby: "być") ($wypiszRuby: "dobre") ($wypiszRuby: "jutro").
 
 Szambolanie łowiący ryby skłonili się i opuścili chatę szamana.
 ]
@@ -1005,7 +1005,7 @@ Było już rano. Przed sobą widziała dwójkę Szambolan ciągnących wóz z ko
 
 Gdy przed nią stanęli, dyskretnie przyjrzała się sytuacji. Miała wrażenie, że kontrola wózka Szambolan-rybaków trwała wieczność.
 
-- ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "dobra")! ($wypiszRuby: "ty") ($wypiszRuby: "iść") ($wypiszRuby: "rzeka")! - rzekł strażnik i Szambolanie przejechali ze swoim ładunkiem (i przy okazji z Kari Matą) w stronę rzeki. 
+- ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "dobre")! ($wypiszRuby: "ty") ($wypiszRuby: "iść") ($wypiszRuby: "rzeka")! - rzekł strażnik i Szambolanie przejechali ze swoim ładunkiem (i przy okazji z Kari Matą) w stronę rzeki. 
 
 Bohaterka nie posiadała się ze szczęścia! W końcu, po wielu perypetiach, przy użyciu sprytnego fortelu wydostała się poza bramy najbardziej śmierdzącej wioski na świecie!
 Suczce pozostało jedynie [[czekać na właściwy moment opuszczenia wózka i uciec stąd, jak najdalej się da...->trueend2]]
