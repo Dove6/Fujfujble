@@ -21,7 +21,7 @@ Fujfujble! razem
 }
 
 
-:: 1 RUN {"position":"1025,200","size":"100,100"}
+:: 1 RUN {"position":"1000,200","size":"100,100"}
 
 
 
@@ -29,31 +29,54 @@ Fujfujble! razem
 
 
 
-:: 4nie {"position":"1375,575","size":"100,100"}
-- (text-colour:red)[Pies??] - zaśmiała się istota i pokiwała głową na boki po czym wskazała na bohaterke i powtorzyła (text-colour:red)[Ty Pies].  Kari Mata posłała nerwowy uśmiech i skinęła głowa mając nadzieję, że podniesienie kącików ust do góry jest uniwersalną oznaką braku złych zamiarów. A przynajmniej powinien tak myśleć jegomość, z którym próbowała się porozumieć.
+:: 4nie {"position":"1400,500","size":"100,100"}
+- ($wypiszRuby: "ja") ($wypiszRuby: "pies")?? - zaśmiała się istota i pokiwała głową na boki po czym wskazała na bohaterke. - ($wypiszRuby: "ty") ($wypiszRuby: "pies")!
+
+Kari Mata posłała nerwowy uśmiech i skinęła głowa mając nadzieję, że podniesienie kącików ust do góry jest uniwersalną oznaką braku złych zamiarów. A przynajmniej powinien tak myśleć jegomość, z którym próbowała się porozumieć.
 
 Kari Mata....
 
 [[...postanowiła zapytać o coś innego->shakegates]] 
-[[...postanowiła zrobić cos innego->talk]] 
+[[...postanowiła zrobić cos innego->talk]]
 
 
-:: 4tak {"position":"1350,450","size":"100,100"}
-- (text-colour:red)[Pies! Pies! ]- zaśmiała się istota i pokiwała głową w góre i w dół. Mata Hari postanowiła założyć, że ten sposób potwierdzenia informacji powinien być uniwersalny w każdej kulturze.
-
-Kari Mata....
-
-[[...postanowiła zapytać o coś innego->shakegates]] 
-[[...postanowiła zrobić cos innego->talk]] 
-
-
-:: 9 {"position":"1375,700","size":"100,100"}
-Istota zaśmiała się i potrząsnęła metalowymi kratami, piskliwym głosem mówiąc przy tym (text-colour:red)[cela.] Kari Mata Hari pomyślała, że pewnie z niej sie nabija.
+:: 4tak {"position":"1400,400","size":"100,100"}
+- ($wypiszRuby: "pies")! ($wypiszRuby: "pies")! - zaśmiała się istota i pokiwała głową w góre i w dół. Mata Hari postanowiła założyć, że ten sposób potwierdzenia informacji powinien być uniwersalny w każdej kulturze.
 
 Kari Mata....
 
 [[...postanowiła zapytać o coś innego->shakegates]] 
-[[...postanowiła zrobić cos innego->talk]] 
+[[...postanowiła zrobić cos innego->talk]]
+
+
+:: 9 {"position":"1300,700","size":"100,100"}
+Istota zaśmiała się i potrząsnęła metalowymi kratami, piskliwym głosem mówiąc przy tym ($wypiszRuby: "cela"). Kari Mata Hari pomyślała, że pewnie z niej sie nabija.
+
+Kari Mata....
+
+[[...postanowiła zapytać o coś innego->shakegates]] 
+[[...postanowiła zrobić cos innego->talk]]
+
+
+:: Autorzy {"position":"150,275","size":"100,100"}
+Gra przygotowana w ramach (link-repeat: "Growego Dżemu Przygód Reksia 2026")[(open-url: "https://itch.io/jam/prgj-2026-growy-dem-przygd-reksia")] przez zespół w składzie: (link-repeat: "''Valiola''")[(open-url: "https://valiola.itch.io/")] i (link-repeat: "''Dove''")[(open-url: "https://dove6.itch.io/")].
+<hr>
+
+The ''Save System and Settings'' template was created by (link-repeat: "manonamora ⎘")[(open-url:"https://manonamora.itch.io/")] on Twine 2 with Harlowe (v3.3.9).
+<hr>
+''It was made possible thanks to:''
+* Chris Klimas, creator of (link-repeat: "Twine ⎘")[(open-url:"https://twinery.org/")]
+* Leon Arnott, creator and maintainer of the (link-repeat: "Harlowe ⎘")[(open-url:"https://twine2.neocities.org/")] format
+* Greyelf's answers on the old Twine Forums, the Discord, and Reddit
+* (link-repeat: "Kajot-dev's Harlowe Save-To-File Macros ⎘")[(open-url: "https://github.com/Kajot-dev/Twine-Harlowe-Save-To_File")]
+<hr>
+''Twine Resources:''
+* Download (link-repeat: "Twine ⎘")[(open-url:"https://twinery.org/")]
+* Check the (link-repeat: "Harlowe manual ⎘")[(open-url:"https://twine2.neocities.org/")]
+* Check the (link-repeat: "Harlowe source code ⎘")[(open-url:"https://foss.heptapod.net/games/harlowe")]
+* Check the (link-repeat: "Twine Resource Masterlist ⎘")[(open-url:"https://intfiction.org/t/twine-resource-masterlist-wiki/65903")]
+* Community Help: (link-repeat: "IntFiction Forum ⎘")[(open-url:"https://intfiction.org/c/authoring/twine")], (link-repeat: "Reddit r/twinegames ⎘")[(open-url:"https://www.reddit.com/r/twinegames/")], (link-repeat: "Discord ⎘")[(open-url:"https://discordapp.com/invite/n5dJvPp")]
+<h5>You can find my other Twine templates and guides (link-repeat: "here ⎘")[(open-url:"https://itch.io/c/2917452/")]
 
 
 :: DZIEŃ 2 {"position":"1000,1525","size":"100,100"}
@@ -84,6 +107,53 @@ Kari Mata....
 
 
 
+:: Intro {"position":"800,300","size":"100,100"}
+"Oślepłam."
+To pierwsze słowo, które pojawiło się w myślach Kari Maty Hari, gdy się ocknęła.
+Nic dziwnego. Otaczał ją całkowity mrok. Jej zmysł węchu działał za to znakomicie. Na nieszczęście, bo do jej nosa dochodził jedynie obrzydliwy smród. Nieznośny zapach przyprawiał ją o mdłości.
+
+Kari Mata spróbowała na chwilę zapomnieć, że w ogóle posiada nos i wytężyła swój słuch. 
+Przestrzeń, w której się znajdowała, wypełniały dziwne szepty i odgłosy.
+Docierające do jej uszu bulgoty, gulgoty i dziwne akcentowania nie przywodziły jej na myśl żadnego narzecza, które znała. Nie dziwiło jej to. W końcu tam, skąd pochodzi, jest wiele grup etniczych posługujących się własnymi odmianami językowymi. Miała zresztą dużo poważniejsze zmartwienia na głowie. Jej myśli zaprzątały kolejne pytania. Co tu robi? Jak się tu znalazła? I jak stąd może się wydostać?
+
+Gdy tak rozmyślała, jej wzrok powoli przyzwyczajał się do panujących wokół egipskich ciemności. Zaczęła dostrzegać zarysy rzeczy, które ją otaczały. Ściany małego pomieszczenia, w którym się znajdowała. Coś na kształt posłania po swojej lewej. Przed sobą miskę. A nieco dalej kraty. Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została uprowadzona.
+
+Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łapy. W tym celu bohaterka...
+
+[[...najpierw rozejrzała się po celi, by rozeznać się dokładniej w swoim położeniu.->look]]
+[[...spróbowała zwrócić na siebie uwagę dziwnych głosów.->talk]]
+
+
+:: Nagłówek [header] {"position":"25,150","size":"100,100"}
+{
+  <!-- Code to send the player back to a story passage -->
+  (if: (passage:)'s name is "Start")[($wczytajAutozapis: )]
+  (else: )[($zapiszAutozapis: )]
+  <!--The title Header-->
+  (prepend:?SideBar)[{=
+      <tw-header>
+          (if: (passage:)'s name is "Start")[FUJFUJBLE!]
+          (else-if: (passage:)'s name is "Słownik")[SŁOWNIK]
+          (else: )[DZIEŃ $numerDnia ($poraDnia)]
+      </tw-header>
+  ]
+  <!--The Settings Autoloader-->
+  (if: $chosenTheme is "Dark Theme")[
+    <script>settingThemeChange(1)</script>
+  ](else:)[
+    <script>settingThemeChange(0)</script>
+  ]
+  (if: $chosenFront is "Serif")[
+    <script>settingFontFamily(2)</script>
+  ](elseif: $chosenFront is "Sans-Serif")[
+    <script>settingFontFamily(1)</script>
+  ](else:)[
+    <script>settingFontFamily(0)</script>
+  ]
+  <script>settingFontSize($fontSize);</script>
+}
+
+
 :: Rzeka 0 [2-run] {"position":"625,1500","size":"100,100"}
 (opis palisady zagradzającej pójście dalej, na bramie wyjściowej stoją szambolanie, którzy jej strzegą. Za bramą słyszy nurt rzeki)
 
@@ -101,7 +171,7 @@ Podążając pod osłoną dziko rosnącej roślinności Kari Mata po raz kolejny
 
 Gdy wydawać się mogło, że będzie to kolejny dzień bezowocnego czekania na przełom, nagle Kari Mata usłyszała wrzask. Przez bramę jak strzała wyleciała dwójka szambolan. Byli to dokładnie ci sami osobnicy, co zwykle wracali z rybami i wieźli je na targ. Zaaferowani niecodziennymi wrzaskami szambolanie szczegący bramy wioski zatrzymali ich i rozpoczęli z nimi rozmowę. Zapewne pytając o to, co ich tak wystraszyło.
 
-- (text-colour:red)[Ryba być rzeka! Ryba być metal! Metal!! Bogini być niedobra!-] gorączkowo tłumaczył jeden z rybaków, a drugi mi wtórował, kiwając gorliwie głową.
+- ($wypiszRuby: "ryba") ($wypiszRuby: "być") ($wypiszRuby: "rzeka")! ($wypiszRuby: "ryba") ($wypiszRuby: "być") ($wypiszRuby: "metal")! ($wypiszRuby: "metal")!!! ($wypiszRuby: "bogini") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! - gorączkowo tłumaczył jeden z rybaków, a drugi mi wtórował, kiwając gorliwie głową.
 
 Szambolanie wydawali się być rozkojarzeni i nie zwracać uwagi na bramę. Czyżby był to odpowiedni moment na podjęcie próby ucieczki? Kari Mata zdawała sobie sprawy, że lepszej okazji mogło nie być... 
 
@@ -119,8 +189,6 @@ Suczka czatując w krzakach na cień szansy, by się wyslizgnąć niepostrzeżen
 [[Niestety, dziś nie było dane Kari Macie zobaczyć, co znajduje się po drugiej stronie palisady. Postanowiła wrócić do swojej kyjówki i odpocząć->mapa noc 1b]]
 
 
-
-
 :: Rzeka noc [2-run] {"position":"2150,2475","size":"100,100"}
 Podążając pod osłoną dziko rosnącej roślinności Kari Mata po raz kolejny udała się w okolice wyjścia z wioski z nadzieją, że może strażnicy bramy sobie poszli. Bądź śpią na tyle głęboko by mogła niezauważona wyjść w stronę wątłego światełka, które widniało za bramą.
 
@@ -129,31 +197,335 @@ Suczka czatując w krzakach na cień szansy, by się wyslizgnąć niepostrzeżen
 [[Niestety, dziś nie było dane Kari Macie zobaczyć, co znajduje się po drugiej stronie palisady. Postanowiła wrócić do swojej kyjówki i odpocząć->sen2a]]
 
 
-:: StartPlot {"position":"775,350","size":"100,100"}
-Oślepłam. 
-To pierwsze słowo, które pojawiło się w myślach Kari Maty Hari, gdy się ocknęła.
-Nic dziwnego. Otaczał ją całkowity mrok. Na nieszczęście, jej zmysł węchu działał znakomicie. Na nieszczęście, bo do jej nosa dochodził jedynie obrzydliwy smród.  Nieznośny zapach przyprawiał ją o mdłości. 
-Kari Mata spróbowała na chwilę zapomnieć, że w ogóle posiada nos i wyteżyła swój słuch. 
-Dziwne szepty w języku jej nieznanym wypełniały przestrzeń, w której się znajdowała. 
-Bulgoty, gulgoty i dziwne akcentowania w narzeczu, któremu się przysłuchiwała nic jej nie mówiły. To z pewnością nie był jezyk, którym sie posługiwała na co dzień. Nie zdziwiło jej to. W końcu tam, skąd pochodzi jest wiele grup etniczych posługujących sie swoim własnym narzeczem, bądź dialektem. Bardziej dziwiło ją to, co tu robi? Jak sie tu znalazła? I jak stąd może sie wydostać?
-Gdy tak rozmyślała, jej wzrok zaczął przyzwyczajać się do panujących tu egipskich ciemności. Powoli zaczęła dostrzegać zarysy rzeczy, które ją otaczały. Znalazła się w małym pomieszczeniu. Po lewej stronie miała coś na kształt posłania. Przed sobą miskę. Oraz kraty. Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została uprowadzona. 
+:: St00pka [footer] {"position":"25,275","size":"100,100"}
+{(append: ?SideBar)
+    [<tw-footer>{
+      (if: (passage:)'s name is not "Start")[{=
+          (if: (passage:)'s name is not "Słownik")[[[SŁOWNIK->Słownik]] — ]
+          ($rozpocznijNowaGre: "RESET GRY") —  
+      ]
+      (link-repeat: "USTAWIENIA")[
+        <script>$(".popup").removeClass("open");$("#popup-settings").addClass("open");</script>
+      ] — 
+      (link-repeat: "AUTORZY")[
+        <script>$(".popup").removeClass("open");$("#popup-credits").addClass("open");</script>
+      ]
+    }</tw-footer>]
+{
+<div id="popup-settings" class="popup">
+  <div id="popup-titlebar">
+    <h2 id="popup-title">USTAWIENIA</h2>
+    <span id="popup-close">
+      (link-repeat: "&times;")[
+        <script>$("#popup-settings").removeClass("open");</script>
+      ]
+    </span>
+	</div>
+	<div id="popup-body">
+		(display: "Ustawienia")<!-- [[Ustawienia]] -->
+	</div>
+</div>
+<div id="popup-credits" class="popup">
+  <div id="popup-titlebar">
+  	<h2 id="popup-title">AUTORZY</h2>
+    <span id="popup-close">
+      (link-repeat: "&times;")[
+        <script>$("#popup-credits").removeClass("open");</script>
+      ]
+    </span>
+	</div>
+	<div id="popup-body">
+		(display: "Autorzy")<!-- [[Autorzy]] -->
+	</div>
+</div>
+}
+<!-- You can obviously change the popups for actual passages, but I personally like this vibe best for myself ~ -->}
 
-Kari Maha Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łapy. W tym celu bohaterka...
 
-[[...najpierw się rozglądnęła po celi, by rozeznać sie dokładniej w swoim położeniu.->look]]
-[[...spróbowała zwrócić na siebie uwagę dziwnych głosów.->talk]]
+:: Start [no-return] {"position":"600,300","size":"100,100"}
+(align: "=><=")[[[>> Rozpocznij grę <<->Intro]]]
+|obrazek>[($jesliCiemnyMotyw: $obrazekOkladkaDark, $obrazekOkladkaLight)]
+(align: "=><=")[[[>> Rozpocznij grę <<->Intro]]]
+(click-goto: ?obrazek, "Intro")
 
+
+:: Słownik {"position":"150,400","size":"100,100"}
+(link-goto: "Powrót", (history: )'s last)
+(link-repeat: "Wyczyść słownik")[($wyczyscTlumaczenia: )(rerun: ?pola)]
+
+|pola>[{=
+<table id="dictionary-table">
+<thead>
+<tr><th>Szambolański</th><th>Uniwersalny</th></tr>
+</thead>
+<tbody>
+<tr><td>($wypiszSzambolanskiNr: 1)</td><td>($edytujTlumaczenieNr: 1)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 2)</td><td>($edytujTlumaczenieNr: 2)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 3)</td><td>($edytujTlumaczenieNr: 3)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 4)</td><td>($edytujTlumaczenieNr: 4)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 5)</td><td>($edytujTlumaczenieNr: 5)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 6)</td><td>($edytujTlumaczenieNr: 6)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 7)</td><td>($edytujTlumaczenieNr: 7)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 8)</td><td>($edytujTlumaczenieNr: 8)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 9)</td><td>($edytujTlumaczenieNr: 9)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 10)</td><td>($edytujTlumaczenieNr: 10)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 11)</td><td>($edytujTlumaczenieNr: 11)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 12)</td><td>($edytujTlumaczenieNr: 12)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 13)</td><td>($edytujTlumaczenieNr: 13)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 14)</td><td>($edytujTlumaczenieNr: 14)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 15)</td><td>($edytujTlumaczenieNr: 15)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 16)</td><td>($edytujTlumaczenieNr: 16)</td></tr>
+</tbody>
+</table>
+]
 
 
 :: TARGTRUEEND [tresc] {"position":"1400,2600","size":"100,100"}
 (KARI MATA MUSI PÓJŚĆ 3 DNIA WIECZÓR NA TARG I WCZOŁGAĆ SIE DO WOZU)
 
 
-[[Jedzie nad rzekę RANKIEM->trueend]] 
+[[Jedzie nad rzekę RANKIEM->trueend]]
 
 
 :: Untitled Passage 13 {"position":"3050,2675","size":"100,100"}
 
+
+
+:: Ustawienia {"position":"150,150","size":"100,100"}
+{
+  <!-- You don't need a table, but I just wanted to build one.-->
+  <table id="settings">
+    <tr>
+      <th>Motyw:</th>
+      <td>
+        (dropdown: 2bind $chosenTheme, "jasny", "ciemny")
+        <span class="mini-buttons">
+          (link-repeat: "✔")[
+            (if: $chosenTheme is "ciemny")[
+              <script>settingThemeChange(1)</script>
+            ](else:)[
+              <script>settingThemeChange(0)</script>
+            ]
+          ]
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <th>Rozmiar tekstu:</th>
+      <td><span class="mini-buttons">
+        (link-repeat: "−")[(set: $fontSize to it - 0.1)<script>settingFontSize($fontSize);</script>] / 
+        (link-repeat: "+")[(set: $fontSize to it + 0.1)<script>settingFontSize($fontSize);</script>]
+      </span></td>
+    </tr>
+  </table>
+  <!--Essentially, if you want to add more, just add a row and fill it up.-->
+}
+
+
+:: Zmienne [startup] {"position":"25,25","size":"100,100"}
+{ <!--This is limited to what the template needs.-->
+    (set: $namePC to "Jane Doe")
+    (set: $lastpassage to "Start")
+
+  <!-- Dane nagłówka -->
+    (set: const-type $numerDniaStart to 1)
+    (set: const-type $poraDniaStart to "wieczór")
+    (set: num-type $numerDnia to $numerDniaStart)
+    (set: (p-either: "rano", "południe", "wieczór", "noc")-type $poraDnia to $poraDniaStart)
+    
+  <!-- Inkrementacja czasu -->
+    (set: $zmienDzien to (macro: [
+        (set: $numerDnia to it + 1)
+        (set: $poraDnia to "rano")
+        (out: )[]
+    ]))
+
+  <!-- Dane słownika -->
+    (set: const-type $slowa to (a:
+        (a: "spanie", "fujfuj1"),
+        (a: "jedzenie", "fujfuj2"),
+        (a: "niedobre", "fujfuj3"),
+        (a: "pies", "fujfuj4"),
+        (a: "być", "fujfuj5"),
+        (a: "bogini", "fujfuj6"),
+        (a: "zostać", "fujfuj7"),
+        (a: "cela", "fujfuj8"),
+        (a: "ty", "fujfuj9"),
+        (a: "ja", "fujfuj10"),
+        (a: "nowy", "fujfuj11"),
+        (a: "iść", "fujfuj12"),
+        (a: "praca", "fujfuj13"),
+        (a: "rzeka", "fujfuj14"),
+        (a: "ryba", "fujfuj15"),
+        (a: "metal", "fujfuj16"),
+        (a: "wioska", "fujfuj17"),
+    ))
+    (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
+    (set: const-type $slownik to (dm:
+        $slowa's 1st's 1st, 1,
+        $slowa's 2nd's 1st, 2,
+        $slowa's 3rd's 1st, 3,
+        $slowa's 4th's 1st, 4,
+        $slowa's 5th's 1st, 5,
+        $slowa's 6th's 1st, 6,
+        $slowa's 7th's 1st, 7,
+        $slowa's 8th's 1st, 8,
+        $slowa's 9th's 1st, 9,
+        $slowa's 10th's 1st, 10,
+        $slowa's 11th's 1st, 11,
+        $slowa's 12th's 1st, 12,
+        $slowa's 13th's 1st, 13,
+        $slowa's 14th's 1st, 14,
+        $slowa's 15th's 1st, 15,
+        $slowa's 16th's 1st, 16,
+        $slowa's 17th's 1st, 17,
+    ))
+
+  <!-- Makra pomocnicze do wypisywania i modyfikacji słów. -->
+    (set: $wypiszSzambolanski to (macro: str-type _slowo, [
+        (set: _doWypisania to $slowa's (_slowo of $slownik)'s 2nd)
+        (out: )[_doWypisania]
+    ]))
+    (set: $wypiszTlumaczenie to (macro: str-type _slowo, [
+        (set: _doWypisania to $tlumaczeniaGracza's (_slowo of $slownik))
+        (out: )[_doWypisania]
+    ]))
+    (set: $zaktualizujTlumaczenie to (macro: str-type _slowo, str-type _znaczenie, [
+        (set: $tlumaczeniaGracza's (_slowo of $slownik) to _znaczenie)
+        (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
+        (out: )[]
+    ]))
+    (set: $wypiszSzambolanskiNr to (macro: num-type _nrSlowa, [
+        (set: _doWypisania to $slowa's _nrSlowa's 2nd)
+        (out: )[_doWypisania]
+    ]))
+    (set: $wypiszTlumaczenieNr to (macro: num-type _nrSlowa, [
+        (set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)
+        (out: )[_doWypisania]
+    ]))
+    (set: $zaktualizujTlumaczenieNr to (macro: num-type _nrSlowa, str-type _znaczenie, [
+        (set: $tlumaczeniaGracza's _nrSlowa to _znaczenie)
+        (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
+        (out: )[]
+    ]))
+    (set: $edytujTlumaczenieNr to (macro: num-type _nrSlowa, [
+        (out: )[{=
+          <div class="translation-editor">
+            (input: 2bind _doWypisania, "X", $tlumaczeniaGracza's _nrSlowa)
+            (link-repeat: "💾")[{=
+                (set: $tlumaczeniaGracza's _nrSlowa to _doWypisania)
+                (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
+            ]
+            (link-repeat: "🔄")[(set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)]
+            (link-repeat: "🚫")[{=
+                (set: $tlumaczeniaGracza's _nrSlowa to "")
+                (set: _doWypisania to "")
+                (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
+            ]
+          </div>
+        ]
+    ]))
+    (set: $wypiszPrzelaczaneNr to (macro: num-type _nrSlowa, [
+        (set: bool-type _czyTlumaczyc to false)
+        (set: _doWypisaniaSzambolanskie to $slowa's _nrSlowa's 2nd)
+        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's _nrSlowa)
+        (if: _doWypisaniaTlumaczenie is an empty)[
+            (out: )[_doWypisaniaSzambolanskie]
+        ]
+        (else: )[
+            (out: )[{=
+                |slowo>[(cond: _czyTlumaczyc, _doWypisaniaTlumaczenie, _doWypisaniaSzambolanskie)]
+                (click-rerun:?slowo)[(set: _czyTlumaczyc to not it)(rerun:?slowo)]
+            ]
+        ]
+    ]))
+    (set: $wyczyscTlumaczenia to (macro: [
+        (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
+        (clear-data: "tlumaczenieGracza", $tlumaczeniaGracza)
+        (out: )[]
+    ]))
+    (set: $wypiszRubyNr to (macro: num-type _nrSlowa, [
+        (set: _doWypisaniaSzambolanskie to $slowa's _nrSlowa's 2nd)
+        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's _nrSlowa)
+        (out: )[<ruby>
+            _doWypisaniaSzambolanskie
+            <rp>(</rp><rt>_doWypisaniaTlumaczenie</rt><rp>)</rp>
+        </ruby>]
+    ]))
+    (set: $wypiszRuby to (macro: str-type _slowo, [
+        (set: _doWypisaniaSzambolanskie to $slowa's (_slowo of $slownik)'s 2nd)
+        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's (_slowo of $slownik))
+        (out: )[{=
+          <ruby>
+            _doWypisaniaSzambolanskie
+              <rp>(</rp><rt>_doWypisaniaTlumaczenie</rt><rp>)</rp>
+          </ruby>]
+    ]))
+    (set: $czyZapisanoTlumaczenia to (macro: [
+        (out-data: (has-data: "tlumaczenieGracza"))
+    ]))
+    (set: $wczytajTlumaczenia to (macro: [
+        (set: $tlumaczeniaGracza to (load-data: "tlumaczenieGracza"))
+        (out: )[]
+    ]))
+ 
+  <!-- Sprawdzenie, czy nie ma powtórzeń w słowach po szambolańsku. -->
+    (set: _slownikSprawdzenie to (macro: [
+        (set: _ileJestRoznychSzambolanskich to (unique: ...(altered: _slowo via _slowo's 2nd, ...$slowa))'s length)
+        (set: _ileJestRoznychSlow to $slowa's length)
+        (if: _ileJestRoznychSzambolanskich < _ileJestRoznychSlow)[(error: "Więcej niż jedno słowo tłumaczy się na to samo po szambolańsku!")]
+        (out: )[]
+    ]))
+    (_slownikSprawdzenie: )
+
+  <!-- For Settings Autoload -->
+    (set: $chosenTheme to "Bright Theme")
+    (set: $chosenFront to "Sans-Serif")
+    (set: $fontSize to 1.5)
+    (set: $setNamingSaves to "Autoname")
+  <!-- For the Saves Name -->
+    (set: $chapter to "Chapter 1")
+    (set: $savesName to $chapter + " - " + $namePC)
+
+  <!-- Rzeczy zależne od motywu -->
+    (set: $jesliCiemnyMotyw to (macro: any-type _jesliCiemny, any-type _jesliJasny, [(out: )[{=
+      <div class="theme-limited" data-theme="dark">
+        _jesliCiemny
+      </div>
+      <div class="theme-limited" data-theme="light sepia">
+        _jesliJasny
+      </div>
+    ]]))
+    
+    (set: $obrazekOkladkaDark to [{=
+      <img width="100%" src="https://i.imgur.com/8wlDaQT.png" />
+    ])
+    (set: $obrazekOkladkaLight to [{=
+      <img width="100%" src="https://i.imgur.com/0cwGc2h.png" />
+    ])
+    
+  <!-- Koniec gry i zapis -->
+    (set: $rozpocznijNowaGre to (macro: str-type _tekstPrzycisku, [
+        (out: )[(link: _tekstPrzycisku)[
+            (store-data: "wyczyscZapis", true)
+            (restart: )
+        ]]
+    ]))
+    (set: $czyZapisNalezyWyczyscic to (macro: [
+        (out-data: (has-data: "wyczyscZapis"))
+    ]))
+    (set: $nazwaZapisu to "Autosave")
+    (set: $wczytajAutozapis to (macro: [
+        (if: (has-data: "wyczyscZapis"))[]
+        (else-if: (saved-games: ) contains $nazwaZapisu)[(load-game: $nazwaZapisu)]
+        (out: )[]
+    ]))
+    (set: $zapiszAutozapis to (macro: [
+        (clear-data: "wyczyscZapis")
+        (save-game: $nazwaZapisu)
+        (out: )[]
+    ]))
+}
 
 
 :: dead2 [2-run] {"position":"2275,3250","size":"100,100"}
@@ -165,7 +537,7 @@ Kari Mata Hari aż do końca swoich dni nie miała więcej szans na ucieczkę. C
 
 KONIEC
 
-[[Kliknij tutaj, by zacząć swoją przygodę od nowa->StartPlot]] 
+($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
 
 
 :: dead3 [2-run] {"position":"1400,2450","size":"100,100"}
@@ -177,17 +549,17 @@ Kari Mata Hari aż do końca swoich dni nie miała więcej szans na ucieczkę. C
 
 KONIEC
 
-[[Kliknij tutaj, by zacząć swoją przygodę od nowa->StartPlot]] 
+($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
 
 
 :: deadend1 {"position":"1400,1000","size":"100,100"}
--(text-colour:red)[ Ja być niedobra? JA BYĆ NIEDOBRA??? ]- tajemniczy rozmówca naszej bohaterki zaczął się irytować. Bardzo mocno irytować. Cokolwiek powiedziała Kari Mata, musiało nie być to zbyt uprzejme. 
+- ($wypiszRuby: "ja") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")?! ($wypiszRuby: "ja")?! - tajemniczy rozmówca naszej bohaterki zaczął się irytować. Bardzo mocno irytować. Cokolwiek powiedziała Kari Mata, musiało nie być to zbyt uprzejme. 
 
 Istota następnie otworzyła cele suczki i zamachnęła się w celu wymierzenia ciosu. Mata Hari nie zdążyła niestety uchronić się przed uderzeniem. Gwałtowne pchnięcie sprawiło, że Kari Mata osunęła się na ziemię i straciła przytomność. Niestety, już nigdy miała jej nie odzyskać.
 
 KONIEC
 
-[[Kliknij tutaj, by zacząć przygodę od nowa->StartPlot]] 
+($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
 
 
 :: end1 {"position":"1400,4075","size":"100,100"}
@@ -202,7 +574,7 @@ Gdy sie ocknęła, stanęła twarzą w twarz z liczną gromada Szambolan wpatruj
 
 Naraz zobaczyła blask. Ktoś rozpalił pochodnię. Jednocześnie tłum Szambolan zaczął recytować:
 
-(text-colour:red)["Bogini być dobra. Bogini zostać wioska. Bogini być dobra. Bogini zostać w wioska"]
+- ($wypiszRuby: "bogini") ($wypiszRuby: "być") ($wypiszRuby: "dobre"). ($wypiszRuby: "bogini") ($wypiszRuby: "zostać") ($wypiszRuby: "wioska"). ($wypiszRuby: "bogini") ($wypiszRuby: "być") ($wypiszRuby: "dobre"). ($wypiszRuby: "bogini") ($wypiszRuby: "zostać") ($wypiszRuby: "wioska").
 
 Przerażona Kari Mata zamknęła oczy, przygotowując sie na najgorsze. 
 
@@ -210,16 +582,16 @@ Co mogła zrobić lepiej? Czy z tego przeklętego jądra ciemności nie było uc
 
 KONIEC
 
-[[Kliknij tutaj, by zacząć przygodę od nowa->StartPlot]] 
+($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
 
 
-:: escapemap {"position":"1075,700","size":"100,100"}
+:: escapemap {"position":"1100,700","size":"100,100"}
 Podobno mowa jest srebrem, a milczenie złotem, lecz w tym wypadku bohaterka stwierdziła, że srebro jest cenniejsze od złota. Rozważając wszystko, co się w tym krótkim pobycie w celi dowiedziała, postanowiła powiedzieć...
 
-[[...wskazać na siebie i powiedzieć (text-colour:red)[Pies być niedobra]->map0]]
-[[...wskazać na istotę i powiedzieć(text-colour:red)[ Ty być niedobra]->deadend1]]
-[[...wskazać na istote i powiedzieć(text-colour:red)[ Ty być cela]->hahaneutral]]
-[[...wskazać na siebie i powiedzieć(text-colour:red)[ Pies być jedzenie]->hahabeka]]
+[[...wskazać na siebie i powiedzieć ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")->map0]]
+[[...wskazać na istotę i powiedzieć ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")->deadend1]]
+[[...wskazać na istote i powiedzieć ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "cela")->hahaneutral]]
+[[...wskazać na siebie i powiedzieć ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "jedzenie")->hahabeka]]
 
 
 :: firstszambo {"position":"975,1300","size":"100,100"}
@@ -239,19 +611,19 @@ Niestety, zwróciła na siebie tym niefortunnym momentem uwage istot, od któryc
 
 KONIEC
 
-[[Kliknij tutaj, by zacząć przygodę od nowa->StartPlot]] 
+($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
 
 
-:: hahabeka {"position":"1200,975","size":"100,100"}
-- Hahaha! Pies być niedobra! Hahaha! - istota porząsnęła głową i głośno sie zaśmiała. Kari Mata Hari stwierdziła, że pewnie musiała powiedzieć coś wyjątkowo głupiego.
+:: hahabeka {"position":"1200,1000","size":"100,100"}
+- ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre") - istota porząsnęła głową i głośno sie zaśmiała. Kari Mata Hari stwierdziła, że pewnie musiała powiedzieć coś wyjątkowo głupiego.
 
-[[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz->escapemap]] 
+[[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz->escapemap]]
 
 
-:: hahaneutral {"position":"1075,975","size":"100,100"}
--(text-colour:red)[ Hahaha! Ty być cela!] - zaśmiała się głośno istota. Coś, co powiedziała nasza bohaterka musiało ją bardzo mocno rozbawić.
+:: hahaneutral {"position":"1100,1000","size":"100,100"}
+- ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "cela")! - zaśmiała się głośno istota. Coś, co powiedziała nasza bohaterka musiało ją bardzo mocno rozbawić.
 
-[[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz->escapemap]] 
+[[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz->escapemap]]
 
 
 :: koncept {"position":"2625,2075","size":"100,100"}
@@ -278,7 +650,7 @@ Może być tak, że słowo ryba poznaje tuż przed śmiercią.
 Chyba tyle./
 
 
-:: look {"position":"775,525","size":"100,100"}
+:: look {"position":"700,500","size":"100,100"}
 Jak już zdążyła zauważyć, nie było w jej skromnej celi zbyt wiele rzeczy. Prosta leżanka wykonana z miękkiego, lecz śmierdzącego niemiłosiernie tworzywa stanowiła jedyny quasi-mebel w tej klatce. Suczka przyjrzała sie bliżej misce. W jej środku znajdowała się dziwna breja. Niestety przez panujacy mrok nie sposób było określić jej koloru. Kari Mata powąchała rzecz w misce. Dało się wyczuć całkiem ładny zapach, który troszkę tłumił panujący wszędobylski smród. 
 
 Następnie przystąpiła do badania ścian swojego więzienia swoim zmysłem dotyku. Niestety, nasza bohaterka nie wyczuła w nich żadnej luki, uszczerbku ani czegoś, co pomogłoby jej zażegnać problem. 
@@ -289,13 +661,12 @@ Po rozglądnięciu się po celi, Kari Mata postanowiła...
 
 [[...spróbować tego, co jest w misce przed nią.->taste]]
 [[...odpocząć na leżance.->rest (być)]]
-[[...zrobić coś innego.->StartPlot]]
-
+[[...zrobić coś innego.->Intro]]
 
 
 :: map0 {"position":"975,1150","size":"100,100"}
 Mówiąc to, Kari Mata Hari teatralnie złapała się za głowe i przymknęła oczy. Miała nadzieję, że jej zdolności aktorskie do tej sztuczki wystarczą.
--(text-colour:red)[ Pies być niedobra! Niedobra! ]- krzyknęła przejętym głosem istota, po czym gwałtownie sie podniosła, upuszczając przy tym pewną rzecz, wybiegając prędko z pomieszczenia, w którym Kari Mata była pilnowana.  Bohaterka słysząc brzdęk przedmiotu wypadającego z kieszeni zafrasowanego "strażnika" domyśliła się, co mógł upuścić. Schyliła się i przez szparę w dole celi sięgnęła po to. Szczęśliwym trafem, klucz, bo to o nim była mowa, pasował jak ulał do zamka w jej celi. Kari Mata uwolniła się. 
+- ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! ($wypiszRuby: "niedobre")! - krzyknęła przejętym głosem istota, po czym gwałtownie sie podniosła, upuszczając przy tym pewną rzecz, wybiegając prędko z pomieszczenia, w którym Kari Mata była pilnowana.  Bohaterka słysząc brzdęk przedmiotu wypadającego z kieszeni zafrasowanego "strażnika" domyśliła się, co mógł upuścić. Schyliła się i przez szparę w dole celi sięgnęła po to. Szczęśliwym trafem, klucz, bo to o nim była mowa, pasował jak ulał do zamka w jej celi. Kari Mata uwolniła się. 
 
 [[Nie namyślając sie długo, Kari Mata Hari postanowiła wyjść z tej przeklętej niewoli i poszukać wyjścia z tego jądra ciemności->firstszambo]]
 
@@ -331,7 +702,6 @@ Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata 
 (lokacja odwiedzona rano jest niedostepna, do wyboru tylko 2)
 
 
-
 :: mapanoc2a {"position":"1000,2450","size":"100,100"}
 Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
 
@@ -361,8 +731,6 @@ Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata 
 (lokacja odwiedzona rano jest niedostepna, do wyboru tylko 2)
 
 
-
-
 :: mieszka0 {"position":"1275,1600","size":"100,100"}
 (pierwszy paragraf dla mieszkańców jak wybierze go gracz po ucieczce z więzienia po raz 1)
 
@@ -378,13 +746,11 @@ Patrząc na część wioski zamieszkałą przez zwykłych Szambolan do uszu Kari
 
 Po chwili zauważyła krępego Szambolana o mocno pomarszczonym ryjku, ubranym w fartuch. W jednej łapie trzymał ciężki młot a w drugiej szczypce kowalskie. W szczypcach znajdował się kawał metalu, który był poddawany obróbce. Rytmicznie uderzał młotem w kawał stali, który pod wpływem narzędzia zmieniał swój kształt. Naraz, szambolański Kowal  przerwał prace, wnikliwie popatrzył na swoją robótkę i krzyknął:
 
--  M(text-colour:red)[etal być niedobra! Metal zostać niedobra!? Metal być nowy! ]
+-  ($wypiszRuby: "metal") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! ($wypiszRuby: "metal") ($wypiszRuby: "być") ($wypiszRuby: "nowy")... ($wypiszRuby: "metal") ($wypiszRuby: "zostać") ($wypiszRuby: "niedobre")?!
 
 Szambolan przeklnął jeszcze kilka razy pod nosem w swoim języku i wyrzucił swoją pracę gdzieś w kąt i zajął się czymś innym.
 
-Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc1a]] 
-
-
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc1a]]
 
 
 :: mieszka1b [lore] {"position":"1975,1950","size":"100,100"}
@@ -398,16 +764,15 @@ Kari Mata mając za swoich sprzymierzeńców gęste zarośla i bajora mogła spo
 Dziś suczka była świadkiem rozmowy dwóch przedstawicieli mitycznego gatunku. Jeden z nich był na tyle mały, niski i drobny, że przypominał niedorosłą jednostkę. Drugi z nich był zdecydowanie większy, wyższy ale jego sylwetka w ocenie Kari Maty była dość...kobieca.
 Oceniając również głosy Szambolan (jeden wyższy, piskliwy, dziecięcy; drugi niższy, łagodniejszy, kobiecy) przypuściła, że ma przed sobą być może matkę i dziecko. 
 
-- (text-colour:red)[Ja iść rzeka?] - powiedział malec, akcentując koniec zdania pytająco. Pod pachą trzymał coś, co przypominało zestaw płetkonurka.
+- ($wypiszRuby: "ja") ($wypiszRuby: "iść") ($wypiszRuby: "rzeka")? - powiedział malec, akcentując koniec zdania pytająco. Pod pachą trzymał coś, co przypominało zestaw płetkonurka.
 
 Starsza szambolanka pokręciła głową przecząco. Na twarzy malucha pojawił sie grymas.
 
-- (text-colour:red)[Ja być niedobra???] - powiedział smutnym głosem.
+- ($wypiszRuby: "ja") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")...? - powiedział smutnym głosem.
 
-- (text-colour:red)[Ty iść robota, rzeka zostać] - odparła szambolanka, zachecając dziecko do pójścia z nią do wnętrza chatki.
+-  ($wypiszRuby: "ty") ($wypiszRuby: "iść") ($wypiszRuby: "praca"), ($wypiszRuby: "rzeka") ($wypiszRuby: "zostać") - odparła szambolanka, zachecając dziecko do pójścia z nią do wnętrza chatki.
 
-Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]] 
-
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]]
 
 
 :: mieszka2b [lore] {"position":"1925,2575","size":"100,100"}
@@ -420,33 +785,41 @@ Kari Mata mając za swoich sprzymierzeńców gęste zarośla i bajora mogła spo
 
 Poruszenie wywołane tajemniczym rykiem było odczuwalne wśród mieszkańców Szambo-La. W każdej zasłyszanej przez suczkę rozmowie dało się wyczuć zdenerwowanie, napięcie i niepokój. Czyżby mieszkańcy spodziewali się najgorszego?
 
-- (text-colour:red)[Ryba być rzeka. Ryba być metal!] - wykrzyknęła jedna z mieszkanem cuchnącej krainy
-- (text-colour:red)[Rzeka być niedobra] - pokręciła głową wyraźnie zmartwiona druga z szambolanek - (text-colour:red)[Ja zostać wioska!]
+- ($wypiszRuby: "ryba") ($wypiszRuby: "być") ($wypiszRuby: "rzeka"). ($wypiszRuby: "ryba") ($wypiszRuby: "być") ($wypiszRuby: "metal")! - wykrzyknęła jedna z mieszkanem cuchnącej krainy
+- ($wypiszRuby: "rzeka") ($wypiszRuby: "być") ($wypiszRuby: "niedobre") - pokręciła głową wyraźnie zmartwiona druga z szambolanek - ($wypiszRuby: "ja") ($wypiszRuby: "zostać") ($wypiszRuby: "wioska")!
 
 Ta pierwsza przytaknęła głową i zabrała się z powrotem do swoich obowiązków.
 
-Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc3a]] 
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc3a]]
 
 
 :: mieszka3b [lore] {"position":"1900,3325","size":"100,100"}
 
 
 
-:: rest (być) {"position":"900,725","size":"100,100"}
-Posłanie, na którym usiadła Kari Mata Hari było zaskakująco miękkie.  Bohaterka stwierdziła, że mały odpoczynek jeszcze nikomu nie zaszkodził. Położyła się na leżance i obróciła się w stronę ściany. Przypatrując się jej, wydawało jej się, że jest coś na niej wyżłobione. Jednak ciężko było jej to ocenić w panującej ciemności. Suczka przyłożyła łapę do ściany. Wzrok nie spłatał jej figla. Na ścianie faktycznie były wyryte jakieś słowa. Całość wiadomości prezentowała się następująco:
+:: rest (być) {"position":"900,800","size":"100,100"}
+Posłanie, na którym usiadła Kari Mata Hari było zaskakująco miękkie.  Bohaterka stwierdziła, że mały odpoczynek jeszcze nikomu nie zaszkodził. Położyła się na leżance i obróciła się w stronę ściany. Przypatrując się jej, wydawało jej się, że jest coś na niej wyżłobione. Jednak ciężko było jej to ocenić w panującej ciemności. Suczka przyłożyła łapę do ściany. Wzrok nie spłatał jej figla. Na ścianie faktycznie były wyryte jakieś słowa.
 
-"Być?"
-(text-colour:red)[Być]
+(if: ($czyZapisanoTlumaczenia: ))[{=
+    ($wczytajTlumaczenia: )
+    ($zaktualizujTlumaczenie: "być", "być")
+    Całość zaczynała się od:
+    ($wypiszRuby: "być")
+    a poniżej było jeszcze kilka słów.
+]
+(else: )[{=
+    ($zaktualizujTlumaczenie: "być", "być")
+    Całość wiadomości prezentowała się następująco:
+    ($wypiszRuby: "być")
+]
 
 Nie było to wiele, lecz dało bohaterce do zrozumienia, że ktoś tu przed nią też był więziony. 
 
-[[Kari Maha w końcu stwierdziła, że ma dość leżenia i postanowiła zrobić coś innego.->StartPlot]]
+[[Kari Maha w końcu stwierdziła, że ma dość leżenia i postanowiła zrobić coś innego.->Intro]]
 
 
 :: rybak3 [tresc] {"position":"200,1450","size":"100,100"}
 (opis, jak rybacy idą w stronę wodza, jednak wejście do niego blokuje zbyt wiele straży, nijak nie przejdzie)
-
-
 
 
 :: sen2 {"position":"1000,2100","size":"100,100"}
@@ -490,14 +863,13 @@ Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy
 
 
 :: shakegates {"position":"1200,525","size":"100,100"}
--(text-colour:red)[ Pies być niedobra! Pies zostać cela!]
+- ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! ($wypiszRuby: "pies") ($wypiszRuby: "zostać") ($wypiszRuby: "cela")!
 
 Mimo, że Kari Mata nie do końca rozumiała, co sie do niej mówi, dało się wyczuć od istoty złość w głosie. Mając już jednak jej uwagę, bohaterka chciała spóbować podjąć próbę porozumienia się z postacią. Z naciskiem na próbę. Wzięła wdech i....
 
-[[(wskazała na siebie) 4?->4tak]]
-[[(wskazała na postać) 4?->4nie]]
-[[9?->9]]
-
+[[(wskazała na siebie) ($wypiszRuby: "pies")?->4tak]]
+[[(wskazała na postać) ($wypiszRuby: "pies")?->4nie]]
+[[($wypiszRuby: "cela")?->9]]
 
 
 :: szaman0 {"position":"1525,1600","size":"100,100"}
@@ -507,7 +879,7 @@ Uwage Kari Maty przykuła od samego poczatku ta wyróżniająca się chatka. Da�
 
 Suczka wiedząc, że ta chata stanowi prawdopodobnie centrum wioski była szczególnie ostrożna, gdy zbliżała się do tego miejsca. Z każda zmianą krzaka, za którym się ukrywała wstrzymywała oddech. Miała wrażenie, że nawet cichy wdech może zdradzić jej pozycję w panującym półmroku. 
 
-Ku jej zdziwieniu, koło chaty nie było ani jednego szambolana. Dodało jej to odwagi do podejścia bliżej. Zajrzała przez jedno z okien chaty do jej środka. W pomieszczeniu znajdował sie wysoki szambolan z misterną ozdoba na głowie wykonaną z roślinności znajdującej się w wiosce. Jego ciało ozdabiała prosta biżuteria wykonana z glinki. Kari Mata stwierdziła, że jego zachowanie też było wyróżniające się na tle innych szambolan. Dziwny układ taneczny, który wykonywał wokół świec ułożonych w okrąg przyprawiał bohaterke o gęsią skórkę. Było w nim jednocześnie coś, co przypominało rytuał religijny czy obrządek pogański. Przez to skojarzenie Kari Mata postanowiła nadać mu w myślach ksywke "szaman". 
+Ku jej zdziwieniu, koło chaty nie było ani jednego szambolana. Dodało jej to odwagi do podejścia bliżej. Zajrzała przez jedno z okien chaty do jej środka. W pomieszczeniu znajdował sie wysoki szambolan z misterną ozdoba na głowie wykonaną z roślinności znajdującej się w wiosce. Jego ciało ozdabiała prosta biżuteria wykonana z glinki. Kari Mata stwierdziła, że jego zachowanie też było wyróżniające się na tle innych szambolan. Dziwny układ taneczny, który wykonywał wokół świec ułożonych w okrąg przyprawiał bohaterke o gęsią skórkę. Było w nim jednocześnie coś, co przypominało rytuał religijny czy obrządek pogański. Przez to skojarzenie Kari Mata postanowiła nadać mu w myślach ksywke "szaman".
 
 
 :: szaman1a {"position":"1200,1975","size":"100,100"}
@@ -515,10 +887,10 @@ W chacie Szamana Kari Mata zauważyła samego jej właściciela odprawiającego 
 
 Dziś szaman gościł u siebie kilku młodych szambolan. Suczka spostrzegła, że wszyscy z nich byli pogrążeni w dziwnej medytacji. Na zmiane recytowali słowa, które przypominały mantrę. 
 
-- (text-colour:red)[Bogini być dobra. Bogini zostać wioska] - zadeklamował szaman.
-- (text-colour:red)[Bogini być dobra! Bogini zostać wioska! ]- powtórzyły z werwą za szamanem pozostali Szambolanie
+- ($wypiszRuby: "bogini") ($wypiszRuby: "być") ($wypiszRuby: "dobre")! ($wypiszRuby: "bogini") ($wypiszRuby: "zostać") ($wypiszRuby: "wioska")! - zadeklamował szaman.
+- ($wypiszRuby: "bogini") ($wypiszRuby: "być") ($wypiszRuby: "dobre")! ($wypiszRuby: "bogini") ($wypiszRuby: "zostać") ($wypiszRuby: "wioska")! - powtórzyły z werwą za szamanem pozostali Szambolanie
 
-Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc1a]] 
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc1a]]
 
 
 :: szaman1b [lore] {"position":"1725,1950","size":"100,100"}
@@ -530,11 +902,9 @@ W chacie Szamana Kari Mata zauważyła samego jej właściciela odprawiającego 
 
 Po dłuższej chwili medytacji Kari Mata zauważyła, jak kapłan wstaje i podchodzi do prostego ołtarzyka. Na nim znajdowały sie świece, które dawały słabe oświetlenie na obrazek znajdujący się między nimi. Obraz ten wydawał się Kari Macie pewnego rodzaju ikoną religijną. Mogła dostrzec na nim sylwetkę suczki w bojowej pozie ubranej w piękne szaty. W jednej ze swoich 8 rąk dzierżyła włócznie. Groźne spojrzenie jakie posyłała ta wojowniczka z obrazu wydawało sie Kari Macie bardziej powodem do odwracania wzroku od tego obrazu. Mimo to, szaman już od dłuższej chwili głeboko się nad nim skłaniaj powtarzając jak mantrę:
 
-(text-colour:red)[- Pies być bogini. Pies być bogini. Pies być bogini.]
+- ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "bogini"). ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "bogini"). ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "bogini").
 
-Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]] 
-
-
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]]
 
 
 :: szaman2b [lore] {"position":"1725,2600","size":"100,100"}
@@ -545,11 +915,11 @@ Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejsc
 Ciekawa tego, co mogło tak wystarszyć szambolan trudniących sie rybactwem, Kari Mata zakradła się do chaty szamana. Zeknęła przez okno chaty do jej środka. 
 Ujrzała dwójkę Szambolanów rozmawiających z wyraźnym poddenerwowaniem z szamanem. 
 
--(text-colour:red)[ Ja iść rzeka. Ja brać ryba. Rzeka być ryba. Ryba być metal! ]- wyrzucił z siebie jeden z nich w stronę szamana, a drugi z nich potakiwał gorliwie, zapewniając o prawdziwości tych słów
+- ($wypiszRuby: "ja") ($wypiszRuby: "iść") ($wypiszRuby: "rzeka"). ($wypiszRuby: "ja") ($wypiszRuby: "brać") ($wypiszRuby: "ryba"). ($wypiszRuby: "rzeka") ($wypiszRuby: "być") ($wypiszRuby: "ryba"). ($wypiszRuby: "ryba") ($wypiszRuby: "być") ($wypiszRuby: "metal")! - wyrzucił z siebie jeden z nich w stronę szamana, a drugi z nich potakiwał gorliwie, zapewniając o prawdziwości tych słów
 
 Szaman milczał przez chwilę a nastepnie przemówił:
 
-- (text-colour:red)[Rzeka być niedobra. Ty iść jutro. Jutro być dobra. Rzeka być dobra]
+- ($wypiszRuby: "rzeka") ($wypiszRuby: "być") ($wypiszRuby: "niedobre"). ($wypiszRuby: "ty") ($wypiszRuby: "iść") ($wypiszRuby: "jutro"). ($wypiszRuby: "jutro") ($wypiszRuby: "być") ($wypiszRuby: "dobre"). ($wypiszRuby: "rzeka") ($wypiszRuby: "być") ($wypiszRuby: "dobre").
 
 Szambolanie łowiący ryby skłonili się i opuścili chatę szamana. Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc3a]] 
 
@@ -588,14 +958,14 @@ Szczęśliwie dla niej, Szambolanie byli zbyt zajęci rozmową i ciagnięciem wo
 [[Kari Mata postanowiła sprawdzić, skąd przyszli Szambolanie.->Rzeka 0]] /OPCJA POJAWIA SIĘ PRZY 2 RUNIE
 
 
-:: talk {"position":"925,525","size":"100,100"}
+:: talk {"position":"900,500","size":"100,100"}
 Suczka podeszła do krat i wytężyła swój zmysł wzroku. Dostrzegła w niewielkim oddaleniu krępy zarys sylwetki, który chyba na czymś się opierał albo siedział. Prawdopodobnie to ta dziwna postać była źródłem obcego dla niej języka, który przed chwilą słyszała.
 
 Kari Mata postanowiła...
 
 [[...potrząsnąć kratami, by hałas doszedł do uszu istoty..->shakegates]]
 [[...spróbować przechyrzyć istotę->escapemap]]
-[[...zrobić coś innego->StartPlot]] 
+[[...zrobić coś innego->Intro]]
 
 
 :: targ0 {"position":"1400,1600","size":"100,100"}
@@ -607,9 +977,7 @@ Różne stoiska można było zaobserwować na tym bazarze. Z jedzeniem, biżuter
 
 Z kolei stoisko z jedzeniem zawierało różnego rodzaju małe żyjatka, którymi prawdopodobnie Szambolanie sie żywili. Uwagę suczki przykuł fakt, że duża część z nich była już zgnita. Mimo to, właśnie do tych najbardziej zgniłych potraw ustawiały się największe kolejki kupujących mieszkańców Szambo-La.
 
-Za to wyroby biżuteryjne nie różniły się za bardzo od tych, co znała Kari Mata ze swojego świata. Były to proste branzolety i naszyjniki wykonane z glinki ułożone niedbale na jednym ze stoisk. 
-
-
+Za to wyroby biżuteryjne nie różniły się za bardzo od tych, co znała Kari Mata ze swojego świata. Były to proste branzolety i naszyjniki wykonane z glinki ułożone niedbale na jednym ze stoisk.
 
 
 :: targ1a [2-run] {"position":"1000,1975","size":"100,100"}
@@ -621,11 +989,7 @@ Kari Mata Hari postanowiła zakraść się ostrożnie do tego, gdzie ryby były 
 
 Upewniając się, że jest bezpiecznie, Kari Mata szybko wzięła pierwszą z brzegu rybę i powróciła do ukrycia. Natychmiast ją spałaszowała. Głód został chwilowo zaspokojony.
 
-Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]] 
-
-
-
-
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]]
 
 
 :: targ1b [lore] {"position":"1525,1950","size":"100,100"}
@@ -637,12 +1001,11 @@ Kari Mata Hari poszła ponownie na mały, lecz gwarny szambolański targ. Ukryta
 
 Biegnący szambolan dość pokaźnej postury biegał od straganu do straganu wyraźnie zaaferowany. Stworzenie pytało o coś swoich pobratymców:
 
--(text-colour:red)[ Pies być wioska? Pies być wioska? ]- każdemu ze sprzedawców zadawał to samo pytanie pokazując świstek papieru. Na słowie (text-colour:red)[wioska,] starał się pokazać swoimi łapami teren znajdujący się dookoła niego. Niestety, Kari Mata była zbyt daleko, by zobaczyć, co się znajduje na kawałku papieru. Jednak suczka rozpoznała w pytającym szambolana, który pilnował ją, gdy była w celi. Domyśliła się, że być może jej szuka.
+- ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "wioska")? ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "wioska")? - każdemu ze sprzedawców zadawał to samo pytanie pokazując świstek papieru. Na słowie ($wypiszRuby: "wioska") starał się pokazać swoimi łapami teren znajdujący się dookoła niego. Niestety, Kari Mata była zbyt daleko, by zobaczyć, co się znajduje na kawałku papieru. Jednak suczka rozpoznała w pytającym szambolana, który pilnował ją, gdy była w celi. Domyśliła się, że być może jej szuka.
 
 Zawsze na pytanie zadawane przez strażnika inni Szambolanie odpowiadali przecząco kręcąc głową na boki. Kari Mata lekko odetchnęła z ulgą. Ukrywanie się musiało jej wychodzić całkiem dobrze. 
 
-Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]] 
-
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]]
 
 
 :: targ2bRANO [2-run] {"position":"1525,2325","size":"100,100"}
@@ -661,58 +1024,55 @@ Kari Mata Hari poszła ponownie na mały, lecz gwarny szambolański targ. Ukryta
 
 Dziś na straganie było nader spokojnie. Kari Mata Hari nie odnotowała niczego przydatnego podczas tej wizyty.
 
-Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc3a]] 
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc3a]]
 
 
 :: targ3b (ryba) [tresc] {"position":"1575,3325","size":"100,100"}
 
 
 
-:: taste {"position":"775,725","size":"100,100"}
+:: taste {"position":"500,600","size":"100,100"}
 Suczka westchnęła. Była dość głodna, ale nie wiedziała, co ma przed sobą do jedzenia. A jeśli to coś zatrutego?
 
 Kari Mata Hari...
 
 [[...postanowiła zaryzykować i skosztować ''lokalnego specifyku''->taste0]]
-[[...nie ryzykować potencjalnym otruciem i zrobić coś innego->StartPlot]] 
+[[...nie ryzykować potencjalnym otruciem i zrobić coś innego->Intro]]
 
 
-
-:: taste0 {"position":"600,800","size":"100,100"}
+:: taste0 {"position":"500,800","size":"100,100"}
 Bohaterka ujęła w dłonie miske i wzięła na swoją łapkę odrobinę maziowatej brei. Nadal pachniała ładniej niż reszta rzeczy w jej otoczeniu. Wzięła głeboki wdech, zamknęła oczy i polizała. 
 
-- Okropne! (text-colour:red)[Niedobra!] - wykrzyknęła odruchowo po spróbowaniu tej dziwnej potrawy. To było najgorsza rzecz, jaką kiedykolwiek próbowała. A może wrażenia potęgował ten wstrętny zapach? 
+- Okropne! ($wypiszRuby: "niedobre") - wykrzyknęła odruchowo po spróbowaniu tej dziwnej potrawy. To było najgorsza rzecz, jaką kiedykolwiek próbowała. A może wrażenia potęgował ten wstrętny zapach? 
 
 Naraz ktoś podszedł do jej celi:
 
-- (text-colour:red)[Jedzienie być niedobra? Hahaha!] -  Dziwny, krępy zarys sylwetki pojawił się w jej zasiegu wzroku. Gdy spojrzała na osobę po drugiej stronie jej celi. Postać mówiąc ostatnie słowo, wskazała na leżankę, zaśmiała się i odwróciła się do niej plecami. 
+- ($wypiszRuby: "niedobre")? ($wypiszRuby: "jedzenie") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")? -  Dziwny, krępy zarys sylwetki pojawił się w jej zasiegu wzroku. Gdy spojrzała na osobę po drugiej stronie jej celi. Postać mówiąc ostatnie słowo, wskazała na leżankę, zaśmiała się i odwróciła się do niej plecami. 
 
 Mając nadal w rękach swoją wątpliwej jakości strawę, Mata Hari...
 
 [[...zaczęła jeść ja dalej. Była okropnie głodna i potrzebowała sił na dalsze obmyślanie planu ucieczki->tastedeath]]
 [[...spróbowała nawiązać konwersację z istota->tastetalk]]
-[[...odłożyła to wstrętne danie i zrobić coś innego->StartPlot]] 
+[[...odłożyła to wstrętne danie i zrobić coś innego->Intro]]
 
 
-
-
-:: tastedeath {"position":"750,950","size":"100,100"}
+:: tastedeath {"position":"600,1000","size":"100,100"}
 Z wielkim trudem Kari Mata Hari połykała kolejne kęsy najgorszego dania jakie kiedykolwiek w życiu jadła. Niestety, z każdym kolejny kęsem zaczęła czuć się coraz dziwniej. Gdy zaczęło jej sie kręcić w głowie przestała jeść i odłożyła miskę. Po chwili świat zawirował, a jej powieki zaczęły się robić ciężkie. 
 
--(text-colour:red)[ Pies? Pies!! Pies być niedobra! Pies być niedobra!] - zaczął ktoś przed jej celą krzyczeć w tym niezrozumiałym przez nią języku. Choć nie zdawała sobie z tego sprawy, były to ostatnie słowa, jakie usłyszała w swoim pieskim życiu.
+- ($wypiszRuby: "pies")?! ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! - zaczął ktoś przed jej celą krzyczeć w tym niezrozumiałym przez nią języku. Choć nie zdawała sobie z tego sprawy, były to ostatnie słowa, jakie usłyszała w swoim pieskim życiu.
 
 
 KONIEC 
 
-[[Kliknij tutaj, by zacząć przygodę od nowa->StartPlot]] 
+($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
 
 
-:: tastetalk {"position":"875,950","size":"100,100"}
--(text-colour:red)[ Jedzienie być niedobra]? - powtórzyła po postaci Kari Mata starając się imitować ten dziwny akcent
+:: tastetalk {"position":"800,900","size":"100,100"}
+- ($wypiszRuby: "jedzenie") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")? - powtórzyła po postaci Kari Mata starając się imitować ten dziwny akcent
 
-- (text-colour:red)[Jedzenie]... - odparła postać wskazując na miskę bohaterki. Następnie wypowiedziała (text-colour:red)[niedobra], wydając z siebie taki dźwięk, jak wydaje niedorosłe młode, któremu nie smakuje dana potrawa po czym jeszcze raz się zaśmiała i powróciła do podpierania ściany.
+- ($wypiszRuby: "jedzenie")... - odparła postać wskazując na miskę bohaterki. Następnie wypowiedziała "($wypiszRuby: "niedobre")", wydając z siebie taki dźwięk, jak wydaje niedorosłe młode, któremu nie smakuje dana potrawa po czym jeszcze raz się zaśmiała i powróciła do podpierania ściany.
 
-Kari Mata Hari stwierdziła, że nie jest już specjalnie głodna i [[postanowiła zrobić coś innego->StartPlot]] 
+Kari Mata Hari stwierdziła, że nie jest już specjalnie głodna i [[postanowiła zrobić coś innego->Intro]]
 
 
 :: trueend [tresc] {"position":"1350,2850","size":"100,100"}
@@ -779,8 +1139,6 @@ Bohaterka zdecydowała...
 (w zależności od tego, czy KMH widziała daną kolacje dzień wcześniej tak ja nazywa, nazwy po ukośniku to te, co powinny być używane, jak udaje się do nich po raz kolejny)
 
 
-
-
 :: wioskamapa3b {"position":"1725,2950","size":"100,100"}
 Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozglądnęła się uważnie po swoim otoczeniu. 
 
@@ -804,426 +1162,6 @@ Suczka czuła się naprawdę źle. Brak regularnego dostępu do pokarmu, środk�
 [[...zajrzeć ponownie do chatki szamana.->end1]]
 [[...podsłuchać mieszkańców Szambo-La->end1]]
 [[...pójść na szambolański targ->end1]]
-
-
-:: Credits {"position":"150,275","size":"100,100"}
-Gra przygotowana w ramach (link-repeat: "Growego Dżemu Przygód Reksia 2026")[(open-url: "https://itch.io/jam/prgj-2026-growy-dem-przygd-reksia")] przez zespół w składzie: (link-repeat: "''Valiola''")[(open-url: "https://valiola.itch.io/")] i (link-repeat: "''Dove''")[(open-url: "https://dove6.itch.io/")].
-<hr>
-
-The ''Save System and Settings'' template was created by (link-repeat: "manonamora ⎘")[(open-url:"https://manonamora.itch.io/")] on Twine 2 with Harlowe (v3.3.9).
-<hr>
-''It was made possible thanks to:''
-* Chris Klimas, creator of (link-repeat: "Twine ⎘")[(open-url:"https://twinery.org/")]
-* Leon Arnott, creator and maintainer of the (link-repeat: "Harlowe ⎘")[(open-url:"https://twine2.neocities.org/")] format
-* Greyelf's answers on the old Twine Forums, the Discord, and Reddit
-* (link-repeat: "Kajot-dev's Harlowe Save-To-File Macros ⎘")[(open-url: "https://github.com/Kajot-dev/Twine-Harlowe-Save-To_File")]
-<hr>
-''Twine Resources:''
-* Download (link-repeat: "Twine ⎘")[(open-url:"https://twinery.org/")]
-* Check the (link-repeat: "Harlowe manual ⎘")[(open-url:"https://twine2.neocities.org/")]
-* Check the (link-repeat: "Harlowe source code ⎘")[(open-url:"https://foss.heptapod.net/games/harlowe")]
-* Check the (link-repeat: "Twine Resource Masterlist ⎘")[(open-url:"https://intfiction.org/t/twine-resource-masterlist-wiki/65903")]
-* Community Help: (link-repeat: "IntFiction Forum ⎘")[(open-url:"https://intfiction.org/c/authoring/twine")], (link-repeat: "Reddit r/twinegames ⎘")[(open-url:"https://www.reddit.com/r/twinegames/")], (link-repeat: "Discord ⎘")[(open-url:"https://discordapp.com/invite/n5dJvPp")]
-<h5>You can find my other Twine templates and guides (link-repeat: "here ⎘")[(open-url:"https://itch.io/c/2917452/")]
-
-
-:: Footer-Menu [footer] {"position":"25,275","size":"100,100"}
-{(append: ?SideBar)
-    [<tw-footer>{
-      (if: (passage:)'s name is not "Start")[{=
-          (if: (passage:)'s name is not "Słownik")[[[SŁOWNIK->Słownik]] — ]
-          (link-repeat: "RESET GRY")[(restart: )] — 
-      ]
-      (link-repeat: "USTAWIENIA")[
-        <script>$(".popup").removeClass("open");$("#popup-settings").addClass("open");</script>
-      ] — 
-      (link-repeat: "AUTORZY")[
-        <script>$(".popup").removeClass("open");$("#popup-credits").addClass("open");</script>
-      ]
-    }</tw-footer>]
-{
-<div id="popup-settings" class="popup">
-  <div id="popup-titlebar">
-    <h2 id="popup-title">USTAWIENIA</h2>
-    <span id="popup-close">
-      (link-repeat: "&times;")[
-        <script>$("#popup-settings").removeClass("open");</script>
-      ]
-    </span>
-	</div>
-	<div id="popup-body">
-		(display: "SETTINGSSYSTEM")<!-- [[SETTINGSSYSTEM]] -->
-	</div>
-</div>
-<div id="popup-credits" class="popup">
-  <div id="popup-titlebar">
-  	<h2 id="popup-title">AUTORZY</h2>
-    <span id="popup-close">
-      (link-repeat: "&times;")[
-        <script>$("#popup-credits").removeClass("open");</script>
-      ]
-    </span>
-	</div>
-	<div id="popup-body">
-		(display: "Credits")<!-- [[Credits]] -->
-	</div>
-</div>
-}
-<!-- You can obviously change the popups for actual passages, but I personally like this vibe best for myself ~ -->}
-
-
-:: Header [header] {"position":"25,150","size":"100,100"}
-{
-  <!-- Code to send the player back to a story passage -->
-  (if: not ((passage:)'s tags contains "no-return"))[
-	  (set: $lastpassage to (passage:)'s name)
-  ]
-  <!--The title Header-->
-  (prepend:?SideBar)[{=
-      <tw-header>
-          (if: (passage:)'s name is "Start")[FUJFUJBLE!]
-          (else-if: (passage:)'s name is "Słownik")[SŁOWNIK]
-          (else: )[DZIEŃ $numerDnia ($poraDnia)]
-      </tw-header>
-  ]
-  <!--The Settings Autoloader-->
-  (if: $chosenTheme is "Dark Theme")[
-    <script>settingThemeChange(1)</script>
-  ](else:)[
-    <script>settingThemeChange(0)</script>
-  ]
-  (if: $chosenFront is "Serif")[
-    <script>settingFontFamily(2)</script>
-  ](elseif: $chosenFront is "Sans-Serif")[
-    <script>settingFontFamily(1)</script>
-  ](else:)[
-    <script>settingFontFamily(0)</script>
-  ]
-  <script>settingFontSize($fontSize);</script>
-}
-
-
-:: Intro {"position":"600,300","size":"100,100"}
-Tutaj zaczyna się opowieść...
-
-- ($wypiszRubyNr: 1) ($wypiszRubyNr: 2) ($wypiszRubyNr: 3)? - spytał ambasador Państwa Szambolańskiego.
-Co mu odpowiesz?
-
-[[- ($wypiszRubyNr: 1) ($wypiszRubyNr: 2) ($wypiszRubyNr: 3)->Saves]]
-[[- Ptaki latają kluczem.->Settings]]
-(link-repeat: "- Takiemu to dobrze.")[<script>$("#popup-credits").addClass("open");</script>]
-Nic, zamiast tego zwracam uwagę na wyrytą na pobliskiej ścianie [[kopię zapasową Forum->Ściana]].
-
-
-:: Okładka DARK [startup] {"position":"100,800","size":"100,100"}
-{=
-(set: $obrazekOkladkaDark to [{=
-<img width="100%" src="https://i.imgur.com/8wlDaQT.png" />
-])
-
-
-:: Okładka LIGHT [startup] {"position":"200,800","size":"100,100"}
-{=
-(set: $obrazekOkladkaLight to [{=
-<img width="100%" src="https://i.imgur.com/0cwGc2h.png" />
-])
-
-
-:: SETTINGSSYSTEM {"position":"150,150","size":"100,100"}
-{
-  <!-- You don't need a table, but I just wanted to build one.-->
-  <table id="settings">
-    <tr>
-      <th>Motyw:</th>
-      <td>
-        (dropdown: 2bind $chosenTheme, "jasny", "ciemny")
-        <span class="mini-buttons">
-          (link-repeat: "✔")[
-            (if: $chosenTheme is "ciemny")[
-              <script>settingThemeChange(1)</script>
-            ](else:)[
-              <script>settingThemeChange(0)</script>
-            ]
-          ]
-        </span>
-      </td>
-    </tr>
-    <tr>
-      <th>Rozmiar tekstu:</th>
-      <td><span class="mini-buttons">
-        (link-repeat: "−")[(set: $fontSize to it - 0.1)<script>settingFontSize($fontSize);</script>] / 
-        (link-repeat: "+")[(set: $fontSize to it + 0.1)<script>settingFontSize($fontSize);</script>]
-      </span></td>
-    </tr>
-  </table>
-  <!--Essentially, if you want to add more, just add a row and fill it up.-->
-}
-
-
-:: Saves {"position":"500,500","size":"100,100"}
-(align:'=><=')[<h2>The Save Systems</h2>]
-Here are different examples to what can be done with Saves.
-Do note that:
-* Harlowe saves automatically a current playthrough with each new passage.
-* Unless exported (see last option), playthroughs are saved in the browser's cache.
-* So, a returning player will pick up where they left off, even if a Save System is not implemented.
-** Reloading (F5) the page does not change anything.
-* However, clearing the cache will delete this progress.
-** But this is true to all non-exported saves.
-
-Because the different examples are pretty long, I've broken it down into multiple passages:
-* Basic Save System: One Save/Load
-* Multi-Slots Save/Load System
-* External Saves (Export/Import)
-* Further Customisations
-<hr>
-* [[Return to Main Menu|Intro]]
-
-
-:: Settings {"position":"700,500","size":"100,100"}
-(align:'=><=')[<h2>The Settings</h2>]
-Because Harlowe does not have Built-In Settings APIs, if you would like to include Accessibility settings for your players, just as Theme changes, Font customisation and other, you will often need to build it from scratch... with some JavaScript/jQuery.
-
-There is still a caveat with Settings related to the StyleSheet, in that they won't stick during a page refresh/game re-load due to the way Harlowe is built and restricts communication between the JavaScript and Story passages. There are ways of going around this issue, through saving Setting choices in a variable and:
-* "(link-repeat:"hacking Harlowe ⎘")[(open-url:"https://twinelab.net/harlowe-macro-api/#/")]" with Chapel's custom code, allowing the use of Harlowe variable in the JavaScript
-* load all the settings with each passage transition, in a header/footer-tagged passage ((link-repeat:"manual ⎘")[(open-url:"https://twinery.org/reference/en/editing-stories/tagging.html")])
-
-Because of this, there are //as many// ways of doing it as there are people coding.
-However, this template includes one example for different options, broken down into neat small chapters:
-* Theme Change (Dark/Light or more)
-* Text Customisation and Fonts
-* Save Settings
-* Volume Controls
-* Other Toggle Settings
-* Automatic Settings Load
-<hr>
-* [[Return to Main Menu|Intro]]
-
-
-:: Start [no-return] {"position":"600,100","size":"100,100"}
-(click-goto: ?content, "Intro")\
-|content>[{=
-(align: "=><=")[[[>> Rozpocznij grę <<->Intro]]]
-($jesliCiemnyMotyw: $obrazekOkladkaDark, $obrazekOkladkaLight)
-(align: "=><=")[[[>> Rozpocznij grę <<->Intro]]]
-]
-
-
-:: Słownik {"position":"150,400","size":"100,100"}
-(link-goto: "Powrót", (history: )'s last)
-(link-repeat: "Wyczyść słownik")[($wyczyscTlumaczenia: )(rerun: ?pola)]
-
-|pola>[{=
-<table id="dictionary-table">
-<thead>
-<tr><th>Szambolański</th><th>Uniwersalny</th></tr>
-</thead>
-<tbody>
-<tr><td>($wypiszSzambolanskiNr: 1)</td><td>($edytujTlumaczenieNr: 1)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 2)</td><td>($edytujTlumaczenieNr: 2)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 3)</td><td>($edytujTlumaczenieNr: 3)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 4)</td><td>($edytujTlumaczenieNr: 4)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 5)</td><td>($edytujTlumaczenieNr: 5)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 6)</td><td>($edytujTlumaczenieNr: 6)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 7)</td><td>($edytujTlumaczenieNr: 7)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 8)</td><td>($edytujTlumaczenieNr: 8)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 9)</td><td>($edytujTlumaczenieNr: 9)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 10)</td><td>($edytujTlumaczenieNr: 10)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 11)</td><td>($edytujTlumaczenieNr: 11)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 12)</td><td>($edytujTlumaczenieNr: 12)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 13)</td><td>($edytujTlumaczenieNr: 13)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 14)</td><td>($edytujTlumaczenieNr: 14)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 15)</td><td>($edytujTlumaczenieNr: 15)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 16)</td><td>($edytujTlumaczenieNr: 16)</td></tr>
-</tbody>
-</table>
-]
-
-
-:: Variable startup [startup] {"position":"25,25","size":"100,100"}
-{ <!--This is limited to what the template needs.-->
-    (set: $namePC to "Jane Doe")
-    (set: $lastpassage to "Start")
-
-  <!-- Dane nagłówka -->
-    (set: const-type $numerDniaStart to 1)
-    (set: const-type $poraDniaStart to "wieczór")
-    (set: num-type $numerDnia to $numerDniaStart)
-    (set: (p-either: "rano", "południe", "wieczór", "noc")-type $poraDnia to $poraDniaStart)
-    
-  <!-- Inkrementacja czasu -->
-    (set: $zmienDzien to (macro: [
-        (set: $numerDnia to it + 1)
-        (set: $poraDnia to "rano")
-        (out: )[]
-    ]))
-
-  <!-- Dane słownika -->
-    (set: const-type $slowa to (a:
-        (a: "spanie", "fujfuj1"),
-        (a: "jedzenie", "fujfuj2"),
-        (a: "niedobre", "fujfuj3"),
-        (a: "pies", "fujfuj4"),
-        (a: "być", "fujfuj5"),
-        (a: "bogini", "fujfuj6"),
-        (a: "slowo7", "fujfuj7"),
-        (a: "slowo8", "fujfuj8"),
-        (a: "slowo9", "fujfuj9"),
-        (a: "slowo10", "fujfuj10"),
-        (a: "slowo11", "fujfuj11"),
-        (a: "slowo12", "fujfuj12"),
-        (a: "slowo13", "fujfuj13"),
-        (a: "slowo14", "fujfuj14"),
-        (a: "slowo15", "fujfuj15"),
-        (a: "slowo16", "fujfuj16"),
-    ))
-    (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
-    (set: const-type $slownik to (dm:
-        $slowa's 1st's 1st, 1,
-        $slowa's 2nd's 1st, 2,
-        $slowa's 3rd's 1st, 3,
-        $slowa's 4th's 1st, 4,
-        $slowa's 5th's 1st, 5,
-        $slowa's 6th's 1st, 6,
-        $slowa's 7th's 1st, 7,
-        $slowa's 8th's 1st, 8,
-        $slowa's 9th's 1st, 9,
-        $slowa's 10th's 1st, 10,
-        $slowa's 11th's 1st, 11,
-        $slowa's 12th's 1st, 12,
-        $slowa's 13th's 1st, 13,
-        $slowa's 14th's 1st, 14,
-        $slowa's 15th's 1st, 15,
-        $slowa's 16th's 1st, 16,
-    ))
-
-  <!-- Makra pomocnicze do wypisywania i modyfikacji słów. -->
-    (set: $wypiszSzambolanski to (macro: str-type _slowo, [
-        (set: _doWypisania to $slowa's (_slowo of $slownik)'s 2nd)
-        (out: )[_doWypisania]
-    ]))
-    (set: $wypiszTlumaczenie to (macro: str-type _slowo, [
-        (set: _doWypisania to $tlumaczeniaGracza's (_slowo of $slownik))
-        (out: )[_doWypisania]
-    ]))
-    (set: $zaktualizujTlumaczenie to (macro: str-type _slowo, str-type _znaczenie, [
-        (set: $tlumaczeniaGracza's (_slowo of $slownik) to _znaczenie)
-        (out: )[]
-    ]))
-    (set: $wypiszSzambolanskiNr to (macro: num-type _nrSlowa, [
-        (set: _doWypisania to $slowa's _nrSlowa's 2nd)
-        (out: )[_doWypisania]
-    ]))
-    (set: $wypiszTlumaczenieNr to (macro: num-type _nrSlowa, [
-        (set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)
-        (out: )[_doWypisania]
-    ]))
-    (set: $zaktualizujTlumaczenieNr to (macro: num-type _nrSlowa, str-type _znaczenie, [
-        (set: $tlumaczeniaGracza's _nrSlowa to _znaczenie)
-        (out: )[]
-    ]))
-    (set: $edytujTlumaczenieNr to (macro: num-type _nrSlowa, [
-        (out: )[{=
-          <div class="translation-editor">
-            (input: 2bind _doWypisania, "X", $tlumaczeniaGracza's _nrSlowa)
-            (link-repeat: "💾")[{=
-                (set: $tlumaczeniaGracza's _nrSlowa to _doWypisania)
-                (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
-            ]
-            (link-repeat: "🔄")[(set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)]
-            (link-repeat: "🚫")[{=
-                (set: $tlumaczeniaGracza's _nrSlowa to "")
-                (set: _doWypisania to "")
-                (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
-            ]
-          </div>
-        ]
-    ]))
-    (set: $wypiszPrzelaczaneNr to (macro: num-type _nrSlowa, [
-        (set: bool-type _czyTlumaczyc to false)
-        (set: _doWypisaniaSzambolanskie to $slowa's _nrSlowa's 2nd)
-        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's _nrSlowa)
-        (if: _doWypisaniaTlumaczenie is an empty)[
-            (out: )[_doWypisaniaSzambolanskie]
-        ]
-        (else: )[
-            (out: )[{=
-                |slowo>[(cond: _czyTlumaczyc, _doWypisaniaTlumaczenie, _doWypisaniaSzambolanskie)]
-                (click-rerun:?slowo)[(set: _czyTlumaczyc to not it)(rerun:?slowo)]
-            ]
-        ]
-    ]))
-    (set: $wyczyscTlumaczenia to (macro: [
-        (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
-        (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
-        (out: )[]
-    ]))
-    (set: $wypiszRubyNr to (macro: num-type _nrSlowa, [
-        (set: _doWypisaniaSzambolanskie to $slowa's _nrSlowa's 2nd)
-        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's _nrSlowa)
-        (out: )[<ruby>
-            _doWypisaniaSzambolanskie
-            <rp>(</rp><rt>_doWypisaniaTlumaczenie</rt><rp>)</rp>
-        </ruby>]
-    ]))
-    (set: $wypiszRuby to (macro: str-type _slowo, [
-        (set: _doWypisaniaSzambolanskie to $slowa's (_slowo of $slownik)'s 2nd)
-        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's $tlumaczeniaGracza's (_slowo of $slownik))
-        (out: )[{=
-          <ruby>
-            _doWypisaniaSzambolanskie
-              <rp>(</rp><rt>_doWypisaniaTlumaczenie</rt><rp>)</rp>
-          </ruby>]
-    ]))
-    (set: $czyZapisanoTlumaczenia to (macro: [
-        (out-data: (has-data: "tlumaczenieGracza"))
-    ]))
-    (set: $wczytajTlumaczenia to (macro: [
-        (set: $tlumaczeniaGracza to (load-data: "tlumaczenieGracza"))
-        (out: )[]
-    ]))
- 
-  <!-- Sprawdzenie, czy nie ma powtórzeń w słowach po szambolańsku. -->
-    (set: _slownikSprawdzenie to (macro: [
-        (set: _ileJestRoznychSzambolanskich to (unique: ...(altered: _slowo via _slowo's 2nd, ...$slowa))'s length)
-        (set: _ileJestRoznychSlow to $slowa's length)
-        (if: _ileJestRoznychSzambolanskich < _ileJestRoznychSlow)[(error: "Więcej niż jedno słowo tłumaczy się na to samo po szambolańsku!")]
-        (out: )[]
-    ]))
-    (_slownikSprawdzenie: )
-
-  <!-- For Settings Autoload -->
-    (set: $chosenTheme to "Bright Theme")
-    (set: $chosenFront to "Sans-Serif")
-    (set: $fontSize to 1.5)
-    (set: $setNamingSaves to "Autoname")
-  <!-- For the Saves Name -->
-    (set: $chapter to "Chapter 1")
-    (set: $savesName to $chapter + " - " + $namePC)
-
-  <!-- Rzeczy zależne od motywu -->
-    (set: $jesliCiemnyMotyw to (macro: any-type _jesliCiemny, any-type _jesliJasny, [(out: )[{=
-      <div class="theme-limited" data-theme="dark">
-        _jesliCiemny
-      </div>
-      <div class="theme-limited" data-theme="light sepia">
-        _jesliJasny
-      </div>
-    ]]))
-}
-
-
-:: Ściana {"position":"800,300","size":"100,100"}
-{=
-(if: ($czyZapisanoTlumaczenia: ))[
-($wczytajTlumaczenia: )
-Przesuwasz palcami po ścianie i czujesz nagły przypływ wiedzy.
-]
-(else: )[
-Przyjrzawszy się dokładniej, stwierdzasz, że jednak nic tu nie ma.
-]
-
-Możesz już [[wrócić->Intro]].
 
 
 :: StoryScript [script]
@@ -1668,6 +1606,11 @@ body.sepia-theme {
   display: none;
 }
 
+ruby {
+  color: red;
+  font-weight: bold;
+}
+
   /***** MOBILE *****/
 /*
   Because I added a header and footer, and it's messing with stuff.
@@ -1712,5 +1655,3 @@ pre {
 .dark-theme pre {
   background: #333357;
 }
-
-
