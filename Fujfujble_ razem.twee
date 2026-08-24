@@ -243,7 +243,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 
 :: Zmienne [startup] {"position":"25,25","size":"100,100"}
 {
-    (set: const-type $wersjaGry to "0.8.24+2347")
+    (set: const-type $wersjaGry to "0.8.24+2353")
 
   <!-- Dane nagłówka -->
     (set: const-type $numerDniaStart to 1)
@@ -362,7 +362,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
   <!-- Zapisywanie/wczytywanie tłumaczeń -->
     (set: $wyczyscTlumaczenia to (macro: [
         (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
-        (clear-data: "tlumaczenieGracza", $tlumaczeniaGracza)
+        (clear-data: "tlumaczenieGracza")
         (out: )[]
     ]))
     (set: $czyZapisanoTlumaczenia to (macro: [
@@ -467,9 +467,10 @@ KONIEC
 
 
 :: deadend1 [dead-end] {"position":"1350,900","size":"100,100"}
-- ($wypiszRuby: "ja") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")?! ($wypiszRuby: "ja")?! - tajemniczy rozmówca naszej bohaterki zaczął się irytować. Bardzo mocno irytować. Cokolwiek powiedziała Kari Mata, musiało nie być to zbyt uprzejme. 
+- ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "kretyn") - zająknęła się przy mówieniu Kari Mata.
+- ($wypiszRuby: "ja") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")?! ($wypiszRuby: "ja")?! - tajemniczy rozmówca naszej bohaterki zaczął się irytować. Bardzo mocno irytować. Cokolwiek nieopatrznie powiedziała Kari Mata, musiało nie być to zbyt uprzejme. 
 
-Istota następnie otworzyła cele suczki i zamachnęła się w celu wymierzenia ciosu. Mata Hari nie zdążyła niestety uchronić się przed uderzeniem. Gwałtowne pchnięcie sprawiło, że Kari Mata osunęła się na ziemię i straciła przytomność. Niestety, już nigdy miała jej nie odzyskać.
+Istota następnie otworzyła celę suczki i zamachnęła się, by wymierzyć cios. Mata Hari nie zdążyła niestety zrobić uniku. Gwałtowne uderzenie sprawiło, że Kari osunęła się na ziemię i straciła przytomność. Niestety, miała jej już nigdy nie odzyskać.
 
 KONIEC
 
@@ -529,7 +530,7 @@ KONIEC
 
 
 :: hahabeka {"position":"1225,900","size":"100,100"}
-- ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre") - istota porząsnęła głową i głośno sie zaśmiała. Kari Mata Hari stwierdziła, że pewnie musiała powiedzieć coś wyjątkowo głupiego.
+- ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre") - istota potrząsnęła głową i głośno się zaśmiała. Kari Mata Hari stwierdziła, że pewnie musiała powiedzieć coś wyjątkowo głupiego.
 
 [[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz->escapemap]]
 
