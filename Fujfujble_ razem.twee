@@ -108,7 +108,6 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
           (if: (passage:)'s name is "Start")[FUJFUJBLE!]<!-- [[Start]] -->
           (else-if: (passage:)'s name is "Słownik")[SŁOWNIK]<!-- [[Słownik]] -->
           (else: )[DZIEŃ $numerDnia ($poraDnia)]
-          <small>(print: (passage: )'s name of $liczbaOdwiedzin)</small>
       </tw-header>
   ]
   <!--Ustawienia wyglądu-->
@@ -250,9 +249,8 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 
 
 :: Zmienne [startup] {"position":"25,25","size":"100,100"}
-{ <!--This is limited to what the template needs.-->
-    (set: $namePC to "Jane Doe")
-    (set: $lastpassage to "Start")
+{
+    (set: const-type $wersjaGry to "0.8.24+1958")
 
   <!-- Dane nagłówka -->
     (set: const-type $numerDniaStart to 1)
@@ -393,13 +391,11 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
     (_slownikSprawdzenie: )
 
   <!-- For Settings Autoload -->
+    (set: $lastpassage to "Start")
     (set: $chosenTheme to "Bright Theme")
     (set: $chosenFront to "Sans-Serif")
     (set: $fontSize to 1.5)
     (set: $setNamingSaves to "Autoname")
-  <!-- For the Saves Name -->
-    (set: $chapter to "Chapter 1")
-    (set: $savesName to $chapter + " - " + $namePC)
 
   <!-- Rzeczy zależne od motywu -->
     (set: $jesliCiemnyMotyw to (macro: any-type _jesliCiemny, any-type _jesliJasny, [(out: )[{=
@@ -425,17 +421,16 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
             (restart: )
         ]]
     ]))
-    (set: $czyZapisNalezyWyczyscic to (macro: [
-        (out-data: (has-data: "wyczyscZapis"))
-    ]))
     (set: $nazwaZapisu to "Autosave")
     (set: $wczytajAutozapis to (macro: [
         (if: (has-data: "wyczyscZapis"))[]
-        (else-if: (saved-games: ) contains $nazwaZapisu)[(load-game: $nazwaZapisu)]
+        (else-if: not (has-data: "wersjaGry"))[]
+        (else: )[(if: (load-data: "wersjaGry") is $wersjaGry and (saved-games: ) contains $nazwaZapisu)[(load-game: $nazwaZapisu)]]
         (out: )[]
     ]))
     (set: $zapiszAutozapis to (macro: [
         (clear-data: "wyczyscZapis")
+        (store-data: "wersjaGry", $wersjaGry)
         (save-game: $nazwaZapisu)
         (out: )[]
     ]))
