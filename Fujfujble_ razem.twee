@@ -211,13 +211,6 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 ]
 
 
-:: TARGTRUEEND [tresc] {"position":"1900,2300","size":"100,100"}
-(KARI MATA MUSI PÓJŚĆ 3 DNIA WIECZÓR NA TARG I WCZOŁGAĆ SIE DO WOZU)
-
-
-[[Jedzie nad rzekę RANKIEM->trueend]]
-
-
 :: Ustawienia {"position":"150,150","size":"100,100"}
 {
   <!-- You don't need a table, but I just wanted to build one.-->
@@ -251,7 +244,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 
 :: Zmienne [startup] {"position":"25,25","size":"100,100"}
 {
-    (set: const-type $wersjaGry to "0.8.24+2013")
+    (set: const-type $wersjaGry to "0.8.24+2302")
 
   <!-- Dane nagłówka -->
     (set: const-type $numerDniaStart to 1)
@@ -264,6 +257,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
     (set: $liczbaOdwiedzin to (dm: ...(interlaced: _nazwyStron, (repeated: _nazwyStron's length, 0))))
     (set: $zwrocOdwiedzone to (macro: [(out-data: (altered: _entry via _entry's name, ...(find: _entry where _entry's value > 0, ...(dm-entries: $liczbaOdwiedzin))))]))
     (set: $odwiedzoneDzis to (a: ))
+    (set: bool-type $zauwazoneKosze to false)
     
   <!-- Inkrementacja czasu -->
     (set: $zmienDzien to (macro: [
@@ -275,26 +269,24 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 
   <!-- Dane słownika -->
     (set: const-type $slowa to (a:
-        (a: "spanie", "fujfuj1"),
-        (a: "jedzenie", "fujfuj2"),
-        (a: "niedobre", "fujfuj3"),
-        (a: "pies", "fujfuj4"),
-        (a: "być", "fujfuj5"),
-        (a: "bogini", "fujfuj6"),
-        (a: "zostać", "fujfuj7"),
-        (a: "cela", "fujfuj8"),
-        (a: "ty", "fujfuj9"),
-        (a: "ja", "fujfuj10"),
-        (a: "nowy", "fujfuj11"),
-        (a: "iść", "fujfuj12"),
-        (a: "praca", "fujfuj13"),
-        (a: "rzeka", "fujfuj14"),
-        (a: "ryba", "fujfuj15"),
-        (a: "metal", "fujfuj16"),
-        (a: "wioska", "fujfuj17"),
-        (a: "brać", "fujfuj18"),
-        (a: "jutro", "fujfuj19"),
-        (a: "dobre", "fujfuj20"),
+        (a: "jedzenie", "bleblefuj"),
+        (a: "niedobre", "fuj"),
+        (a: "pies", "gulbula"),
+        (a: "być", "tfu"),
+        (a: "bogini", "bulabula"),
+        (a: "zostać", "łełełe"),
+        (a: "więzienie", "fujfujble"),
+        (a: "ty", "fefe"),
+        (a: "ja", "fe"),
+        (a: "iść", "łe"),
+        (a: "praca", "fujfujgul"),
+        (a: "rzeka", "blegul"),
+        (a: "ryba", "gulgulgul"),
+        (a: "metal", "bulfujfe"),
+        (a: "wioska", "fujble"),
+        (a: "jutro", "fu-tfu"),
+        (a: "dobre", "blefuj"),
+        (a: "kretyn", "fu-fuj"),
     ))
     (set: const-type $slowaSzambolanskie to (altered: _slowo via _slowo's 2nd, ...$slowa))
     (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
@@ -550,13 +542,13 @@ KONIEC
 
 
 :: look {"position":"700,500","size":"100,100"}
-Jak już zdążyła zauważyć, nie było w jej skromnej celi zbyt wiele rzeczy. Prosta leżanka wykonana z miękkiego, lecz śmierdzącego niemiłosiernie tworzywa stanowiła jedyny quasi-mebel w tej klatce. Suczka przyjrzała sie bliżej misce. W jej środku znajdowała się dziwna breja. Niestety przez panujacy mrok nie sposób było określić jej koloru. Kari Mata powąchała rzecz w misce. Dało się wyczuć całkiem ładny zapach, który troszkę tłumił panujący wszędobylski smród. 
+Kari Mata zdążyła już zauważyć, że w jej skromnej celi nie było zbyt wiele rzeczy. Prosta leżanka wykonana z miękkiego, lecz śmierdzącego niemiłosiernie tworzywa stanowiła jedyny quasi-mebel w tej klatce. Suczka przyjrzała się bliżej misce. W jej środku znajdowała się dziwna breja. Niestety, przez panujący mrok nie sposób było określić jej koloru. Kari Mata powąchała rzecz w misce. Z powodu wszechobecnego smrodu nie dało się wyczuć, jaki dokładnie ma zapach.
 
-Następnie przystąpiła do badania ścian swojego więzienia swoim zmysłem dotyku. Niestety, nasza bohaterka nie wyczuła w nich żadnej luki, uszczerbku ani czegoś, co pomogłoby jej zażegnać problem. 
+Bohaterka przystąpiła do badania ścian więzienia swoim zmysłem dotyku. Niestety, nie wyczuła w nich żadnej luki, uszczerbku ani czegoś, co pomogłoby jej zażegnać problem. 
 
-Kończąc rozglądanie się po celi, Kari Mata Hari poczuła, że burczy jej w brzuch. No tak. Z pewnością od dłuższego czasu nic nie jadła. Nie miała pojęcia, ile czasu minęło od jej porwania. 
+Kończąc rozglądanie się po celi, Kari Mata Hari poczuła, że burczy jej w brzuchu. No tak, z pewnością od dłuższego czasu nic nie jadła. Nie miała pojęcia, ile czasu minęło od jej porwania.
 
-Po rozglądnięciu się po celi, Kari Mata postanowiła...
+Rozejrzawszy się po celi, Kari Mata postanowiła...
 
 [[...spróbować tego, co jest w misce przed nią.->taste]]
 [[...odpocząć na leżance.->rest (być)]]
@@ -582,16 +574,16 @@ Mówiąc to, Kari Mata Hari teatralnie złapała się za głowe i przymknęła o
 Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
 
 (if: "szaman" is not in $odwiedzoneDzis)[{=
-    (link-goto: (cond: $liczbaOdwiedzin's szaman is 0, "...zajrzeć przez okno chatki większej od pozostałych.", "...udać się do chatki szamana."), (cond: $numerDnia < 4, "szaman", "end1"))<!-- [[szaman]] -->
+    (link-goto: (cond: $liczbaOdwiedzin's szaman is 0, "...zajrzeć przez okno chatki większej od pozostałych.", "...udać się do chatki szamana."), (cond: $numerDnia < 4, "szaman", "end1"))<!-- [[szaman]] [[end1]] -->
 ]
 (if: "mieszka" is not in $odwiedzoneDzis)[{=
-    (link-goto: (cond: $liczbaOdwiedzin's mieszka is 0, "...zakraść się do zbiorowiska małych chatek.", "...przejść się w okolice mieszkań Szambolan."), (cond: $numerDnia < 4, "mieszka", "end1"))<!-- [[mieszka]] -->
+    (link-goto: (cond: $liczbaOdwiedzin's mieszka is 0, "...zakraść się do zbiorowiska małych chatek.", "...przejść się w okolice mieszkań Szambolan."), (cond: $numerDnia < 4, "mieszka", "end1"))<!-- [[mieszka]] [[end1]] -->
 ]
 (if: "targ" is not in $odwiedzoneDzis)[{=
-    (link-goto: (cond: $liczbaOdwiedzin's targ is 0, "...pójść tam, skąd wyszli szambolanie przez nią spotkani.", "...iść na szambolański targ."), (cond: $numerDnia < 4, "targ", "end1"))<!-- [[targ]] -->
+    (link-goto: (cond: $liczbaOdwiedzin's targ is 0, "...pójść tam, skąd wyszli szambolanie przez nią spotkani.", "...iść na szambolański targ."), (cond: $numerDnia < 4, "targ", "end1"))<!-- [[targ]] [[end1]] -->
 ]
 (if: $liczbaOdwiedzin's rzeka > 0 and "rzeka" is not in $odwiedzoneDzis)[
-    (link-goto: "...sprawdzić raz jeszcze bramę do wioski.", (cond: $numerDnia < 4, "rzeka", "end1"))<!-- [[rzeka]] -->
+    (link-goto: "...sprawdzić raz jeszcze bramę do wioski.", (cond: $numerDnia < 4, "rzeka", "end1"))<!-- [[rzeka]] [[end1]] -->
 ]
 
 
@@ -742,9 +734,9 @@ Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy
 
 
 :: shakegates {"position":"1200,525","size":"100,100"}
-- ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! ($wypiszRuby: "pies") ($wypiszRuby: "zostać") ($wypiszRuby: "cela")!
+- ($wypiszRuby: "pies") ($wypiszRuby: "zostać") ($wypiszRuby: "cela")!
 
-Mimo, że Kari Mata nie do końca rozumiała, co sie do niej mówi, dało się wyczuć od istoty złość w głosie. Mając już jednak jej uwagę, bohaterka chciała spóbować podjąć próbę porozumienia się z postacią. Z naciskiem na próbę. Wzięła wdech i....
+Mimo że Kari Mata nie do końca rozumiała, co się do niej mówi, była w stanie wyczuć w tonie istoty rozkaz. Mając już jednak jej uwagę, bohaterka chciała podjąć próbę porozumienia się z postacią. Z naciskiem na próbę. Wzięła wdech i...
 
 [[(wskazała na siebie) ($wypiszRuby: "pies")?->4tak]]
 [[(wskazała na postać) ($wypiszRuby: "pies")?->4nie]]
@@ -796,6 +788,9 @@ Szaman milczał przez chwilę a nastepnie przemówił:
 
 Szambolanie łowiący ryby skłonili się i opuścili chatę szamana.
 ]
+(else-if: $numerDnia is 4 and $poraDnia is "rano")[
+Kari Mata przestała odnotowywać w myślach jak długo już Szaman żarliwie sie modlił. W jego modlitwie dało się usłyszeć pojedyńcze westchnięcia, przerywane raz za razem rękami wznoszonymi ku niebu.
+]
 (else: )[
 Dziś w chatce szamana było nader spokojnie. Kari Mata Hari nie odnotowała niczego przydatnego podczas tej wizyty.
 ]
@@ -825,9 +820,9 @@ Suczka podeszła do krat i wytężyła swój zmysł wzroku. Dostrzegła w niewie
 
 Kari Mata postanowiła...
 
-[[...potrząsnąć kratami, by hałas doszedł do uszu istoty..->shakegates]]
-[[...spróbować przechyrzyć istotę->escapemap]]
-[[...zrobić coś innego->Intro]]
+[[...potrząsnąć kratami, by hałas doszedł do uszu istoty.->shakegates]]
+[[...spróbować przechyrzyć istotę.->escapemap]]
+[[...zrobić coś innego.->Intro]]
 
 
 :: targ [lokacja] {"position":"1800,2000","size":"100,100"}
@@ -865,6 +860,7 @@ Dostrzegła, że na tyłach straganu świeże ryby były niechlujnie układane n
 Kari Mata Hari postanowiła zakraść się ostrożnie do tego, gdzie ryby były najświeższe. Odczekała chwilę. Szambolanie-rybacy, dokładnie ci sami, których spotkała po wydostaniu sie z celi, odłożyli wszystkie świeże ryby z koszów, które znajdowały się na pchanym wcześniej przez nich wozie. Następnie udali się do stosu tych bardziej zgniłych i zaczęli je układać na swoim straganie.
 
 Upewniając się, że jest bezpiecznie, Kari Mata szybko wzięła pierwszą z brzegu rybę i powróciła do ukrycia. Natychmiast ją spałaszowała. Głód został chwilowo zaspokojony.
+\(set: bool-type $zauwazoneKosze to true)
 ]
 (else-if: $numerDnia is 2 and $poraDnia is "wieczór")[
 Biegnący szambolan dość pokaźnej postury biegał od straganu do straganu wyraźnie zaaferowany. Stworzenie pytało o coś swoich pobratymców:
@@ -878,8 +874,20 @@ Kari Mata Hari poszła ponownie na mały, lecz gwarny szambolański targ. Ukryta
 
 Bohaterka zaobserwowała za straganem rybaków puste kosze po rybach. Upewniając się, że nikogo nie ma w ich pobliżu przyjrzała im sie z bliska. Kosze były na tyle duże i głebokie, że suczka spokojnie mogła się w nich zmieścić, gdyby tylko mogła.
 ]
+(else-if: $numerDnia is 3 and $poraDnia is "wieczór" and $zauwazoneKosze)[
+Bohaterka dostrzegła, jak szambolanie, którzy zwykle trudnią się rybactwem wyciagają ryby z koszów. Tym razem jednak koszów było znacznie więcej. Przy takiej ilości żaden szambolan nie dałby rady unieść ich samodzielnie. Dlatego nie zdziwił suczki fakt, że puste kosze rybacy zaczęli układać na wózki. Wózki te były bardzo prosto skonstruowane. Składały się na nie zwykłe deski większych rozmiarów doczepione do czterech kół. 
+
+Naraz, szambolanie układający kosze usłyszeli, jak prawdopodobnie ktoś ich woła. Kari Mata wywnioskowała to, ponieważ rybacy słysząc głos innego przedstawiciela swojego gatunku, zostawili wozy i poszli w stronę, skąd głos dobiegał.
+
+Puste kosze i wozy stały niestrzeżone. Mata Hari rozejrzała się. W pobliżu nie było nikogo. 
+
+Suczka postanowiła...
+]
 (else-if: $numerDnia is 3 and $poraDnia is "wieczór")[
-(tutaj jakiś link do [[TARGTRUEEND]])
+Dziś Kari Mata podsłuchała rozmowę dwóch Szambolan - sprzedawcy i klienta. Stali przy stoisku z rozkładającymi się rybami. Gestykulacja obu osobników przypominała typowe targowanie się o cenę towaru, które spełni oczekiwania strony kupującej jak i sprzedającej.
+
+- ($wypiszRuby: "ryba")? - wskazał kupujący na jedną z ryb wyłożoną na stoisku - ($wypiszRuby: "ryba") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")!
+- ($wypiszRuby: "być") ($wypiszRuby: "dobre"), ($wypiszRuby: "dobre")! - zapewniał gorliwie sprzedawca. Przynajmniej tak domyślała się suczka, przysłuchując się tej wymianie zdań.
 ]
 (else: )[
 Dziś na straganie było nader spokojnie. Kari Mata Hari nie odnotowała niczego przydatnego podczas tej wizyty.
@@ -891,6 +899,11 @@ Biorąc pod uwage wszystkie zebrane informacje do tej pory, Mata Hari postanowi�
 [[...schować się w koszu.->dead3]]
 (link-goto: "...pójść po kolejną świeżą rybę ze wczorajszego stosu i udać się na odpoczynek", (cond: $poraDnia is "rano", "mapanoc", "sen"))<!-- [[mapanoc]] [[sen]] -->
 ]
+(else-if: $numerDnia is 3 and $poraDnia is "wieczór" and $zauwazoneKosze)[
+[[...schować się w jednym z koszy.->dead3]]
+[[...schować się na wózku między koszami.->trueend]]
+(link-goto: "...zostawić kosze w spokoju, następnie wrócić do swojej \"bazy\", by odpocząć.", (cond: $poraDnia is "rano", "mapanoc", "sen"))<!-- [[mapanoc]] [[sen]] -->
+]
 (else: )[(_normalneLinki: )]
 
 
@@ -899,8 +912,8 @@ Suczka westchnęła. Była dość głodna, ale nie wiedziała, co ma przed sobą
 
 Kari Mata Hari...
 
-[[...postanowiła zaryzykować i skosztować ''lokalnego specifyku''->taste0]]
-[[...nie ryzykować potencjalnym otruciem i zrobić coś innego->Intro]]
+[[...postanowiła zaryzykować i skosztować ''lokalnego specifyku''.->taste0]]
+[[...nie ryzykować potencjalnym otruciem i zrobić coś innego.->Intro]]
 
 
 :: taste0 {"position":"500,800","size":"100,100"}
@@ -938,7 +951,64 @@ KONIEC
 Kari Mata Hari stwierdziła, że nie jest już specjalnie głodna i [[postanowiła zrobić coś innego->Intro]]
 
 
-:: trueend [tresc] {"position":"1900,2500","size":"100,100"}
+:: trueend [tresc] {"position":"1900,2300","size":"100,100"}
+Kari Mata Hari domyślała się, że szambolanie mogą wozami transportować kosze w różne części wioski, może również poza nią. Postanowiła wykorzystać okazję i schować się w wozie. 
+
+Szczęśliwie dla niej w wozie znajdowało się też mnóstwo płacht utkanych z lokalnej roślinności. Bohaterka położyła się między koszami i przykryła jedną z nich, by pozostać niezauważoną. Liczyła, że to wystarczy.
+
+Pozostało tylko oczekiwać na przyjście szambolan. Suczka miała nadzieję, że szambolanie postanowią przetransportować ładunek na wózku (wraz z nią) jak najszybciej. Czas uciekał, a ona z braku dostępu do pożywienia robiła się coraz słabsza.
+
+Mimo nerwowego wyczekiwania na to, co się wydarzy, Kari Mata nie mogła powstrzymać zmęczenia. [[Usnęła na wozie...->truend1]]
+
+
+:: trueend2 {"position":"1900,2575","size":"100,100"}
+Minęło kilka godzin od momentu, kiedy rybacy dotarli nad rzekę i rozpoczęli połów. Bohaterka była coraz słabsza. Miała wrażenie, że jeśli za chwilę nie nadarzy się okazja, zostanie w tym wózku już na zawsze. Okazja jednak nie przychodziła.
+
+Nagle dziewczyna usłyszała, jak szambolańscy rybacy zaczynają ściągać płachty i kosze z wózka. Suczka pomyślała, że być może zakończyli już swoje prace i chcą załadować ryby do koszy!
+Serce zaczęło bić jej mocniej. Zdawała sobie sprawę z beznadziejności swojej sytuacji. 
+Zaraz pewnie zostanie odkryta. Czy dało się coś jeszcze zrobić?
+
+Niespodziewanie Kari Mata usłyszała głośne buczenie. Syrena statku rozdarła dotychczasową ciszę, prawie ogłuszając suczkę. Słysząc sygnał, Szambolanie wrzasnęli i uciekli w stronę wioski. Tupot ich nóg stawał się coraz odleglejszy, a obrzydliwy szambolański odór coraz mniej wyczuwalny. 
+Wnioskując, że właściciele porzucili swój wóz, bohaterka w końcu nabrała odwagi, by zrzucić z siebie płachtę i zejść z wozu.
+
+Gdy to uczyniła, jej oczom po raz pierwszy od dawna ukazało się słońce. Odzwyczajona do jego blasku suczka początkowo musiała zakryć łapami oczy. Światło zbyt mocno ją raziło. Kiedy jej wzrok przywykł wreszcie do panujących warunków, przyjrzała się dokładniej swojemu otoczeniu.
+
+Znajdowała się nad rzeką otoczoną dżunglą. Na ziemi ustawiony był nieduży stos ryb. Teren przy rzece był podmokły, bagnisty. Grząski grunt rozciągał się prawdopodobnie w stronę wioski. Jednak to, co zaskoczyło Kari Matę najbardziej, znajdowało się w przeciwnym kierunku, a konkretnie na brzegu rzeki.
+
+Był to statek, ale nie byle jaki. Łódź przypominająca kształtem rybę była wykonana w całości z metalu! Wydawała się ona Kari Macie na tyle ciężka, że miała wrażenie, że zaraz utonie. Jednak statek kołysał się spokojnie na boki, nie dając oznak, aby zaraz miał spocząć na dnie.
+
+[[Kari Mata Hari postanowiła podejść bliżej statku…->trueendkoniec]]
+
+
+
+:: trueendkoniec {"position":"1900,2700","size":"100,100"}
+Podchodząc bliżej statku, Kari Mata dostrzegła, jak ktoś z niego wychodzi.
+
+Był to postawny kogut, ubrany w niebieski marynarski mundur. Na głowie miał kapitańską czapkę z wygrawerowaną na broszce literką "N".
+Jego spojrzenie, początkowo ostre, złagodniało, gdy dostrzegł osłabioną suczkę. Nie kryjąc zdziwienia, rzekł:
+
+ -- Nigdy bym nie przypuszczał, że na terenie zamieszkałym przez cuchnących dzikusów spotkam kogoś cywilizowanego...
+
+Kari Mata Hari zastygła w bezruchu. Mimo że rozumiała, co mówi do niej kogut, nowo nabyte doświadczenia nauczyły ją być nieufną i ostrożną. Rozważała, czy ma do czynienia z nieprzyjacielem i powinna rzucić się do ucieczki, czy lepiej grać na czas i zobaczyć, co się stanie.
+
+-- Nie jest tu ani ciekawie, ani bezpiecznie. A ty wyglądasz mi na kogoś, kto wiele zniósł przez ostatnie dni. Najszybszy sposób na wydostanie się stąd będzie drogą wodną, na pokładzie mojego Nautilusa - odparł kogut, wskazując skrzydłem na swój statek - Decyzja należy do ciebie. 
+
+-- Nieważne dokąd, byle jak najdalej od tego śmierdzącego miejsca - odparła Kari Mata Hari, wdrapując się na statek z pomocą koguta.
+
+KONIEC
+
+
+:: truend1 {"position":"1900,2450","size":"100,100"}
+Suczka obudziła się w momencie, gdy wózek wjechał na wystający korzeń. Pojazd podskoczył, a Kari Mata wraz z nim. Bohaterka, pamiętając swoje położenie, dyskretnie wyjrzała spod płachty, pod którą się znajdowała.
+
+Było już rano. Przed sobą widziała dwójkę Szambolan ciągnących wóz z koszami (i przy okazji nią samą) w kierunku bramy wyjściowej.
+
+Gdy przed nią stanęli, dyskretnie przyjrzała się sytuacji. Miała wrażenie, że kontrola wózka Szambolan-rybaków trwała wieczność.
+
+- ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "dobra")! ($wypiszRuby: "ty") ($wypiszRuby: "iść") ($wypiszRuby: "rzeka")! - rzekł strażnik i Szambolanie przejechali ze swoim ładunkiem (i przy okazji z Kari Matą) w stronę rzeki. 
+
+Bohaterka nie posiadała się ze szczęścia! W końcu, po wielu perypetiach, przy użyciu sprytnego fortelu wydostała się poza bramy najbardziej śmierdzącej wioski na świecie!
+Suczce pozostało jedynie [[czekać na właściwy moment opuszczenia wózka i uciec stąd, jak najdalej się da...->trueend2]]
 
 
 
@@ -969,11 +1039,11 @@ Suczka czuła się naprawdę źle. Brak regularnego dostępu do pokarmu, środk�
 Bohaterka zdecydowała... 
 ]
 
-(link-goto: (cond: $liczbaOdwiedzin's szaman is 0, "...zajrzeć przez okno chatki większej od pozostałych.", "...udać się do chatki szamana."), (cond: $numerDnia < 4, "szaman", "end1"))<!-- [[szaman]] -->
-(link-goto: (cond: $liczbaOdwiedzin's mieszka is 0, "...zakraść się do zbiorowiska małych chatek.", "...przejść się w okolice mieszkań Szambolan."), (cond: $numerDnia < 4, "mieszka", "end1"))<!-- [[mieszka]] -->
-(link-goto: (cond: $liczbaOdwiedzin's targ is 0, "...pójść tam, skąd wyszli szambolanie przez nią spotkani.", "...iść na szambolański targ."), (cond: $numerDnia < 4, "targ", "end1"))<!-- [[targ]] -->
+(link-goto: (cond: $liczbaOdwiedzin's szaman is 0, "...zajrzeć przez okno chatki większej od pozostałych.", "...udać się do chatki szamana."), (cond: $numerDnia < 4, "szaman", "end1"))<!-- [[szaman]] [[end1]] -->
+(link-goto: (cond: $liczbaOdwiedzin's mieszka is 0, "...zakraść się do zbiorowiska małych chatek.", "...przejść się w okolice mieszkań Szambolan."), (cond: $numerDnia < 4, "mieszka", "end1"))<!-- [[mieszka]] [[end1]] -->
+(link-goto: (cond: $liczbaOdwiedzin's targ is 0, "...pójść tam, skąd wyszli szambolanie przez nią spotkani.", "...iść na szambolański targ."), (cond: $numerDnia < 4, "targ", "end1"))<!-- [[targ]] [[end1]] -->
 (if: $liczbaOdwiedzin's rzeka > 0)[
-    (link-goto: "...sprawdzić raz jeszcze bramę do wioski.", (cond: $numerDnia < 4, "rzeka", "end1"))<!-- [[rzeka]] -->
+    (link-goto: "...sprawdzić raz jeszcze bramę do wioski.", (cond: $numerDnia < 4, "rzeka", "end1"))<!-- [[rzeka]] [[end1]] -->
 ]
 
 
