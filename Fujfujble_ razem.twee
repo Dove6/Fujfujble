@@ -97,15 +97,16 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
   (if: (passage:)'s name is "Start")[($wczytajAutozapis: )]
   (else: )[($zapiszAutozapis: )]
   <!-- Liczba odwiedzin -->
-    (if: (passage:)'s name is not in (a: "Start", "Słownik"))[(set: $liczbaOdwiedzin's (history: )'s last to it + 1)]
+    (if: (passage:)'s name is not in (a: "Start", "Słownik"))[(set: $liczbaOdwiedzin's (history: )'s last to it + 1)]<!-- [[Start]] [[Słownik]] -->
     (if: "lokacja" is in (passage: )'s tags)[(set: $odwiedzoneDzis to it + (a: (passage: )'s name))]
-    (if: "hub" is in (passage: )'s tags)[($zmienPoreDnia: )]
-    (if: (history: )'s last is "sen")[($zmienDzien: )]
+    (if: (passage: )'s name is "wioskamapa")[(set: $poraDnia to "rano")]<!-- [[wioskamapa]] -->
+    (else-if: (passage: )'s name is "mapanoc")[(set: $poraDnia to "wieczór")]<!-- [[mapanoc]] -->
+    (else-if: (passage: )'s name is "sen")[(set: $poraDnia to "noc")]<!-- [[sen]] -->
   <!--The title Header-->
   (prepend:?SideBar)[{=
       <tw-header>
-          (if: (passage:)'s name is "Start")[FUJFUJBLE!]
-          (else-if: (passage:)'s name is "Słownik")[SŁOWNIK]
+          (if: (passage:)'s name is "Start")[FUJFUJBLE!]<!-- [[Start]] -->
+          (else-if: (passage:)'s name is "Słownik")[SŁOWNIK]<!-- [[Słownik]] -->
           (else: )[DZIEŃ $numerDnia ($poraDnia)]
           <small>(print: (passage: )'s name of $liczbaOdwiedzin)</small>
       </tw-header>
@@ -255,7 +256,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 
   <!-- Dane nagłówka -->
     (set: const-type $numerDniaStart to 1)
-    (set: const-type $poraDniaStart to "wieczór")
+    (set: const-type $poraDniaStart to "noc")
     (set: num-type $numerDnia to $numerDniaStart)
     (set: (p-either: "rano", "wieczór", "noc")-type $poraDnia to $poraDniaStart)
 
@@ -270,10 +271,6 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
         (set: $numerDnia to it + 1)
         (set: $poraDnia to "rano")
         (set: $odwiedzoneDzis to (a: ))
-        (out: )[]
-    ]))
-    (set: $zmienPoreDnia to (macro: [
-        (set: $poraDnia to (cond: it is "rano", "wieczór", it is "wieczór", "noc", "rano"))
         (out: )[]
     ]))
 
@@ -296,44 +293,17 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
         (a: "ryba", "fujfuj15"),
         (a: "metal", "fujfuj16"),
         (a: "wioska", "fujfuj17"),
+        (a: "brać", "fujfuj18"),
+        (a: "jutro", "fujfuj19"),
+        (a: "dobre", "fujfuj20"),
     ))
+    (set: const-type $slowaSzambolanskie to (altered: _slowo via _slowo's 2nd, ...$slowa))
     (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
-    (set: const-type $slownik to (dm:
-        $slowa's 1st's 1st, 1,
-        $slowa's 2nd's 1st, 2,
-        $slowa's 3rd's 1st, 3,
-        $slowa's 4th's 1st, 4,
-        $slowa's 5th's 1st, 5,
-        $slowa's 6th's 1st, 6,
-        $slowa's 7th's 1st, 7,
-        $slowa's 8th's 1st, 8,
-        $slowa's 9th's 1st, 9,
-        $slowa's 10th's 1st, 10,
-        $slowa's 11th's 1st, 11,
-        $slowa's 12th's 1st, 12,
-        $slowa's 13th's 1st, 13,
-        $slowa's 14th's 1st, 14,
-        $slowa's 15th's 1st, 15,
-        $slowa's 16th's 1st, 16,
-        $slowa's 17th's 1st, 17,
-    ))
+    (set: const-type $slownik to (dm: ...(interlaced: (altered: _slowo via _slowo's 1st, ...$slowa), (range: 1, $slowa's length))))
 
   <!-- Makra pomocnicze do wypisywania i modyfikacji słów. -->
-    (set: $wypiszSzambolanski to (macro: str-type _slowo, [
-        (set: _doWypisania to $slowa's (_slowo of $slownik)'s 2nd)
-        (out: )[_doWypisania]
-    ]))
-    (set: $wypiszTlumaczenie to (macro: str-type _slowo, [
-        (set: _doWypisania to $tlumaczeniaGracza's (_slowo of $slownik))
-        (out: )[_doWypisania]
-    ]))
-    (set: $zaktualizujTlumaczenie to (macro: str-type _slowo, str-type _znaczenie, [
-        (set: $tlumaczeniaGracza's (_slowo of $slownik) to _znaczenie)
-        (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
-        (out: )[]
-    ]))
     (set: $wypiszSzambolanskiNr to (macro: num-type _nrSlowa, [
-        (set: _doWypisania to $slowa's _nrSlowa's 2nd)
+        (set: _doWypisania to $slowaSzambolanskie's _nrSlowa)
         (out: )[_doWypisania]
     ]))
     (set: $wypiszTlumaczenieNr to (macro: num-type _nrSlowa, [
@@ -364,7 +334,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
     ]))
     (set: $wypiszPrzelaczaneNr to (macro: num-type _nrSlowa, [
         (set: bool-type _czyTlumaczyc to false)
-        (set: _doWypisaniaSzambolanskie to $slowa's _nrSlowa's 2nd)
+        (set: _doWypisaniaSzambolanskie to $slowaSzambolanskie's _nrSlowa)
         (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's _nrSlowa)
         (if: _doWypisaniaTlumaczenie is an empty)[
             (out: )[_doWypisaniaSzambolanskie]
@@ -376,27 +346,34 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
             ]
         ]
     ]))
-    (set: $wyczyscTlumaczenia to (macro: [
-        (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
-        (clear-data: "tlumaczenieGracza", $tlumaczeniaGracza)
-        (out: )[]
-    ]))
     (set: $wypiszRubyNr to (macro: num-type _nrSlowa, [
-        (set: _doWypisaniaSzambolanskie to $slowa's _nrSlowa's 2nd)
+        (set: _doWypisaniaSzambolanskie to $slowaSzambolanskie's _nrSlowa)
         (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's _nrSlowa)
         (out: )[<ruby>
             _doWypisaniaSzambolanskie
             <rp>(</rp><rt>_doWypisaniaTlumaczenie</rt><rp>)</rp>
         </ruby>]
     ]))
+
+    (set: $wypiszSzambolanski to (macro: str-type _slowo, [
+        (out: )[($wypiszSzambolanskiNr: $slownik's _slowo)]
+    ]))
+    (set: $wypiszTlumaczenie to (macro: str-type _slowo, [
+        (out: )[($wypiszTlumaczenieNr: $slownik's _slowo)]
+    ]))
+    (set: $zaktualizujTlumaczenie to (macro: str-type _slowo, str-type _znaczenie, [
+        ($zaktualizujTlumaczenieNr: $slownik's _slowo, _znaczenie)
+        (out: )[]
+    ]))
     (set: $wypiszRuby to (macro: str-type _slowo, [
-        (set: _doWypisaniaSzambolanskie to $slowa's (_slowo of $slownik)'s 2nd)
-        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's (_slowo of $slownik))
-        (out: )[{=
-          <ruby>
-            _doWypisaniaSzambolanskie
-              <rp>(</rp><rt>_doWypisaniaTlumaczenie</rt><rp>)</rp>
-          </ruby>]
+        (out: )[($wypiszRubyNr: $slownik's _slowo)]
+    ]))
+
+  <!-- Zapisywanie/wczytywanie tłumaczeń -->
+    (set: $wyczyscTlumaczenia to (macro: [
+        (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
+        (clear-data: "tlumaczenieGracza", $tlumaczeniaGracza)
+        (out: )[]
     ]))
     (set: $czyZapisanoTlumaczenia to (macro: [
         (out-data: (has-data: "tlumaczenieGracza"))
@@ -408,7 +385,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
  
   <!-- Sprawdzenie, czy nie ma powtórzeń w słowach po szambolańsku. -->
     (set: _slownikSprawdzenie to (macro: [
-        (set: _ileJestRoznychSzambolanskich to (unique: ...(altered: _slowo via _slowo's 2nd, ...$slowa))'s length)
+        (set: _ileJestRoznychSzambolanskich to (unique: ...$slowaSzambolanskie)'s length)
         (set: _ileJestRoznychSlow to $slowa's length)
         (if: _ileJestRoznychSzambolanskich < _ileJestRoznychSlow)[(error: "Więcej niż jedno słowo tłumaczy się na to samo po szambolańsku!")]
         (out: )[]
@@ -609,13 +586,13 @@ Mówiąc to, Kari Mata Hari teatralnie złapała się za głowe i przymknęła o
 Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
 
 (if: "szaman" is not in $odwiedzoneDzis)[{=
-    (link-goto: (cond: $liczbaOdwiedzin's szaman is 0, "...zajrzeć przez okno chatki większej od pozostałych.", "....udać się do chatki szamana."), (cond: $numerDnia < 4, "szaman", "end1"))<!-- [[szaman]] -->
+    (link-goto: (cond: $liczbaOdwiedzin's szaman is 0, "...zajrzeć przez okno chatki większej od pozostałych.", "...udać się do chatki szamana."), (cond: $numerDnia < 4, "szaman", "end1"))<!-- [[szaman]] -->
 ]
 (if: "mieszka" is not in $odwiedzoneDzis)[{=
-    (link-goto: (cond: $liczbaOdwiedzin's szaman is 0, "..zakraść się do zbiorowiska małych chatek.", "...przejść się w okolice mieszkań Szambolan."), (cond: $numerDnia < 4, "mieszka", "end1"))<!-- [[mieszka]] -->
+    (link-goto: (cond: $liczbaOdwiedzin's mieszka is 0, "...zakraść się do zbiorowiska małych chatek.", "...przejść się w okolice mieszkań Szambolan."), (cond: $numerDnia < 4, "mieszka", "end1"))<!-- [[mieszka]] -->
 ]
 (if: "targ" is not in $odwiedzoneDzis)[{=
-    (link-goto: (cond: $liczbaOdwiedzin's szaman is 0, "...pójść tam, skąd wyszli szambolanie przez nią spotkani.", "...iść na szambolański targ."), (cond: $numerDnia < 4, "targ", "end1"))<!-- [[targ]] -->
+    (link-goto: (cond: $liczbaOdwiedzin's targ is 0, "...pójść tam, skąd wyszli szambolanie przez nią spotkani.", "...iść na szambolański targ."), (cond: $numerDnia < 4, "targ", "end1"))<!-- [[targ]] -->
 ]
 (if: $liczbaOdwiedzin's rzeka > 0 and "rzeka" is not in $odwiedzoneDzis)[
     (link-goto: "...sprawdzić raz jeszcze bramę do wioski.", (cond: $numerDnia < 4, "rzeka", "end1"))<!-- [[rzeka]] -->
@@ -717,7 +694,7 @@ Po kilku minutach ostrożnego spaceru pod osłoną okolicznej roślinności boha
 
 Kari Mata Hari zza palisady usłyszała wartki nurt rzeki. Westchnęła. Próba wdrapania się na drewniany płot na pewno by nie przeszła niezauważenie, a próba przejścia przez strażników bez dobrego planu skończyłaby sie niepowodzeniem. 
 
-Na ten moment bohaterka postanowiła wycofać się z tej lokacji i pójść (link-goto: "tam, gdzie poszli spotkani wcześniej Szambolanie...", (cond: $poraDnia is "rano", "mapanoc", "sen")).
+Na ten moment bohaterka postanowiła wycofać się z tej lokacji i pójść [[tam, gdzie poszli spotkani wcześniej Szambolanie...->😴]].
 ]
 (else: )[
     (if: $numerDnia is 4 and $poraDnia is "rano")[
@@ -765,7 +742,7 @@ Gdy układała się do snu, po raz kolejny usłyszała syrenę statku. Dokładni
 ]
 Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy podczas snu jest bezbronny, zwłaszcza na wrogim terenie!) zmęczenie fizyczne wzięło nad nią górę. Po chwili już spała. 
 
-[[Oby kolejny dzień przybliżył Kari Matę Hari do wolności...->wioskamapa]]
+[[Oby kolejny dzień przybliżył Kari Matę Hari do wolności...->😴]]
 
 
 :: shakegates {"position":"1200,525","size":"100,100"}
@@ -830,7 +807,7 @@ Dziś w chatce szamana było nader spokojnie. Kari Mata Hari nie odnotowała nic
 Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a następnie (link-goto: "wróci do swojej \"bazy\", by odpocząć", (cond: $poraDnia is "rano", "mapanoc", "sen")).<!-- [[mapanoc]] [[sen]] -->
 
 
-:: szambopass {"position":"775,1350","size":"100,100"}
+:: szambopass {"position":"900,1600","size":"100,100"}
 Nie chcąc ryzykować wykrycia i ponownego wsadzenia do więzienia Kari Mata ukryła sie za najbliższymi krzakami, jakie zauważyła. Miała nadzieję, że to wystarczy, by pozostać niewidoczną.
 
 Suczka poczekała cierpliwie na nadejście właścicieli głosów, które przed chwila słyszała. Pomiędzy liściami w krzakach była dogodna luka służąca bohaterce za obserwacje otoczenia.  Kari Mata postanowiła jej użyć niczym lornetki.
@@ -842,9 +819,9 @@ Kobiecie ciężko było w to uwierzyć, ale miała już pewność, że ma do czy
 
 Szczęśliwie dla niej, Szambolanie byli zbyt zajęci rozmową i ciagnięciem wozu, z którego wystawały smacznie wyglądające ryby. Spokojnie minęli suczkę i udali się w kierunku znanym tylko im.
 
-[[Kari Mata po oddaleniu się Szambolan postanowiła chwilę odpocząć, by zebrać siły. Następnie rozejrzała się po okolicy->wioskamapa]] 
+[[Kari Mata po oddaleniu się Szambolan postanowiła chwilę odpocząć, by zebrać siły. Następnie rozejrzała się po okolicy->😴]] 
 
-[[Kari Mata postanowiła sprawdzić, skąd przyszli Szambolanie.->rzeka]] /OPCJA POJAWIA SIĘ PRZY 2 RUNIE
+[[Kari Mata postanowiła sprawdzić, skąd przyszli Szambolanie.->rzeka]]
 
 
 :: talk {"position":"900,500","size":"100,100"}
@@ -996,12 +973,17 @@ Suczka czuła się naprawdę źle. Brak regularnego dostępu do pokarmu, środk�
 Bohaterka zdecydowała... 
 ]
 
-(link-goto: (cond: $liczbaOdwiedzin's szaman is 0, "...zajrzeć przez okno chatki większej od pozostałych.", "....udać się do chatki szamana."), (cond: $numerDnia < 4, "szaman", "end1"))<!-- [[szaman]] -->
-(link-goto: (cond: $liczbaOdwiedzin's szaman is 0, "..zakraść się do zbiorowiska małych chatek.", "...przejść się w okolice mieszkań Szambolan."), (cond: $numerDnia < 4, "mieszka", "end1"))<!-- [[mieszka]] -->
-(link-goto: (cond: $liczbaOdwiedzin's szaman is 0, "...pójść tam, skąd wyszli szambolanie przez nią spotkani.", "...iść na szambolański targ."), (cond: $numerDnia < 4, "targ", "end1"))<!-- [[targ]] -->
+(link-goto: (cond: $liczbaOdwiedzin's szaman is 0, "...zajrzeć przez okno chatki większej od pozostałych.", "...udać się do chatki szamana."), (cond: $numerDnia < 4, "szaman", "end1"))<!-- [[szaman]] -->
+(link-goto: (cond: $liczbaOdwiedzin's mieszka is 0, "...zakraść się do zbiorowiska małych chatek.", "...przejść się w okolice mieszkań Szambolan."), (cond: $numerDnia < 4, "mieszka", "end1"))<!-- [[mieszka]] -->
+(link-goto: (cond: $liczbaOdwiedzin's targ is 0, "...pójść tam, skąd wyszli szambolanie przez nią spotkani.", "...iść na szambolański targ."), (cond: $numerDnia < 4, "targ", "end1"))<!-- [[targ]] -->
 (if: $liczbaOdwiedzin's rzeka > 0)[
     (link-goto: "...sprawdzić raz jeszcze bramę do wioski.", (cond: $numerDnia < 4, "rzeka", "end1"))<!-- [[rzeka]] -->
 ]
+
+
+:: 😴 {"position":"1600,1500","size":"100,100"}
+($zmienDzien: )
+(redirect: "wioskamapa")<!-- [[wioskamapa]] -->
 
 
 :: StoryScript [script]
