@@ -1,0 +1,1716 @@
+:: StoryTitle
+Fujfujble! razem
+
+
+:: StoryData
+{
+  "ifid": "9605975B-A708-4B24-8BA5-8D172FE01FDF",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "tag-colors": {
+    "tresc": "yellow",
+    "2-run": "red",
+    "opis": "blue",
+    "lore": "purple",
+    "startup": "orange",
+    "footer": "orange",
+    "header": "orange"
+  },
+  "zoom": 0.6
+}
+
+
+:: 1 RUN {"position":"1025,200","size":"100,100"}
+
+
+
+:: 2 RUN {"position":"1675,1100","size":"100,100"}
+
+
+
+:: 4nie {"position":"1375,575","size":"100,100"}
+- (text-colour:red)[Pies??] - zaśmiała się istota i pokiwała głową na boki po czym wskazała na bohaterke i powtorzyła (text-colour:red)[Ty Pies].  Kari Mata posłała nerwowy uśmiech i skinęła głowa mając nadzieję, że podniesienie kącików ust do góry jest uniwersalną oznaką braku złych zamiarów. A przynajmniej powinien tak myśleć jegomość, z którym próbowała się porozumieć.
+
+Kari Mata....
+
+[[...postanowiła zapytać o coś innego->shakegates]] 
+[[...postanowiła zrobić cos innego->talk]] 
+
+
+:: 4tak {"position":"1350,450","size":"100,100"}
+- (text-colour:red)[Pies! Pies! ]- zaśmiała się istota i pokiwała głową w góre i w dół. Mata Hari postanowiła założyć, że ten sposób potwierdzenia informacji powinien być uniwersalny w każdej kulturze.
+
+Kari Mata....
+
+[[...postanowiła zapytać o coś innego->shakegates]] 
+[[...postanowiła zrobić cos innego->talk]] 
+
+
+:: 9 {"position":"1375,700","size":"100,100"}
+Istota zaśmiała się i potrząsnęła metalowymi kratami, piskliwym głosem mówiąc przy tym (text-colour:red)[cela.] Kari Mata Hari pomyślała, że pewnie z niej sie nabija.
+
+Kari Mata....
+
+[[...postanowiła zapytać o coś innego->shakegates]] 
+[[...postanowiła zrobić cos innego->talk]] 
+
+
+:: DZIEŃ 2 {"position":"1000,1525","size":"100,100"}
+
+
+
+:: DZIEŃ 2a {"position":"1725,1525","size":"100,100"}
+
+
+
+:: DZIEŃ 3 {"position":"1000,2250","size":"100,100"}
+
+
+
+:: DZIEŃ 3a {"position":"1725,2250","size":"100,100"}
+
+
+
+:: DZIEŃ 4 {"position":"1000,2925","size":"100,100"}
+
+
+
+:: DZIEŃ 4a {"position":"1725,2875","size":"100,100"}
+
+
+
+:: DZIEŃ 5 {"position":"1400,3800","size":"100,100"}
+
+
+
+:: Rzeka 0 [2-run] {"position":"625,1500","size":"100,100"}
+(opis palisady zagradzającej pójście dalej, na bramie wyjściowej stoją szambolanie, którzy jej strzegą. Za bramą słyszy nurt rzeki)
+
+Smakowicie wyglądające ryby z koszów Szambolan, którzy właśnie ją minęły zachęciły Kari Matę do poszukania miejsca, skąd pochodzą. Piorytetem dla suczki było najpierw znalezienie pożywienia, a potem obmyślanie planu ucieczki. Na pustym żołądku mogła szybko stracić siły i stać się jeszcze łatwiejszą ofiarą dla okolicznych zagrożeń.
+
+Po kilku minutach ostrożnego spaceru pod osłoną okolicznej roślinności bohaterka doszła do prostego obrodzenia wykonanego z drewnianych pali. Bramę, wykonaną również z tego samego surówca strzegło dwóch znudzonych Szambolan. Z pewnością byli to "strażnicy", którzy strzegli jednocześnie wejścia i wyjścia do wioski. 
+
+Kari Mata Hari zza palisady usłyszała wartki nurt rzeki. Westchnęła. Próba wdrapania się na drewniany płot na pewno by nie przeszła niezauważenie, a próba przejścia przez strażników bez dobrego planu skończyłaby sie niepowodzeniem. 
+
+[[Na ten moment bohaterka postanowiła wycofać się z tej lokacji i pójść tam, gdzie poszli spotkani wcześniej Szambolanie...->wioskamapa1b]]
+
+
+:: Rzeka 3 [2-run] {"position":"2150,3125","size":"100,100"}
+Podążając pod osłoną dziko rosnącej roślinności Kari Mata po raz kolejny udała się w okolice wyjścia z wioski z nadzieją, że może strażnicy bramy sobie poszli. Bądź śpią na tyle głęboko by mogła niezauważona wyjść w stronę wątłego światełka, które widniało za bramą.
+
+Gdy wydawać się mogło, że będzie to kolejny dzień bezowocnego czekania na przełom, nagle Kari Mata usłyszała wrzask. Przez bramę jak strzała wyleciała dwójka szambolan. Byli to dokładnie ci sami osobnicy, co zwykle wracali z rybami i wieźli je na targ. Zaaferowani niecodziennymi wrzaskami szambolanie szczegący bramy wioski zatrzymali ich i rozpoczęli z nimi rozmowę. Zapewne pytając o to, co ich tak wystraszyło.
+
+- (text-colour:red)[Ryba być rzeka! Ryba być metal! Metal!! Bogini być niedobra!-] gorączkowo tłumaczył jeden z rybaków, a drugi mi wtórował, kiwając gorliwie głową.
+
+Szambolanie wydawali się być rozkojarzeni i nie zwracać uwagi na bramę. Czyżby był to odpowiedni moment na podjęcie próby ucieczki? Kari Mata zdawała sobie sprawy, że lepszej okazji mogło nie być... 
+
+Bohaterka...
+
+[[...postanowiła zaryzykować.->dead2]]
+[[postanowiła nie podejmować ryzyka i wrócić do swojej kryjówki, by pomyśleć nad innym rozwiazaniem.->mapanoc 3b]]
+
+
+:: Rzeka dzien [2-run] {"position":"2150,2325","size":"100,100"}
+Podążając pod osłoną dziko rosnącej roślinności Kari Mata po raz kolejny udała się w okolice wyjścia z wioski z nadzieją, że może strażnicy bramy sobie poszli. Bądź śpią na tyle głęboko by mogła niezauważona wyjść w stronę wątłego światełka, które widniało za bramą.
+
+Suczka czatując w krzakach na cień szansy, by się wyslizgnąć niepostrzeżenie z wioski przez główną bramę odnotowała pewne zwyczaje Szambolan. Między innymi każdego ranka dwójka szambolan wychodziła przez bramę z pustymi koszami.
+
+[[Niestety, dziś nie było dane Kari Macie zobaczyć, co znajduje się po drugiej stronie palisady. Postanowiła wrócić do swojej kyjówki i odpocząć->mapa noc 1b]]
+
+
+
+
+:: Rzeka noc [2-run] {"position":"2150,2475","size":"100,100"}
+Podążając pod osłoną dziko rosnącej roślinności Kari Mata po raz kolejny udała się w okolice wyjścia z wioski z nadzieją, że może strażnicy bramy sobie poszli. Bądź śpią na tyle głęboko by mogła niezauważona wyjść w stronę wątłego światełka, które widniało za bramą.
+
+Suczka czatując w krzakach na cień szansy, by się wyslizgnąć niepostrzeżenie z wioski przez główną bramę odnotowała pewne zwyczaje Szambolan. Zauważyła, że każdego wieczoru przez bramę wchodzi dwójka Szambolan. Na swoim prostym wózku wieźli kosze zapakowane aż po brzegi świeżymi rybami. Kierowali się zawsze w stronę wioskowego targu. 
+
+[[Niestety, dziś nie było dane Kari Macie zobaczyć, co znajduje się po drugiej stronie palisady. Postanowiła wrócić do swojej kyjówki i odpocząć->sen2a]]
+
+
+:: StartPlot {"position":"775,350","size":"100,100"}
+Oślepłam. 
+To pierwsze słowo, które pojawiło się w myślach Kari Maty Hari, gdy się ocknęła.
+Nic dziwnego. Otaczał ją całkowity mrok. Na nieszczęście, jej zmysł węchu działał znakomicie. Na nieszczęście, bo do jej nosa dochodził jedynie obrzydliwy smród.  Nieznośny zapach przyprawiał ją o mdłości. 
+Kari Mata spróbowała na chwilę zapomnieć, że w ogóle posiada nos i wyteżyła swój słuch. 
+Dziwne szepty w języku jej nieznanym wypełniały przestrzeń, w której się znajdowała. 
+Bulgoty, gulgoty i dziwne akcentowania w narzeczu, któremu się przysłuchiwała nic jej nie mówiły. To z pewnością nie był jezyk, którym sie posługiwała na co dzień. Nie zdziwiło jej to. W końcu tam, skąd pochodzi jest wiele grup etniczych posługujących sie swoim własnym narzeczem, bądź dialektem. Bardziej dziwiło ją to, co tu robi? Jak sie tu znalazła? I jak stąd może sie wydostać?
+Gdy tak rozmyślała, jej wzrok zaczął przyzwyczajać się do panujących tu egipskich ciemności. Powoli zaczęła dostrzegać zarysy rzeczy, które ją otaczały. Znalazła się w małym pomieszczeniu. Po lewej stronie miała coś na kształt posłania. Przed sobą miskę. Oraz kraty. Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została uprowadzona. 
+
+Kari Maha Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łapy. W tym celu bohaterka...
+
+[[...najpierw się rozglądnęła po celi, by rozeznać sie dokładniej w swoim położeniu.->look]]
+[[...spróbowała zwrócić na siebie uwagę dziwnych głosów.->talk]]
+
+
+
+:: TARGTRUEEND [tresc] {"position":"1400,2600","size":"100,100"}
+(KARI MATA MUSI PÓJŚĆ 3 DNIA WIECZÓR NA TARG I WCZOŁGAĆ SIE DO WOZU)
+
+
+[[Jedzie nad rzekę RANKIEM->trueend]] 
+
+
+:: Untitled Passage 13 {"position":"3050,2675","size":"100,100"}
+
+
+
+:: dead2 [2-run] {"position":"2275,3250","size":"100,100"}
+Niestety, szybkie przemknięcie się koło szambolan nie było dobrym pomysłem. Istoty te cechowały sie nadzwyczajnie dobrym słuchem. Gdy tylko Kari Mata Hari próbowała się przekraść wokół nich, natychmiast zdali sobie sprawę z jej obecności.
+
+Suczka z łatwością została obezwładniona, Nie miała szans w starciu z czwórką dorosłych szambolan.  Znalazła się z powrotem w ohydnej, obleśnej celi. 
+
+Kari Mata Hari aż do końca swoich dni nie miała więcej szans na ucieczkę. Co mogła zrobić lepiej? Czy z tego przeklętego jądra ciemności nie było ucieczki? A może po prostu los nie był jej przychylny? Tego na pewno nie dowie się już w tym wcieleniu.
+
+KONIEC
+
+[[Kliknij tutaj, by zacząć swoją przygodę od nowa->StartPlot]] 
+
+
+:: dead3 [2-run] {"position":"1400,2450","size":"100,100"}
+Kari Mata po wejściu do kosza nagle poczuła, że ktoś ją podnosi. Po dłuższej chwili, została gwałtownie wyrzucona z kosza. Spełniła się jej największa obawa. Dwójka szambolan patrzyła na nia z góry swoimi małymi, czarnymi oczami.
+
+Suczka z łatwością została obezwładniona, Nie miała szans w starciu z dwójką dorosłych szambolan.  Znalazła się z powrotem w ohydnej, obleśnej celi. 
+
+Kari Mata Hari aż do końca swoich dni nie miała więcej szans na ucieczkę. Co mogła zrobić lepiej? Czy z tego przeklętego jądra ciemności nie było ucieczki? A może po prostu los nie był jej przychylny? Tego na pewno nie dowie się już w tym wcieleniu.
+
+KONIEC
+
+[[Kliknij tutaj, by zacząć swoją przygodę od nowa->StartPlot]] 
+
+
+:: deadend1 {"position":"1400,1000","size":"100,100"}
+-(text-colour:red)[ Ja być niedobra? JA BYĆ NIEDOBRA??? ]- tajemniczy rozmówca naszej bohaterki zaczął się irytować. Bardzo mocno irytować. Cokolwiek powiedziała Kari Mata, musiało nie być to zbyt uprzejme. 
+
+Istota następnie otworzyła cele suczki i zamachnęła się w celu wymierzenia ciosu. Mata Hari nie zdążyła niestety uchronić się przed uderzeniem. Gwałtowne pchnięcie sprawiło, że Kari Mata osunęła się na ziemię i straciła przytomność. Niestety, już nigdy miała jej nie odzyskać.
+
+KONIEC
+
+[[Kliknij tutaj, by zacząć przygodę od nowa->StartPlot]] 
+
+
+:: end1 {"position":"1400,4075","size":"100,100"}
+Z minuty na minutę idąc w wyznaczonym kierunku chód Kari Maty stawał się coraz wolniejszy. Oddech stawał się coraz cięższy a ciało odmawiało posłuszeństwa. 
+W końcu ciało bohaterki podddało się i upadło bezwiednie na ziemię. Kilka dni funkcjonowania w ciagłym stresie przed wykryciem, bez regularnego dostępu do pożywienia znacząco osłabiło organizm suczki. 
+
+Mata Hari nie wiedziała, ile czasu leżała tak bezsilnie na ziemi. Każda chwila spędzona na mokrym, brudnym bajorze wydawała jej się wiecznością. 
+
+Naraz poczuła, że ktoś ją podnosi. Usłyszała ostatkiem sił znajomy obcy język z wieloma bulgoczącymi dźwiękami po czym straciła przytomność. 
+
+Gdy sie ocknęła, stanęła twarzą w twarz z liczną gromada Szambolan wpatrujących się w nia jak w obrazek. Próbowała się ruszyć. Nie mogła. Jej ręce i nogi były przywiązane do pala wbitego w ziemię. 
+
+Naraz zobaczyła blask. Ktoś rozpalił pochodnię. Jednocześnie tłum Szambolan zaczął recytować:
+
+(text-colour:red)["Bogini być dobra. Bogini zostać wioska. Bogini być dobra. Bogini zostać w wioska"]
+
+Przerażona Kari Mata zamknęła oczy, przygotowując sie na najgorsze. 
+
+Co mogła zrobić lepiej? Czy z tego przeklętego jądra ciemności nie było ucieczki? A może po prostu los nie był jej przychylny? Tego na pewno nie dowie się już w tym wcieleniu.
+
+KONIEC
+
+[[Kliknij tutaj, by zacząć przygodę od nowa->StartPlot]] 
+
+
+:: escapemap {"position":"1075,700","size":"100,100"}
+Podobno mowa jest srebrem, a milczenie złotem, lecz w tym wypadku bohaterka stwierdziła, że srebro jest cenniejsze od złota. Rozważając wszystko, co się w tym krótkim pobycie w celi dowiedziała, postanowiła powiedzieć...
+
+[[...wskazać na siebie i powiedzieć (text-colour:red)[Pies być niedobra]->map0]]
+[[...wskazać na istotę i powiedzieć(text-colour:red)[ Ty być niedobra]->deadend1]]
+[[...wskazać na istote i powiedzieć(text-colour:red)[ Ty być cela]->hahaneutral]]
+[[...wskazać na siebie i powiedzieć(text-colour:red)[ Pies być jedzenie]->hahabeka]]
+
+
+:: firstszambo {"position":"975,1300","size":"100,100"}
+Kari Mata wyjrzała na powierzchnię. Na szczęście krajobraz wokół niej już nie przypominał słynnego obrazu "Kair Nocą". Na zewnątrz panował półmrok, w którym względnie łatwo było kobiecie rozeznać się. Znajdowała się w pewnego rodzaju wiosce ukrytej w liściach gęstej dżungli. Z żalem stwierdziła, że wszędobylski smród nadal sie utrzymywał i był jeszcze gorszy niż w więzieniu, z którego się wydostała. 
+
+Nim zdążyła obmyśleć swój kolejny ruch, naraz usłyszała znajomy obcy język. W przypływie adrenaliny suczka postanowiła...
+
+[[....rozejrzeć się za kryjówką i poczekać, aż ją miną.->szambopass]]
+[[...szybko pobiec w kierunku przeciwnym od tego, z którego dobiegają głosy.->firstszambodeath]]
+
+
+:: firstszambodeath {"position":"1200,1400","size":"100,100"}
+Nie było czasu do stracenia. Ktoś sie zbliżał i na pewno nie miał wobec bohaterki dobrych zamiarów. Trzeba było szybko uciekać.
+
+W panicznym biegu Kari Mata nastąpiła na coś, co wydało dość głośny dźwięk. Przystanęła na chwilę zaalarmowana nagłym zrobieniem hałasu po czym wznowiła ucieczkę.
+Niestety, zwróciła na siebie tym niefortunnym momentem uwage istot, od których uciekała. Z łatwością ją dogoniły po czym zabrały z powrotem do ohydnej, obleśnej celi. Kari Mata Hari aż do końca swoich dni nie miała więcej szans na ucieczkę.
+
+KONIEC
+
+[[Kliknij tutaj, by zacząć przygodę od nowa->StartPlot]] 
+
+
+:: hahabeka {"position":"1200,975","size":"100,100"}
+- Hahaha! Pies być niedobra! Hahaha! - istota porząsnęła głową i głośno sie zaśmiała. Kari Mata Hari stwierdziła, że pewnie musiała powiedzieć coś wyjątkowo głupiego.
+
+[[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz->escapemap]] 
+
+
+:: hahaneutral {"position":"1075,975","size":"100,100"}
+-(text-colour:red)[ Hahaha! Ty być cela!] - zaśmiała się głośno istota. Coś, co powiedziała nasza bohaterka musiało ją bardzo mocno rozbawić.
+
+[[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz->escapemap]] 
+
+
+:: koncept {"position":"2625,2075","size":"100,100"}
+Koncept: gry NIE DA SIĘ przejść za pierwszym runem.
+
+RUN 1
+Dzień 1: ucieczka z celi
+Dzień 2: luźna eksploracja (może np. dostrzec strażników przy wyjściach z wioski - już wszyscy wiedzą, że uciekła, więc mają na nią baczenie jakby co)
+Dzień 3: luźna eksploracja (np. obserwuje zwyczaje mieszkańców)
+Dzień 4:
+  [rano] przypływa Nemo, słychać syrenę okrętową, płoszy rybaków, Kari może usłyszeć tę syrenę i w różnych miejscach zasłyszeć też rozmowy o ryba/metal (ale niekoniecznie jeszcze je rozumie)
+  [wieczór] słychać syrenę okrętową, Nemo odpływa
+Dzień 5: rano idą już bez strachu po te ryby, luźna eksploracja, ale pod wieczór Kari pada ze zmęczenia/niedożywienia, może się ocknąć jeszcze przed śmiercią, żeby doświadczyć, jak ją poświęcają w ofierze czy coś  
+
+RUN 2 (zakładając, że Kari już wie)
+Dzień 1: ucieczka z celi
+Dzień 2: luźna eksploracja (Kari bada zwyczaje rybaków, że biorą jakieś kosze/wózek itd.)
+Dzień 3: luźna eksploracja (nwm cokolwiek)
+Dzień 4: [rano] Kari wskakuje między te kosze i rybacy zabierają ją nad rzekę, słychać syrenę okrętową, Nemo cumuje (), rybacy w popłochu porzucają kosze, Kari nwm wychodzi z wózka i mdleje, Nemo ją bierze na statek KONIEC  
+
+No i te rzeczy w nawiasach to są tylko propozycje, nie obowiązek. Luźna eksploracja zakłada, że Kari może się np. nauczyć słowa ryba dopiero za trzecią wizytą w tym ich składzie rybnym albo w wyniku wypadu nad rzekę (z bad endem), albo cokolwiek.
+Nie musi być tak, że w obrębie jednego runa najpierw poznaje słowa, a potem z nich korzysta.
+Może być tak, że słowo ryba poznaje tuż przed śmiercią.
+Chyba tyle./
+
+
+:: look {"position":"775,525","size":"100,100"}
+Jak już zdążyła zauważyć, nie było w jej skromnej celi zbyt wiele rzeczy. Prosta leżanka wykonana z miękkiego, lecz śmierdzącego niemiłosiernie tworzywa stanowiła jedyny quasi-mebel w tej klatce. Suczka przyjrzała sie bliżej misce. W jej środku znajdowała się dziwna breja. Niestety przez panujacy mrok nie sposób było określić jej koloru. Kari Mata powąchała rzecz w misce. Dało się wyczuć całkiem ładny zapach, który troszkę tłumił panujący wszędobylski smród. 
+
+Następnie przystąpiła do badania ścian swojego więzienia swoim zmysłem dotyku. Niestety, nasza bohaterka nie wyczuła w nich żadnej luki, uszczerbku ani czegoś, co pomogłoby jej zażegnać problem. 
+
+Kończąc rozglądanie się po celi, Kari Mata Hari poczuła, że burczy jej w brzuch. No tak. Z pewnością od dłuższego czasu nic nie jadła. Nie miała pojęcia, ile czasu minęło od jej porwania. 
+
+Po rozglądnięciu się po celi, Kari Mata postanowiła...
+
+[[...spróbować tego, co jest w misce przed nią.->taste]]
+[[...odpocząć na leżance.->rest (być)]]
+[[...zrobić coś innego.->StartPlot]]
+
+
+
+:: map0 {"position":"975,1150","size":"100,100"}
+Mówiąc to, Kari Mata Hari teatralnie złapała się za głowe i przymknęła oczy. Miała nadzieję, że jej zdolności aktorskie do tej sztuczki wystarczą.
+-(text-colour:red)[ Pies być niedobra! Niedobra! ]- krzyknęła przejętym głosem istota, po czym gwałtownie sie podniosła, upuszczając przy tym pewną rzecz, wybiegając prędko z pomieszczenia, w którym Kari Mata była pilnowana.  Bohaterka słysząc brzdęk przedmiotu wypadającego z kieszeni zafrasowanego "strażnika" domyśliła się, co mógł upuścić. Schyliła się i przez szparę w dole celi sięgnęła po to. Szczęśliwym trafem, klucz, bo to o nim była mowa, pasował jak ulał do zamka w jej celi. Kari Mata uwolniła się. 
+
+[[Nie namyślając sie długo, Kari Mata Hari postanowiła wyjść z tej przeklętej niewoli i poszukać wyjścia z tego jądra ciemności->firstszambo]]
+
+
+:: mapa noc 1b {"position":"1725,1775","size":"100,100"}
+Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
+
+[[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman1b]]
+[[...zakraść się do zbiorowiska małych chatek/ przejść się w okolice mieszkań Szambolan.->mieszka1b]]
+[[...pójść tam, skąd wyszli szambolanie przez nią spotkani/iść na szambolański targ.->targ1b]]
+[[...sprawdzić raz jeszcze bramę do wioski->Rzeka noc]] //WYBÓR POJAWIA SIĘ TYLKO JAK KARI odwiedzi RZEKA 0
+(lokacja odwiedzona rano jest niedostepna, do wyboru tylko 2)
+
+
+:: mapanoc 3b {"position":"1725,3125","size":"100,100"}
+Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
+
+[[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman3b]]
+[[...zakraść się do zbiorowiska małych chatek/ przejść się w okolice mieszkań Szambolan.->mieszka3b]]
+[[...pójść tam, skąd wyszli szambolanie przez nią spotkani/iść na szambolański targ.->targ3b (ryba)]]
+[[...sprawdzić raz jeszcze bramę do wioski->Rzeka noc]] //WYBÓR POJAWIA SIĘ TYLKO JAK KARI odwiedzi RZEKA 0
+
+(lokacja odwiedzona rano jest niedostepna, do wyboru tylko 2)
+
+
+:: mapanoc1a {"position":"1000,1750","size":"100,100"}
+Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
+
+[[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman1a]]
+[[...zakraść się do zbiorowiska małych chatek/ przejść się w okolice mieszkań Szambolan.->mieszka1a (metal)]]
+[[...pójść tam, skąd wyszli szambolanie przez nią spotkani/iść na szambolański targ.->targ1a]]
+
+(lokacja odwiedzona rano jest niedostepna, do wyboru tylko 2)
+
+
+
+:: mapanoc2a {"position":"1000,2450","size":"100,100"}
+Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
+
+[[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman2a (bogini)]]
+[[...zakraść się do zbiorowiska małych chatek/ przejść się w okolice mieszkań Szambolan.->mieszka2a (rzeka)]]
+[[...pójść tam, skąd wyszli szambolanie przez nią spotkani/iść na szambolański targ.->targ2a (wioska)]]
+
+(lokacja odwiedzona rano jest niedostepna, do wyboru tylko 2)
+
+
+:: mapanoc2b {"position":"1725,2450","size":"100,100"}
+Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
+
+[[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman2b]]
+[[...zakraść się do zbiorowiska małych chatek/ przejść się w okolice mieszkań Szambolan.->mieszka2b]]
+[[...pójść tam, skąd wyszli szambolanie przez nią spotkani/iść na szambolański targ.->TARGTRUEEND]]
+[[...sprawdzić raz jeszcze bramę do wioski->Rzeka noc]] //WYBÓR POJAWIA SIĘ TYLKO JAK KARI odwiedzi RZEKA 0
+
+
+:: mapanoc3a {"position":"1000,3150","size":"100,100"}
+Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksploracje tej przedziwnie cuchnącej wioski. Nie namyślając się długo postanowiła...
+
+[[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman3a]]
+[[...zakraść się do zbiorowiska małych chatek/ przejść się w okolice mieszkań Szambolan.->mieszka3a]]
+[[...pójść tam, skąd wyszli szambolanie przez nią spotkani/iść na szambolański targ.->targ3a ]]
+
+(lokacja odwiedzona rano jest niedostepna, do wyboru tylko 2)
+
+
+
+
+:: mieszka0 {"position":"1275,1600","size":"100,100"}
+(pierwszy paragraf dla mieszkańców jak wybierze go gracz po ucieczce z więzienia po raz 1)
+
+Kari Mata Hari zbliżyła się do placu, na którym były po okręgu zbudowane proste chatki, których ściany są zrobione z mieszaniny błota, gliny oraz okolicznej roślinności. Taka mieszanka twardnieje pod wpływem ciepła tworząc prowizoryczne warunki mieszkalne. Bohaterka przypomniała sobie, że ten sposób budowania chat jest dość popularny w biedniejszych krajach, gdzie panuje dość gorący klimat. 
+
+Na środku okręgu zrobionego z lepianek stało miejsce na palenisko. Wydawało się być ono suczce sercem tej części wioski. Wokół niego mniejsi Szambolanie gonili za muchami, starając się złapać za pomocą siatki jak najwięcej z nich. Więksi Szambolanie zajmowali się typowymi obowiązkami domowymi. Niektórzy "czyścili" rzeczy w mule, inni zajmowali się tworzeniem prostych narzędzi. Jeszcze inni po prostu leniwie kąpali się w kilku bajorach znajdujących się przed ich lepiankami.
+
+Kari Mata wdrapała się ukradkiem na jedno z okolicznych drzew, by móc bez strachu o odkrycie rozeznać się w sytuacji
+
+
+:: mieszka1a (metal) {"position":"800,1975","size":"100,100"}
+Patrząc na część wioski zamieszkałą przez zwykłych Szambolan do uszu Kari Maty doszedł pewien odgłos. Mógł pochodzić tylko z warsztatu Szambolana trudniącego się wyrobem rzeczy z metalu. Nie namyślając się długo suczka postanowiła na palcach podejść do źródła dźwięku.
+
+Po chwili zauważyła krępego Szambolana o mocno pomarszczonym ryjku, ubranym w fartuch. W jednej łapie trzymał ciężki młot a w drugiej szczypce kowalskie. W szczypcach znajdował się kawał metalu, który był poddawany obróbce. Rytmicznie uderzał młotem w kawał stali, który pod wpływem narzędzia zmieniał swój kształt. Naraz, szambolański Kowal  przerwał prace, wnikliwie popatrzył na swoją robótkę i krzyknął:
+
+-  M(text-colour:red)[etal być niedobra! Metal zostać niedobra!? Metal być nowy! ]
+
+Szambolan przeklnął jeszcze kilka razy pod nosem w swoim języku i wyrzucił swoją pracę gdzieś w kąt i zajął się czymś innym.
+
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc1a]] 
+
+
+
+
+:: mieszka1b [lore] {"position":"1975,1950","size":"100,100"}
+(nawiązanie do rytuału sati)
+
+
+:: mieszka2a (rzeka) {"position":"800,2575","size":"100,100"}
+Nasza bohaterka ponownie postanowiła się zapuścić do części wioski zamieszkałej przez prostych Szambolan. Szczęśliwie dla niej, mieszkańcy Szambo-La byli na tyle zajęci sprawami dnia codziennego, że nie zwracali za bardzo uwagi co się dzieje dookoła nich.
+Kari Mata mając za swoich sprzymierzeńców gęste zarośla i bajora mogła spokojnie podróżować nimi w ukryciu po wiosce.
+
+Dziś suczka była świadkiem rozmowy dwóch przedstawicieli mitycznego gatunku. Jeden z nich był na tyle mały, niski i drobny, że przypominał niedorosłą jednostkę. Drugi z nich był zdecydowanie większy, wyższy ale jego sylwetka w ocenie Kari Maty była dość...kobieca.
+Oceniając również głosy Szambolan (jeden wyższy, piskliwy, dziecięcy; drugi niższy, łagodniejszy, kobiecy) przypuściła, że ma przed sobą być może matkę i dziecko. 
+
+- (text-colour:red)[Ja iść rzeka?] - powiedział malec, akcentując koniec zdania pytająco. Pod pachą trzymał coś, co przypominało zestaw płetkonurka.
+
+Starsza szambolanka pokręciła głową przecząco. Na twarzy malucha pojawił sie grymas.
+
+- (text-colour:red)[Ja być niedobra???] - powiedział smutnym głosem.
+
+- (text-colour:red)[Ty iść robota, rzeka zostać] - odparła szambolanka, zachecając dziecko do pójścia z nią do wnętrza chatki.
+
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]] 
+
+
+
+:: mieszka2b [lore] {"position":"1925,2575","size":"100,100"}
+
+
+
+:: mieszka3a {"position":"775,3325","size":"100,100"}
+Nasza bohaterka ponownie postanowiła się zapuścić do części wioski zamieszkałej przez prostych Szambolan. Szczęśliwie dla niej, mieszkańcy Szambo-La byli na tyle zajęci sprawami dnia codziennego, że nie zwracali za bardzo uwagi co się dzieje dookoła nich.
+Kari Mata mając za swoich sprzymierzeńców gęste zarośla i bajora mogła spokojnie podróżować nimi w ukryciu po wiosce.
+
+Poruszenie wywołane tajemniczym rykiem było odczuwalne wśród mieszkańców Szambo-La. W każdej zasłyszanej przez suczkę rozmowie dało się wyczuć zdenerwowanie, napięcie i niepokój. Czyżby mieszkańcy spodziewali się najgorszego?
+
+- (text-colour:red)[Ryba być rzeka. Ryba być metal!] - wykrzyknęła jedna z mieszkanem cuchnącej krainy
+- (text-colour:red)[Rzeka być niedobra] - pokręciła głową wyraźnie zmartwiona druga z szambolanek - (text-colour:red)[Ja zostać wioska!]
+
+Ta pierwsza przytaknęła głową i zabrała się z powrotem do swoich obowiązków.
+
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc3a]] 
+
+
+:: mieszka3b [lore] {"position":"1900,3325","size":"100,100"}
+
+
+
+:: rest (być) {"position":"900,725","size":"100,100"}
+Posłanie, na którym usiadła Kari Mata Hari było zaskakująco miękkie.  Bohaterka stwierdziła, że mały odpoczynek jeszcze nikomu nie zaszkodził. Położyła się na leżance i obróciła się w stronę ściany. Przypatrując się jej, wydawało jej się, że jest coś na niej wyżłobione. Jednak ciężko było jej to ocenić w panującej ciemności. Suczka przyłożyła łapę do ściany. Wzrok nie spłatał jej figla. Na ścianie faktycznie były wyryte jakieś słowa. Całość wiadomości prezentowała się następująco:
+
+"Być?"
+(text-colour:red)[Być]
+
+Nie było to wiele, lecz dało bohaterce do zrozumienia, że ktoś tu przed nią też był więziony. 
+
+[[Kari Maha w końcu stwierdziła, że ma dość leżenia i postanowiła zrobić coś innego.->StartPlot]]
+
+
+:: rybak3 [tresc] {"position":"200,1450","size":"100,100"}
+(opis, jak rybacy idą w stronę wodza, jednak wejście do niego blokuje zbyt wiele straży, nijak nie przejdzie)
+
+
+
+
+:: sen2 {"position":"1000,2100","size":"100,100"}
+Nastała noc. Mrok nieustannie spowijający Szambo-La zdawał się być jeszcze ciemniejszy i groźniejszy, niż za dnia. Kari Mata, czując jak jej powieki same zamykają jej sie ze zmęczenia postanowiła wrócić do swojej kryjówki. Przemykając się pomiędzy pojedyńczymi Szambolanami bezpiecznie dotarła do swojej niepewnej oazy. Wiedziała, że poczyniła dziś niezłe postępy. Lecz wciąż brakowało jej sposobu na wydostanie się z tego impasu. 
+Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy podczas snu jest bezbronny, zwłaszcza na wrogim terenie!) zmęczenie fizyczne wzięło nad nią górę. Po chwili już spała. 
+
+[[Oby kolejny dzień przybliżył Kari Matę Hari do wolności...->wioskamapa2a]]
+
+
+:: sen2a {"position":"1725,2100","size":"100,100"}
+Nastała noc. Mrok nieustannie spowijający Szambo-La zdawał się być jeszcze ciemniejszy i groźniejszy, niż za dnia. Kari Mata, czując jak jej powieki same zamykają jej sie ze zmęczenia postanowiła wrócić do swojej kryjówki. Przemykając się pomiędzy pojedyńczymi Szambolanami bezpiecznie dotarła do swojej niepewnej oazy. Wiedziała, że poczyniła dziś niezłe postępy. Lecz wciąż brakowało jej sposobu na wydostanie się z tego impasu. 
+Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy podczas snu jest bezbronny, zwłaszcza na wrogim terenie!) zmęczenie fizyczne wzięło nad nią górę. Po chwili już spała. 
+
+[[Oby kolejny dzień przybliżył Kari Matę Hari do wolności...->wioskamapa2b]]
+
+
+:: sen3 {"position":"1000,2750","size":"100,100"}
+Nastała noc. Mrok nieustannie spowijający Szambo-La zdawał się być jeszcze ciemniejszy i groźniejszy, niż za dnia. Kari Mata, czując jak jej powieki same zamykają jej sie ze zmęczenia postanowiła wrócić do swojej kryjówki. Przemykając się pomiędzy pojedyńczymi Szambolanami bezpiecznie dotarła do swojej niepewnej oazy. Wiedziała, że poczyniła dziś niezłe postępy. Lecz wciąż brakowało jej sposobu na wydostanie się z tego impasu. 
+Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy podczas snu jest bezbronny, zwłaszcza na wrogim terenie!) zmęczenie fizyczne wzięło nad nią górę. Po chwili już spała. 
+
+[[Oby kolejny dzień przybliżył Kari Matę Hari do wolności...->wioskamapa3a]]
+
+
+:: sen3a {"position":"1725,2725","size":"100,100"}
+Nastała noc. Mrok nieustannie spowijający Szambo-La zdawał się być jeszcze ciemniejszy i groźniejszy, niż za dnia. Kari Mata, czując jak jej powieki same zamykają jej sie ze zmęczenia postanowiła wrócić do swojej kryjówki. Przemykając się pomiędzy pojedyńczymi Szambolanami bezpiecznie dotarła do swojej niepewnej oazy. Wiedziała, że poczyniła dziś niezłe postępy. Lecz wciąż brakowało jej sposobu na wydostanie się z tego impasu. 
+Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy podczas snu jest bezbronny, zwłaszcza na wrogim terenie!) zmęczenie fizyczne wzięło nad nią górę. Po chwili już spała. 
+
+Nad ranem wybudziło ją ze snu głośne buczenie, przypominające syrenę statku. Szambolanie natychmiast wyjrzeli ze swoich domów, by zbadać źródło hałasu. Kari Mata Hari, mimo lęku przed odkryciem jej kryjówki, zdecydowała się jej nie opuszczać do czasu, aż zamieszanie w osadzie nie ustanie. Szambolanie po krótkim czasie uspokoili się i wznowili swój spoczynek. A nasza bohaterka wraz z nimi.
+
+[[Oby kolejny dzień przybliżył Kari Matę Hari do wolności...->wioskamapa3b]]
+
+
+:: sen4 {"position":"1400,3625","size":"100,100"}
+Nastała noc. Mrok nieustannie spowijający Szambo-La zdawał się być jeszcze ciemniejszy i groźniejszy, niż za dnia. Kari Mata, czując jak jej powieki same zamykają jej sie ze zmęczenia postanowiła wrócić do swojej kryjówki. Przemykając się pomiędzy pojedyńczymi Szambolanami bezpiecznie dotarła do swojej niepewnej oazy. Wiedziała, że poczyniła dziś niezłe postępy. Lecz wciąż brakowało jej sposobu na wydostanie się z tego impasu. 
+
+Gdy układała się do snu, po raz kolejny usłyszała syrenę statku. Dokładnie tę sama, która poruszyła całe społeczeństwo Szambolan. Syrena przez chwilę wyła jak opętana, a potem stawała się coraz bardziej oddalona, i oddalona. W końcu na dobre umilkła.
+
+Mimo bariery psychicznej, która uniemożliwiała jej zasnąć (przecież każdy podczas snu jest bezbronny, zwłaszcza na wrogim terenie!) zmęczenie fizyczne wzięło nad nią górę. Po chwili już spała. 
+
+[[Oby kolejny dzień przybliżył Kari Matę Hari do wolności...->wioskamapa4a]]
+
+
+:: shakegates {"position":"1200,525","size":"100,100"}
+-(text-colour:red)[ Pies być niedobra! Pies zostać cela!]
+
+Mimo, że Kari Mata nie do końca rozumiała, co sie do niej mówi, dało się wyczuć od istoty złość w głosie. Mając już jednak jej uwagę, bohaterka chciała spóbować podjąć próbę porozumienia się z postacią. Z naciskiem na próbę. Wzięła wdech i....
+
+[[(wskazała na siebie) 4?->4tak]]
+[[(wskazała na postać) 4?->4nie]]
+[[9?->9]]
+
+
+
+:: szaman0 {"position":"1525,1600","size":"100,100"}
+(pierwszy paragraf dla szamana jak wybierze go gracz po ucieczce z więzienia po raz 1)
+
+Uwage Kari Maty przykuła od samego poczatku ta wyróżniająca się chatka. Dało się od niej wyczuć swąd większy niż od pozostałych. Czyżby to było to legendarne jądro ciemności, znane z opowieści i legend?
+
+Suczka wiedząc, że ta chata stanowi prawdopodobnie centrum wioski była szczególnie ostrożna, gdy zbliżała się do tego miejsca. Z każda zmianą krzaka, za którym się ukrywała wstrzymywała oddech. Miała wrażenie, że nawet cichy wdech może zdradzić jej pozycję w panującym półmroku. 
+
+Ku jej zdziwieniu, koło chaty nie było ani jednego szambolana. Dodało jej to odwagi do podejścia bliżej. Zajrzała przez jedno z okien chaty do jej środka. W pomieszczeniu znajdował sie wysoki szambolan z misterną ozdoba na głowie wykonaną z roślinności znajdującej się w wiosce. Jego ciało ozdabiała prosta biżuteria wykonana z glinki. Kari Mata stwierdziła, że jego zachowanie też było wyróżniające się na tle innych szambolan. Dziwny układ taneczny, który wykonywał wokół świec ułożonych w okrąg przyprawiał bohaterke o gęsią skórkę. Było w nim jednocześnie coś, co przypominało rytuał religijny czy obrządek pogański. Przez to skojarzenie Kari Mata postanowiła nadać mu w myślach ksywke "szaman". 
+
+
+:: szaman1a {"position":"1200,1975","size":"100,100"}
+W chacie Szamana Kari Mata zauważyła samego jej właściciela odprawiającego swoje codzienne rytuały. Skupienie z jakim wykonywał swoje religijne obowiązki było godne podziwu. Kari Mata stwierdziła, że nawet stado przebiegających słoni nie mogłoby go rozproszyć.
+
+Dziś szaman gościł u siebie kilku młodych szambolan. Suczka spostrzegła, że wszyscy z nich byli pogrążeni w dziwnej medytacji. Na zmiane recytowali słowa, które przypominały mantrę. 
+
+- (text-colour:red)[Bogini być dobra. Bogini zostać wioska] - zadeklamował szaman.
+- (text-colour:red)[Bogini być dobra! Bogini zostać wioska! ]- powtórzyły z werwą za szamanem pozostali Szambolanie
+
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc1a]] 
+
+
+:: szaman1b [lore] {"position":"1725,1950","size":"100,100"}
+
+
+
+:: szaman2a (bogini) {"position":"1175,2575","size":"100,100"}
+W chacie Szamana Kari Mata zauważyła samego jej właściciela odprawiającego swoje codzienne rytuały. Skupienie z jakim wykonywał swoje religijne obowiązki było godne podziwu. Kari Mata stwierdziła, że nawet stado przebiegających słoni nie mogłoby go rozproszyć.
+
+Po dłuższej chwili medytacji Kari Mata zauważyła, jak kapłan wstaje i podchodzi do prostego ołtarzyka. Na nim znajdowały sie świece, które dawały słabe oświetlenie na obrazek znajdujący się między nimi. Obraz ten wydawał się Kari Macie pewnego rodzaju ikoną religijną. Mogła dostrzec na nim sylwetkę suczki w bojowej pozie ubranej w piękne szaty. W jednej ze swoich 8 rąk dzierżyła włócznie. Groźne spojrzenie jakie posyłała ta wojowniczka z obrazu wydawało sie Kari Macie bardziej powodem do odwracania wzroku od tego obrazu. Mimo to, szaman już od dłuższej chwili głeboko się nad nim skłaniaj powtarzając jak mantrę:
+
+(text-colour:red)[- Pies być bogini. Pies być bogini. Pies być bogini.]
+
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]] 
+
+
+
+
+:: szaman2b [lore] {"position":"1725,2600","size":"100,100"}
+
+
+
+:: szaman3a {"position":"1225,3325","size":"100,100"}
+Ciekawa tego, co mogło tak wystarszyć szambolan trudniących sie rybactwem, Kari Mata zakradła się do chaty szamana. Zeknęła przez okno chaty do jej środka. 
+Ujrzała dwójkę Szambolanów rozmawiających z wyraźnym poddenerwowaniem z szamanem. 
+
+-(text-colour:red)[ Ja iść rzeka. Ja brać ryba. Rzeka być ryba. Ryba być metal! ]- wyrzucił z siebie jeden z nich w stronę szamana, a drugi z nich potakiwał gorliwie, zapewniając o prawdziwości tych słów
+
+Szaman milczał przez chwilę a nastepnie przemówił:
+
+- (text-colour:red)[Rzeka być niedobra. Ty iść jutro. Jutro być dobra. Rzeka być dobra]
+
+Szambolanie łowiący ryby skłonili się i opuścili chatę szamana. Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc3a]] 
+
+(TEN DIALOG POJAWIA SIĘ TYLKO RANO TEGO DNIA!)
+
+
+:: szaman3aa {"position":"1350,3325","size":"100,100"}
+W chacie Szamana Kari Mata zauważyła samego jej właściciela odprawiającego swoje codzienne wieczorne modlitwy. Skupienie z jakim wykonywał swoje religijne obowiązki było godne podziwu. Kari Mata stwierdziła, że nawet stado przebiegających słoni nie mogłoby go rozproszyć.
+
+
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc3a]]
+
+
+
+(TEN DIALOG TYLKO JAK PÓJDZIEMY DO SZAMANA WIECZOREM TEGO DNIA)
+
+
+:: szaman3b [lore] {"position":"1750,3325","size":"100,100"}
+
+
+
+:: szambopass {"position":"775,1400","size":"100,100"}
+Nie chcąc ryzykować wykrycia i ponownego wsadzenia do więzienia Kari Mata ukryła sie za najbliższymi krzakami, jakie zauważyła. Miała nadzieję, że to wystarczy, by pozostać niewidoczną.
+
+Suczka poczekała cierpliwie na nadejście właścicieli głosów, które przed chwila słyszała. Pomiędzy liściami w krzakach była dogodna luka służąca bohaterce za obserwacje otoczenia.  Kari Mata postanowiła jej użyć niczym lornetki.
+
+Wtem dostrzegła zza krzaków właścicieli dziwnego narzecza. Jej oczom ukazały się istoty, które Kari Mata Hari znała tylko z baśni i legend. Myślała początkowo, że śni.
+Stworzenia charakteryzowały się dużym, masywnym cielskiem pokrytym łuskami. Na łuskach tych nawarstwiała się obrzydliwa breja w odcieniach ciemnego brązu. Ta maź wręcz ociekała z nich, gdy się przemieszczały. Jedyna rzecz, która odznaczała się na ciemnym tle ich sylwetek był ich jasny pysk. Głęboko osadzone ciemne oczy i wydłużony nos, przypominajacy małą trąbę nadawał im groteskowego wyglądu. Stwory przybliżyły się do krzaków i Mata Hari prawie zwymiotowała. Ciężko było wytrzymać zapach jednej takiej istoty, ale dwie koło siebie? Tego było niemal już za wiele!
+
+Kobiecie ciężko było w to uwierzyć, ale miała już pewność, że ma do czynienia z Szambolanami z Szambo-La - istotami znanymi z mieszkania w całkowitej ciemności i wydzielającej cuchnąca woń. Kto by pomyślał, że w opowiastkach mających na celu postraszyć niegrzeczne szczeniaki kryje się odrobina prawdy... 
+
+Szczęśliwie dla niej, Szambolanie byli zbyt zajęci rozmową i ciagnięciem wozu, z którego wystawały smacznie wyglądające ryby. Spokojnie minęli suczkę i udali się w kierunku znanym tylko im.
+
+[[Kari Mata po oddaleniu się Szambolan postanowiła chwilę odpocząć, by zebrać siły. Następnie rozejrzała się po okolicy->wioskamapa1a]] 
+
+[[Kari Mata postanowiła sprawdzić, skąd przyszli Szambolanie.->Rzeka 0]] /OPCJA POJAWIA SIĘ PRZY 2 RUNIE
+
+
+:: talk {"position":"925,525","size":"100,100"}
+Suczka podeszła do krat i wytężyła swój zmysł wzroku. Dostrzegła w niewielkim oddaleniu krępy zarys sylwetki, który chyba na czymś się opierał albo siedział. Prawdopodobnie to ta dziwna postać była źródłem obcego dla niej języka, który przed chwilą słyszała.
+
+Kari Mata postanowiła...
+
+[[...potrząsnąć kratami, by hałas doszedł do uszu istoty..->shakegates]]
+[[...spróbować przechyrzyć istotę->escapemap]]
+[[...zrobić coś innego->StartPlot]] 
+
+
+:: targ0 {"position":"1400,1600","size":"100,100"}
+(pierwszy paragraf dla targu jak wybierze go gracz po ucieczce z więzienia po raz 1)
+
+Pójście tam, gdzie udali sie szambolanie-rybacy zaprowadziło Kari Mate Hari na mały, lecz gwarny szambolański targ. Ukryta między krzakami bohaterka wyteżyła wzrok panujący w półmroku wioski, by dostrzec coś, co mogło by jej się przydać by przetrwać w obozie nieprzyjaciela.
+
+Różne stoiska można było zaobserwować na tym bazarze. Z jedzeniem, biżuterią, środkami do pielegnacji.... Co prawda higienę osobista pewnie mieszkańczy Szambo-La rozumieli inaczej niż reszta świata. Z opowieści Kari Mata pamiętała, że Szambolanie nieznosili czystości i im ktoś był brudniejszy, tym cieszył się wiekszym prestiżem. Nie zdziwiło jej wobec tego fakt, że przy tym stoisku śmierdziało najbardziej...
+
+Z kolei stoisko z jedzeniem zawierało różnego rodzaju małe żyjatka, którymi prawdopodobnie Szambolanie sie żywili. Uwagę suczki przykuł fakt, że duża część z nich była już zgnita. Mimo to, właśnie do tych najbardziej zgniłych potraw ustawiały się największe kolejki kupujących mieszkańców Szambo-La.
+
+Za to wyroby biżuteryjne nie różniły się za bardzo od tych, co znała Kari Mata ze swojego świata. Były to proste branzolety i naszyjniki wykonane z glinki ułożone niedbale na jednym ze stoisk. 
+
+
+
+
+:: targ1a [2-run] {"position":"1000,1975","size":"100,100"}
+Burczący żołądek Kari Mati stawał się coraz głośniejszy. Bohaterka wiedziała, że musi jak najszybciej zaspokoić swoja potrzebę głodu, by jej fizjologiczne odgłosy nie przyciagnęły przypadkiem na nią uwagi. 
+
+Dostrzegła, że na tyłach straganu świeże ryby były niechlujnie układane na stosach. Stosów tych ryb było kilka. Każdy z nich cechował się innym poziomem zepsucia. 
+
+Kari Mata Hari postanowiła zakraść się ostrożnie do tego, gdzie ryby były najświeższe. Odczekała chwilę. Szambolanie-rybacy, dokładnie ci sami, których spotkała po wydostaniu sie z celi, odłożyli wszystkie świeże ryby z koszów, które znajdowały się na pchanym wcześniej przez nich wozie. Następnie udali się do stosu tych bardziej zgniłych i zaczęli je układać na swoim straganie.
+
+Upewniając się, że jest bezpiecznie, Kari Mata szybko wzięła pierwszą z brzegu rybę i powróciła do ukrycia. Natychmiast ją spałaszowała. Głód został chwilowo zaspokojony.
+
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]] 
+
+
+
+
+
+
+:: targ1b [lore] {"position":"1525,1950","size":"100,100"}
+
+
+
+:: targ2a (wioska) {"position":"1000,2600","size":"100,100"}
+Kari Mata Hari poszła ponownie na mały, lecz gwarny szambolański targ. Ukryta między krzakami bohaterka wyteżyła wzrok panujący w półmroku wioski, by dostrzec coś, co mogło by jej się przydać by przetrwać w obozie nieprzyjaciela.
+
+Biegnący szambolan dość pokaźnej postury biegał od straganu do straganu wyraźnie zaaferowany. Stworzenie pytało o coś swoich pobratymców:
+
+-(text-colour:red)[ Pies być wioska? Pies być wioska? ]- każdemu ze sprzedawców zadawał to samo pytanie pokazując świstek papieru. Na słowie (text-colour:red)[wioska,] starał się pokazać swoimi łapami teren znajdujący się dookoła niego. Niestety, Kari Mata była zbyt daleko, by zobaczyć, co się znajduje na kawałku papieru. Jednak suczka rozpoznała w pytającym szambolana, który pilnował ją, gdy była w celi. Domyśliła się, że być może jej szuka.
+
+Zawsze na pytanie zadawane przez strażnika inni Szambolanie odpowiadali przecząco kręcąc głową na boki. Kari Mata lekko odetchnęła z ulgą. Ukrywanie się musiało jej wychodzić całkiem dobrze. 
+
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc2a]] 
+
+
+
+:: targ2bRANO [2-run] {"position":"1525,2325","size":"100,100"}
+Kari Mata Hari poszła ponownie na mały, lecz gwarny szambolański targ. Ukryta między krzakami bohaterka wyteżyła wzrok panujący w półmroku wioski, by dostrzec coś, co mogło by jej się przydać by przetrwać w obozie nieprzyjaciela.
+
+Bohaterka zaobserwowała za straganem rybaków puste kosze po rybach. Upewniając się, że nikogo nie ma w ich pobliżu przyjrzała im sie z bliska. Kosze były na tyle duże i głebokie, że suczka spokojnie mogła się w nich zmieścić, gdyby tylko mogła.
+
+Biorąc pod uwage wszystkie zebrane informacje do tej pory, Mata Hari postanowiła...
+
+[[...schować się w koszu.->dead3]]
+[[...pójść po kolejną świeżą rybę ze wczorajszego stosu i udać się na odpoczynek.->mapanoc2b]]
+
+
+:: targ3a\  {"position":"1000,3325","size":"100,100"}
+Kari Mata Hari poszła ponownie na mały, lecz gwarny szambolański targ. Ukryta między krzakami bohaterka wyteżyła wzrok panujący w półmroku wioski, by dostrzec coś, co mogło by jej się przydać by przetrwać w obozie nieprzyjaciela.
+
+Dziś na straganie było nader spokojnie. Kari Mata Hari nie odnotowała niczego przydatnego podczas tej wizyty.
+
+Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejscu w ukryciu a [[następnie wróci do swojej "bazy", by odpocząć->mapanoc3a]] 
+
+
+:: targ3b (ryba) [tresc] {"position":"1575,3325","size":"100,100"}
+
+
+
+:: taste {"position":"775,725","size":"100,100"}
+Suczka westchnęła. Była dość głodna, ale nie wiedziała, co ma przed sobą do jedzenia. A jeśli to coś zatrutego?
+
+Kari Mata Hari...
+
+[[...postanowiła zaryzykować i skosztować ''lokalnego specifyku''->taste0]]
+[[...nie ryzykować potencjalnym otruciem i zrobić coś innego->StartPlot]] 
+
+
+
+:: taste0 {"position":"600,800","size":"100,100"}
+Bohaterka ujęła w dłonie miske i wzięła na swoją łapkę odrobinę maziowatej brei. Nadal pachniała ładniej niż reszta rzeczy w jej otoczeniu. Wzięła głeboki wdech, zamknęła oczy i polizała. 
+
+- Okropne! (text-colour:red)[Niedobra!] - wykrzyknęła odruchowo po spróbowaniu tej dziwnej potrawy. To było najgorsza rzecz, jaką kiedykolwiek próbowała. A może wrażenia potęgował ten wstrętny zapach? 
+
+Naraz ktoś podszedł do jej celi:
+
+- (text-colour:red)[Jedzienie być niedobra? Hahaha!] -  Dziwny, krępy zarys sylwetki pojawił się w jej zasiegu wzroku. Gdy spojrzała na osobę po drugiej stronie jej celi. Postać mówiąc ostatnie słowo, wskazała na leżankę, zaśmiała się i odwróciła się do niej plecami. 
+
+Mając nadal w rękach swoją wątpliwej jakości strawę, Mata Hari...
+
+[[...zaczęła jeść ja dalej. Była okropnie głodna i potrzebowała sił na dalsze obmyślanie planu ucieczki->tastedeath]]
+[[...spróbowała nawiązać konwersację z istota->tastetalk]]
+[[...odłożyła to wstrętne danie i zrobić coś innego->StartPlot]] 
+
+
+
+
+:: tastedeath {"position":"750,950","size":"100,100"}
+Z wielkim trudem Kari Mata Hari połykała kolejne kęsy najgorszego dania jakie kiedykolwiek w życiu jadła. Niestety, z każdym kolejny kęsem zaczęła czuć się coraz dziwniej. Gdy zaczęło jej sie kręcić w głowie przestała jeść i odłożyła miskę. Po chwili świat zawirował, a jej powieki zaczęły się robić ciężkie. 
+
+-(text-colour:red)[ Pies? Pies!! Pies być niedobra! Pies być niedobra!] - zaczął ktoś przed jej celą krzyczeć w tym niezrozumiałym przez nią języku. Choć nie zdawała sobie z tego sprawy, były to ostatnie słowa, jakie usłyszała w swoim pieskim życiu.
+
+
+KONIEC 
+
+[[Kliknij tutaj, by zacząć przygodę od nowa->StartPlot]] 
+
+
+:: tastetalk {"position":"875,950","size":"100,100"}
+-(text-colour:red)[ Jedzienie być niedobra]? - powtórzyła po postaci Kari Mata starając się imitować ten dziwny akcent
+
+- (text-colour:red)[Jedzenie]... - odparła postać wskazując na miskę bohaterki. Następnie wypowiedziała (text-colour:red)[niedobra], wydając z siebie taki dźwięk, jak wydaje niedorosłe młode, któremu nie smakuje dana potrawa po czym jeszcze raz się zaśmiała i powróciła do podpierania ściany.
+
+Kari Mata Hari stwierdziła, że nie jest już specjalnie głodna i [[postanowiła zrobić coś innego->StartPlot]] 
+
+
+:: trueend [tresc] {"position":"1350,2850","size":"100,100"}
+
+
+
+:: wioskamapa1a {"position":"1000,1600","size":"100,100"}
+Przez narastający głód nie było jej dane długo odpocząć. Jeśli miała mieć siły na znalezienie stąd wyjścia musiała poszukać tu czegoś jadalnego. Pozostał też oczywiście nader wszystko problem znalezienia drogi ucieczki. Kari Mata zakładała, że nie będzie to szczenięco proste. Dlatego musiała zebrać informacje, rozeznać się w terenie i spróbować jakoś zrozumieć ten dziwny język. Przynajmniej w części jej się to już udało. Suczka wiedziała jednak, że to dopiero początek jej zmagań z tym dziwnym światem, który znany był jej tylko z mitów i legend.
+
+Kobieta rozejrzała się zza zarośli. Mogła dostrzec kilka strategicznych punktów w okolicy wartych zbadania. Na pierwszy plan wysunęła jej się chatka, która wyróżniała sie spośród innych, które ją otaczały. Była większa, bardziej skąpana w brązowym mule i posiadała więcej okien niż pozostałe. Kari Mata zauważyła również placyk, gdzie chatki były ułożone na kształt okręgu. Na środku placu była przestrzeń przeznaczona na palenisko. 
+Istniała jeszcze jedna możliwość - suczka mogła sie udać tam, gdzie poszli Szambolanie, którzy ją minęli. Kari Mata postanowiła...
+
+
+[[...zajrzeć przez okno chatki większej od pozostałych.->szaman1a]]
+[[...zakraść się do zbiorowiska małych chatek.->mieszka1a (metal)]]
+[[...pójść tam, gdzie poszli Szambolanie z rybami.->targ1a]]
+
+
+:: wioskamapa1b {"position":"1725,1600","size":"100,100"}
+Przez narastający głód nie było jej dane długo odpocząć. Jeśli miała mieć siły na znalezienie stąd wyjścia musiała poszukać tu czegoś jadalnego. Pozostał też oczywiście nader wszystko problem znalezienia drogi ucieczki. Kari Mata zakładała, że nie będzie to szczenięco proste. Dlatego musiała zebrać informacje, rozeznać się w terenie i spróbować jakoś zrozumieć ten dziwny język. Przynajmniej w części jej się to już udało. Suczka wiedziała jednak, że to dopiero początek jej zmagań z tym dziwnym światem, który znany był jej tylko z mitów i legend.
+
+Kobieta rozejrzała się zza zarośli. Mogła dostrzec kilka strategicznych punktów w okolicy wartych zbadania. Na pierwszy plan wysunęła jej się chatka, która wyróżniała sie spośród innych, które ją otaczały. Była większa, bardziej skąpana w brązowym mule i posiadała więcej okien niż pozostałe. Kari Mata zauważyła również placyk, gdzie chatki były ułożone na kształt okręgu. Na środku placu była przestrzeń przeznaczona na palenisko. 
+Istniała jeszcze jedna możliwość - suczka mogła sie udać tam, gdzie poszli Szambolanie, którzy ją minęli. Kari Mata postanowiła...
+
+
+[[...zajrzeć przez okno chatki większej od pozostałych.->szaman1b]]
+[[...zakraść się do zbiorowiska małych chatek.->mieszka1b]]
+[[...pójść tam, gdzie poszli Szambolanie z rybami.->targ1b]]
+[[...sprawdzić raz jeszcze bramę do wioski->Rzeka dzien]] //WYBÓR POJAWIA SIĘ TYLKO JAK KARI odwiedzi RZEKA 0
+
+
+:: wioskamapa2a {"position":"1000,2325","size":"100,100"}
+Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozglądnęła się uważnie po swoim otoczeniu. Bohaterka zdecydowała... 
+
+[[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman2a (bogini)]]
+[[...zakraść się do zbiorowiska małych chatek/ przejść się w okolice mieszkań Szambolan.->mieszka2a (rzeka)]]
+[[...pójść tam, skąd wyszli szambolanie przez nią spotkani/iść na szambolański targ.->targ2a (wioska)]]
+
+(w zależności od tego, czy KMH widziała daną kolacje dzień wcześniej tak ja nazywa, nazwy po ukośniku to te, co powinny być używane, jak udaje się do nich po raz kolejny)
+
+
+:: wioskamapa2b {"position":"1725,2325","size":"100,100"}
+Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozglądnęła się uważnie po swoim otoczeniu. Bohaterka zdecydowała... 
+
+[[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman2b]]
+[[...zakraść się do zbiorowiska małych chatek/ przejść się w okolice mieszkań Szambolan.->mieszka2b]]
+[[...pójść tam, skąd wyszli szambolanie przez nią spotkani/iść na szambolański targ.->targ2bRANO]]
+[[...sprawdzić raz jeszcze bramę do wioski->Rzeka dzien]] //WYBÓR POJAWIA SIĘ TYLKO JAK KARI odwiedzi RZEKA 0
+
+(w zależności od tego, czy KMH widziała daną kolacje dzień wcześniej tak ja nazywa, nazwy po ukośniku to te, co powinny być używane, jak udaje się do nich po raz kolejny)
+
+
+:: wioskamapa3a {"position":"1000,3000","size":"100,100"}
+Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozglądnęła się uważnie po swoim otoczeniu. 
+
+Wtem w oddali rozległo się głośne buczenie, przypominające syrenę statku. Szambolanie natychmiast wyjrzeli ze swoich domów, by zbadać źródło hałasu. Kari Mata Hari, mimo lęku przed odkryciem jej kryjówki, zdecydowała się jej nie opuszczać do czasu, aż zamieszanie w osadzie nie ustanie. Po dłuższej chwili dostrzegła, jak pewni Szambolanie z wrzaskiem wbiegają do chatki szamana. 
+
+Bohaterka zdecydowała... 
+
+[[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman3a]]
+[[...zakraść się do zbiorowiska małych chatek/ przejść się w okolice mieszkań Szambolan.->mieszka3a]]
+[[...pójść tam, skąd wyszli szambolanie przez nią spotkani po ucieczce z więzienia/iść na szambolański targ.->targ3a ]]
+
+(w zależności od tego, czy KMH widziała daną kolacje dzień wcześniej tak ja nazywa, nazwy po ukośniku to te, co powinny być używane, jak udaje się do nich po raz kolejny)
+
+
+
+
+:: wioskamapa3b {"position":"1725,2950","size":"100,100"}
+Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozglądnęła się uważnie po swoim otoczeniu. 
+
+
+Bohaterka zdecydowała... 
+
+[[...zajrzeć przez okno chatki większej od pozostałych/udać się dochatki szamana.->szaman3b]]
+[[...zakraść się do zbiorowiska małych chatek/ przejść się w okolice mieszkań Szambolan.->mieszka3b]]
+[[...pójść tam, skąd wyszli szambolanie przez nią spotkani po ucieczce z więzienia/iść na szambolański targ.->targ3b (ryba)]]
+[[...sprawdzić raz jeszcze bramę do wioski->Rzeka 3]] //WYBÓR POJAWIA SIĘ TYLKO JAK KARI odwiedzi RZEKA 0
+
+(w zależności od tego, czy KMH widziała daną kolacje dzień wcześniej tak ja nazywa, nazwy po ukośniku to te, co powinny być używane, jak udaje się do nich po raz kolejny)
+
+
+:: wioskamapa4a {"position":"1400,3875","size":"100,100"}
+Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozglądnęła się uważnie po swoim otoczeniu. 
+
+Suczka czuła się naprawdę źle. Brak regularnego dostępu do pokarmu, środków czystości i innych rzeczy, które mogły zaspokoić jej podstawowe potrzeby fizjologiczne dziś dał jej bardzo we znaki. Mimo wszystko z wielkim trudem postanowiła nie poddawać się i zrobić kolejny krok w stronę wolności. Postanowiła...
+
+
+[[...zajrzeć ponownie do chatki szamana.->end1]]
+[[...podsłuchać mieszkańców Szambo-La->end1]]
+[[...pójść na szambolański targ->end1]]
+
+
+:: Credits {"position":"150,275","size":"100,100"}
+Gra przygotowana w ramach (link-repeat: "Growego Dżemu Przygód Reksia 2026")[(open-url: "https://itch.io/jam/prgj-2026-growy-dem-przygd-reksia")] przez zespół w składzie: (link-repeat: "''Valiola''")[(open-url: "https://valiola.itch.io/")] i (link-repeat: "''Dove''")[(open-url: "https://dove6.itch.io/")].
+<hr>
+
+The ''Save System and Settings'' template was created by (link-repeat: "manonamora ⎘")[(open-url:"https://manonamora.itch.io/")] on Twine 2 with Harlowe (v3.3.9).
+<hr>
+''It was made possible thanks to:''
+* Chris Klimas, creator of (link-repeat: "Twine ⎘")[(open-url:"https://twinery.org/")]
+* Leon Arnott, creator and maintainer of the (link-repeat: "Harlowe ⎘")[(open-url:"https://twine2.neocities.org/")] format
+* Greyelf's answers on the old Twine Forums, the Discord, and Reddit
+* (link-repeat: "Kajot-dev's Harlowe Save-To-File Macros ⎘")[(open-url: "https://github.com/Kajot-dev/Twine-Harlowe-Save-To_File")]
+<hr>
+''Twine Resources:''
+* Download (link-repeat: "Twine ⎘")[(open-url:"https://twinery.org/")]
+* Check the (link-repeat: "Harlowe manual ⎘")[(open-url:"https://twine2.neocities.org/")]
+* Check the (link-repeat: "Harlowe source code ⎘")[(open-url:"https://foss.heptapod.net/games/harlowe")]
+* Check the (link-repeat: "Twine Resource Masterlist ⎘")[(open-url:"https://intfiction.org/t/twine-resource-masterlist-wiki/65903")]
+* Community Help: (link-repeat: "IntFiction Forum ⎘")[(open-url:"https://intfiction.org/c/authoring/twine")], (link-repeat: "Reddit r/twinegames ⎘")[(open-url:"https://www.reddit.com/r/twinegames/")], (link-repeat: "Discord ⎘")[(open-url:"https://discordapp.com/invite/n5dJvPp")]
+<h5>You can find my other Twine templates and guides (link-repeat: "here ⎘")[(open-url:"https://itch.io/c/2917452/")]
+
+
+:: Footer-Menu [footer] {"position":"25,275","size":"100,100"}
+{(append: ?SideBar)
+    [<tw-footer>{
+      (if: (passage:)'s name is not "Start")[{=
+          (if: (passage:)'s name is not "Słownik")[[[SŁOWNIK->Słownik]] — ]
+          (link-repeat: "RESET GRY")[(restart: )] — 
+      ]
+      (link-repeat: "USTAWIENIA")[
+        <script>$(".popup").removeClass("open");$("#popup-settings").addClass("open");</script>
+      ] — 
+      (link-repeat: "AUTORZY")[
+        <script>$(".popup").removeClass("open");$("#popup-credits").addClass("open");</script>
+      ]
+    }</tw-footer>]
+{
+<div id="popup-settings" class="popup">
+  <div id="popup-titlebar">
+    <h2 id="popup-title">USTAWIENIA</h2>
+    <span id="popup-close">
+      (link-repeat: "&times;")[
+        <script>$("#popup-settings").removeClass("open");</script>
+      ]
+    </span>
+	</div>
+	<div id="popup-body">
+		(display: "SETTINGSSYSTEM")<!-- [[SETTINGSSYSTEM]] -->
+	</div>
+</div>
+<div id="popup-credits" class="popup">
+  <div id="popup-titlebar">
+  	<h2 id="popup-title">AUTORZY</h2>
+    <span id="popup-close">
+      (link-repeat: "&times;")[
+        <script>$("#popup-credits").removeClass("open");</script>
+      ]
+    </span>
+	</div>
+	<div id="popup-body">
+		(display: "Credits")<!-- [[Credits]] -->
+	</div>
+</div>
+}
+<!-- You can obviously change the popups for actual passages, but I personally like this vibe best for myself ~ -->}
+
+
+:: Header [header] {"position":"25,150","size":"100,100"}
+{
+  <!-- Code to send the player back to a story passage -->
+  (if: not ((passage:)'s tags contains "no-return"))[
+	  (set: $lastpassage to (passage:)'s name)
+  ]
+  <!--The title Header-->
+  (prepend:?SideBar)[{=
+      <tw-header>
+          (if: (passage:)'s name is "Start")[FUJFUJBLE!]
+          (else-if: (passage:)'s name is "Słownik")[SŁOWNIK]
+          (else: )[DZIEŃ $numerDnia ($poraDnia)]
+      </tw-header>
+  ]
+  <!--The Settings Autoloader-->
+  (if: $chosenTheme is "Dark Theme")[
+    <script>settingThemeChange(1)</script>
+  ](else:)[
+    <script>settingThemeChange(0)</script>
+  ]
+  (if: $chosenFront is "Serif")[
+    <script>settingFontFamily(2)</script>
+  ](elseif: $chosenFront is "Sans-Serif")[
+    <script>settingFontFamily(1)</script>
+  ](else:)[
+    <script>settingFontFamily(0)</script>
+  ]
+  <script>settingFontSize($fontSize);</script>
+}
+
+
+:: Intro {"position":"600,300","size":"100,100"}
+Tutaj zaczyna się opowieść...
+
+- ($wypiszRubyNr: 1) ($wypiszRubyNr: 2) ($wypiszRubyNr: 3)? - spytał ambasador Państwa Szambolańskiego.
+Co mu odpowiesz?
+
+[[- ($wypiszRubyNr: 1) ($wypiszRubyNr: 2) ($wypiszRubyNr: 3)->Saves]]
+[[- Ptaki latają kluczem.->Settings]]
+(link-repeat: "- Takiemu to dobrze.")[<script>$("#popup-credits").addClass("open");</script>]
+Nic, zamiast tego zwracam uwagę na wyrytą na pobliskiej ścianie [[kopię zapasową Forum->Ściana]].
+
+
+:: Okładka DARK [startup] {"position":"100,800","size":"100,100"}
+{=
+(set: $obrazekOkladkaDark to [{=
+<img width="100%" src="https://i.imgur.com/8wlDaQT.png" />
+])
+
+
+:: Okładka LIGHT [startup] {"position":"200,800","size":"100,100"}
+{=
+(set: $obrazekOkladkaLight to [{=
+<img width="100%" src="https://i.imgur.com/0cwGc2h.png" />
+])
+
+
+:: SETTINGSSYSTEM {"position":"150,150","size":"100,100"}
+{
+  <!-- You don't need a table, but I just wanted to build one.-->
+  <table id="settings">
+    <tr>
+      <th>Motyw:</th>
+      <td>
+        (dropdown: 2bind $chosenTheme, "jasny", "ciemny")
+        <span class="mini-buttons">
+          (link-repeat: "✔")[
+            (if: $chosenTheme is "ciemny")[
+              <script>settingThemeChange(1)</script>
+            ](else:)[
+              <script>settingThemeChange(0)</script>
+            ]
+          ]
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <th>Rozmiar tekstu:</th>
+      <td><span class="mini-buttons">
+        (link-repeat: "−")[(set: $fontSize to it - 0.1)<script>settingFontSize($fontSize);</script>] / 
+        (link-repeat: "+")[(set: $fontSize to it + 0.1)<script>settingFontSize($fontSize);</script>]
+      </span></td>
+    </tr>
+  </table>
+  <!--Essentially, if you want to add more, just add a row and fill it up.-->
+}
+
+
+:: Saves {"position":"500,500","size":"100,100"}
+(align:'=><=')[<h2>The Save Systems</h2>]
+Here are different examples to what can be done with Saves.
+Do note that:
+* Harlowe saves automatically a current playthrough with each new passage.
+* Unless exported (see last option), playthroughs are saved in the browser's cache.
+* So, a returning player will pick up where they left off, even if a Save System is not implemented.
+** Reloading (F5) the page does not change anything.
+* However, clearing the cache will delete this progress.
+** But this is true to all non-exported saves.
+
+Because the different examples are pretty long, I've broken it down into multiple passages:
+* Basic Save System: One Save/Load
+* Multi-Slots Save/Load System
+* External Saves (Export/Import)
+* Further Customisations
+<hr>
+* [[Return to Main Menu|Intro]]
+
+
+:: Settings {"position":"700,500","size":"100,100"}
+(align:'=><=')[<h2>The Settings</h2>]
+Because Harlowe does not have Built-In Settings APIs, if you would like to include Accessibility settings for your players, just as Theme changes, Font customisation and other, you will often need to build it from scratch... with some JavaScript/jQuery.
+
+There is still a caveat with Settings related to the StyleSheet, in that they won't stick during a page refresh/game re-load due to the way Harlowe is built and restricts communication between the JavaScript and Story passages. There are ways of going around this issue, through saving Setting choices in a variable and:
+* "(link-repeat:"hacking Harlowe ⎘")[(open-url:"https://twinelab.net/harlowe-macro-api/#/")]" with Chapel's custom code, allowing the use of Harlowe variable in the JavaScript
+* load all the settings with each passage transition, in a header/footer-tagged passage ((link-repeat:"manual ⎘")[(open-url:"https://twinery.org/reference/en/editing-stories/tagging.html")])
+
+Because of this, there are //as many// ways of doing it as there are people coding.
+However, this template includes one example for different options, broken down into neat small chapters:
+* Theme Change (Dark/Light or more)
+* Text Customisation and Fonts
+* Save Settings
+* Volume Controls
+* Other Toggle Settings
+* Automatic Settings Load
+<hr>
+* [[Return to Main Menu|Intro]]
+
+
+:: Start [no-return] {"position":"600,100","size":"100,100"}
+(click-goto: ?content, "Intro")\
+|content>[{=
+(align: "=><=")[[[>> Rozpocznij grę <<->Intro]]]
+($jesliCiemnyMotyw: $obrazekOkladkaDark, $obrazekOkladkaLight)
+(align: "=><=")[[[>> Rozpocznij grę <<->Intro]]]
+]
+
+
+:: Słownik {"position":"150,400","size":"100,100"}
+(link-goto: "Powrót", (history: )'s last)
+(link-repeat: "Wyczyść słownik")[($wyczyscTlumaczenia: )(rerun: ?pola)]
+
+|pola>[{=
+<table id="dictionary-table">
+<thead>
+<tr><th>Szambolański</th><th>Uniwersalny</th></tr>
+</thead>
+<tbody>
+<tr><td>($wypiszSzambolanskiNr: 1)</td><td>($edytujTlumaczenieNr: 1)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 2)</td><td>($edytujTlumaczenieNr: 2)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 3)</td><td>($edytujTlumaczenieNr: 3)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 4)</td><td>($edytujTlumaczenieNr: 4)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 5)</td><td>($edytujTlumaczenieNr: 5)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 6)</td><td>($edytujTlumaczenieNr: 6)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 7)</td><td>($edytujTlumaczenieNr: 7)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 8)</td><td>($edytujTlumaczenieNr: 8)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 9)</td><td>($edytujTlumaczenieNr: 9)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 10)</td><td>($edytujTlumaczenieNr: 10)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 11)</td><td>($edytujTlumaczenieNr: 11)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 12)</td><td>($edytujTlumaczenieNr: 12)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 13)</td><td>($edytujTlumaczenieNr: 13)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 14)</td><td>($edytujTlumaczenieNr: 14)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 15)</td><td>($edytujTlumaczenieNr: 15)</td></tr>
+<tr><td>($wypiszSzambolanskiNr: 16)</td><td>($edytujTlumaczenieNr: 16)</td></tr>
+</tbody>
+</table>
+]
+
+
+:: Variable startup [startup] {"position":"25,25","size":"100,100"}
+{ <!--This is limited to what the template needs.-->
+    (set: $namePC to "Jane Doe")
+    (set: $lastpassage to "Start")
+
+  <!-- Dane nagłówka -->
+    (set: const-type $numerDniaStart to 1)
+    (set: const-type $poraDniaStart to "wieczór")
+    (set: num-type $numerDnia to $numerDniaStart)
+    (set: (p-either: "rano", "południe", "wieczór", "noc")-type $poraDnia to $poraDniaStart)
+    
+  <!-- Inkrementacja czasu -->
+    (set: $zmienDzien to (macro: [
+        (set: $numerDnia to it + 1)
+        (set: $poraDnia to "rano")
+        (out: )[]
+    ]))
+
+  <!-- Dane słownika -->
+    (set: const-type $slowa to (a:
+        (a: "spanie", "fujfuj1"),
+        (a: "jedzenie", "fujfuj2"),
+        (a: "niedobre", "fujfuj3"),
+        (a: "pies", "fujfuj4"),
+        (a: "być", "fujfuj5"),
+        (a: "bogini", "fujfuj6"),
+        (a: "slowo7", "fujfuj7"),
+        (a: "slowo8", "fujfuj8"),
+        (a: "slowo9", "fujfuj9"),
+        (a: "slowo10", "fujfuj10"),
+        (a: "slowo11", "fujfuj11"),
+        (a: "slowo12", "fujfuj12"),
+        (a: "slowo13", "fujfuj13"),
+        (a: "slowo14", "fujfuj14"),
+        (a: "slowo15", "fujfuj15"),
+        (a: "slowo16", "fujfuj16"),
+    ))
+    (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
+    (set: const-type $slownik to (dm:
+        $slowa's 1st's 1st, 1,
+        $slowa's 2nd's 1st, 2,
+        $slowa's 3rd's 1st, 3,
+        $slowa's 4th's 1st, 4,
+        $slowa's 5th's 1st, 5,
+        $slowa's 6th's 1st, 6,
+        $slowa's 7th's 1st, 7,
+        $slowa's 8th's 1st, 8,
+        $slowa's 9th's 1st, 9,
+        $slowa's 10th's 1st, 10,
+        $slowa's 11th's 1st, 11,
+        $slowa's 12th's 1st, 12,
+        $slowa's 13th's 1st, 13,
+        $slowa's 14th's 1st, 14,
+        $slowa's 15th's 1st, 15,
+        $slowa's 16th's 1st, 16,
+    ))
+
+  <!-- Makra pomocnicze do wypisywania i modyfikacji słów. -->
+    (set: $wypiszSzambolanski to (macro: str-type _slowo, [
+        (set: _doWypisania to $slowa's (_slowo of $slownik)'s 2nd)
+        (out: )[_doWypisania]
+    ]))
+    (set: $wypiszTlumaczenie to (macro: str-type _slowo, [
+        (set: _doWypisania to $tlumaczeniaGracza's (_slowo of $slownik))
+        (out: )[_doWypisania]
+    ]))
+    (set: $zaktualizujTlumaczenie to (macro: str-type _slowo, str-type _znaczenie, [
+        (set: $tlumaczeniaGracza's (_slowo of $slownik) to _znaczenie)
+        (out: )[]
+    ]))
+    (set: $wypiszSzambolanskiNr to (macro: num-type _nrSlowa, [
+        (set: _doWypisania to $slowa's _nrSlowa's 2nd)
+        (out: )[_doWypisania]
+    ]))
+    (set: $wypiszTlumaczenieNr to (macro: num-type _nrSlowa, [
+        (set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)
+        (out: )[_doWypisania]
+    ]))
+    (set: $zaktualizujTlumaczenieNr to (macro: num-type _nrSlowa, str-type _znaczenie, [
+        (set: $tlumaczeniaGracza's _nrSlowa to _znaczenie)
+        (out: )[]
+    ]))
+    (set: $edytujTlumaczenieNr to (macro: num-type _nrSlowa, [
+        (out: )[{=
+          <div class="translation-editor">
+            (input: 2bind _doWypisania, "X", $tlumaczeniaGracza's _nrSlowa)
+            (link-repeat: "💾")[{=
+                (set: $tlumaczeniaGracza's _nrSlowa to _doWypisania)
+                (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
+            ]
+            (link-repeat: "🔄")[(set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)]
+            (link-repeat: "🚫")[{=
+                (set: $tlumaczeniaGracza's _nrSlowa to "")
+                (set: _doWypisania to "")
+                (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
+            ]
+          </div>
+        ]
+    ]))
+    (set: $wypiszPrzelaczaneNr to (macro: num-type _nrSlowa, [
+        (set: bool-type _czyTlumaczyc to false)
+        (set: _doWypisaniaSzambolanskie to $slowa's _nrSlowa's 2nd)
+        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's _nrSlowa)
+        (if: _doWypisaniaTlumaczenie is an empty)[
+            (out: )[_doWypisaniaSzambolanskie]
+        ]
+        (else: )[
+            (out: )[{=
+                |slowo>[(cond: _czyTlumaczyc, _doWypisaniaTlumaczenie, _doWypisaniaSzambolanskie)]
+                (click-rerun:?slowo)[(set: _czyTlumaczyc to not it)(rerun:?slowo)]
+            ]
+        ]
+    ]))
+    (set: $wyczyscTlumaczenia to (macro: [
+        (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
+        (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
+        (out: )[]
+    ]))
+    (set: $wypiszRubyNr to (macro: num-type _nrSlowa, [
+        (set: _doWypisaniaSzambolanskie to $slowa's _nrSlowa's 2nd)
+        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's _nrSlowa)
+        (out: )[<ruby>
+            _doWypisaniaSzambolanskie
+            <rp>(</rp><rt>_doWypisaniaTlumaczenie</rt><rp>)</rp>
+        </ruby>]
+    ]))
+    (set: $wypiszRuby to (macro: str-type _slowo, [
+        (set: _doWypisaniaSzambolanskie to $slowa's (_slowo of $slownik)'s 2nd)
+        (set: _doWypisaniaTlumaczenie to $tlumaczeniaGracza's $tlumaczeniaGracza's (_slowo of $slownik))
+        (out: )[{=
+          <ruby>
+            _doWypisaniaSzambolanskie
+              <rp>(</rp><rt>_doWypisaniaTlumaczenie</rt><rp>)</rp>
+          </ruby>]
+    ]))
+    (set: $czyZapisanoTlumaczenia to (macro: [
+        (out-data: (has-data: "tlumaczenieGracza"))
+    ]))
+    (set: $wczytajTlumaczenia to (macro: [
+        (set: $tlumaczeniaGracza to (load-data: "tlumaczenieGracza"))
+        (out: )[]
+    ]))
+ 
+  <!-- Sprawdzenie, czy nie ma powtórzeń w słowach po szambolańsku. -->
+    (set: _slownikSprawdzenie to (macro: [
+        (set: _ileJestRoznychSzambolanskich to (unique: ...(altered: _slowo via _slowo's 2nd, ...$slowa))'s length)
+        (set: _ileJestRoznychSlow to $slowa's length)
+        (if: _ileJestRoznychSzambolanskich < _ileJestRoznychSlow)[(error: "Więcej niż jedno słowo tłumaczy się na to samo po szambolańsku!")]
+        (out: )[]
+    ]))
+    (_slownikSprawdzenie: )
+
+  <!-- For Settings Autoload -->
+    (set: $chosenTheme to "Bright Theme")
+    (set: $chosenFront to "Sans-Serif")
+    (set: $fontSize to 1.5)
+    (set: $setNamingSaves to "Autoname")
+  <!-- For the Saves Name -->
+    (set: $chapter to "Chapter 1")
+    (set: $savesName to $chapter + " - " + $namePC)
+
+  <!-- Rzeczy zależne od motywu -->
+    (set: $jesliCiemnyMotyw to (macro: any-type _jesliCiemny, any-type _jesliJasny, [(out: )[{=
+      <div class="theme-limited" data-theme="dark">
+        _jesliCiemny
+      </div>
+      <div class="theme-limited" data-theme="light sepia">
+        _jesliJasny
+      </div>
+    ]]))
+}
+
+
+:: Ściana {"position":"800,300","size":"100,100"}
+{=
+(if: ($czyZapisanoTlumaczenia: ))[
+($wczytajTlumaczenia: )
+Przesuwasz palcami po ścianie i czujesz nagły przypływ wiedzy.
+]
+(else: )[
+Przyjrzawszy się dokładniej, stwierdzasz, że jednak nic tu nie ma.
+]
+
+Możesz już [[wrócić->Intro]].
+
+
+:: StoryScript [script]
+// TABLE OF CONTENT
+  // I  - SETTINGS
+  // II - IMPORT/EXPORT CUSTOM CODE
+
+//---SETTINGS---
+  // Theme
+  window.settingThemeChange = function(mode) {
+    $('body').removeClass('dark-theme sepia-theme light-theme');
+    switch (mode) {
+      case 2:
+        $('body').addClass("sepia-theme");
+        break;
+      case 1:
+        $('body').addClass("dark-theme");
+        break;
+      default:
+        $('body').addClass("light-theme");
+        break;
+    }
+  };
+    // Font Family
+  window.settingFontFamily = function(mode) {
+    $('body').removeClass('serif sansserif monospace');
+    switch (mode) {
+      case 2:
+        $('body').addClass("serif");
+        break;
+      case 1:
+        $('body').addClass("sansserif");
+        break;
+      default:
+        $('body').addClass("monospace");
+        break;
+    }
+  };
+    // Font Size
+  window.settingFontSize = function(mode) {
+    $('tw-story').css( "fontSize", mode + "em" );
+  };
+  
+  //---IMPORT/EXPORT CUSTOM CODE---
+    // Harlowe Save to File Custom Macro from Kajot-Dev
+    // Modified to only store player translations
+
+  const privateSave = {
+    storeData: (name, value) => {
+      try {
+        const key = privateSave.prepareKey(name);
+        localStorage.setItem(key, JSON.stringify(value));
+        return true;
+      } catch (error) {
+        console.error({ name, error });
+        return false;
+      }
+    },
+    loadData: name => {
+      try {
+        const key = privateSave.prepareKey(name);
+        const stringifiedValue = localStorage.getItem(key);
+        if (stringifiedValue !== null) {
+          return JSON.parse(stringifiedValue);
+        } else {
+          return null;
+        }
+      } catch (error) {
+        console.error({ name, error });
+        return null;
+      }
+    },
+    hasData: name => {
+      try {
+        const key = privateSave.prepareKey(name);
+        return localStorage.getItem(key) !== null;
+      } catch (error) {
+        console.error({ name, error });
+        return false;
+      }
+    },
+    clearData: name => {
+      try {
+        const key = privateSave.prepareKey(name);
+        localStorage.removeItem(key);
+        return true;
+      } catch (error) {
+        console.error({ name, error });
+        return false;
+      }
+    },
+    prepareKey: name => `(Saved Data ${name} from Game ${privateSave.storyUID})`,
+    storyUID: document.querySelector('tw-storydata').getAttribute('ifid'),
+    appPrefix: ["%cSAVE TO FILE:", "font-weight: bold"]
+  };
+  
+  Object.freeze(privateSave);
+  console.info(privateSave.appPrefix[0] + "%c Data save script is ready!", privateSave.appPrefix[1], "color: green;");
+  const Macros = require("macros");
+  const TwineError = require("internaltypes/twineerror");
+  const TwineNotifier = require("internaltypes/twinenotifier");
+  Macros.add("storedata", `Boolean`, function (_, n, v) {
+    n = n.trim();
+    if (n === "") {
+      return TwineError.create("macrocall", "Name must not be an empty string!");
+    }
+    if (Utils.options.debug) {
+      console.log(`(storedata: ${n}, ${JSON.stringify(v)})`);
+    }
+    return privateSave.storeData(n, v);
+  }, [String, Macros.TypeSignature.Any]);
+  Macros.add("loaddata", `Any`, function (_, n) {
+    n = n.trim();
+    if (n === "") {
+      return TwineError.create("macrocall", "Name must not be an empty string!");
+    }
+    if (Utils.options.debug) {
+      console.log(`(loaddata: ${n})`);
+    }
+    return privateSave.loadData(n);
+  }, [String]);
+  Macros.add("hasdata", `Boolean`, function (_, n) {
+    n = n.trim();
+    if (n === "") {
+      return TwineError.create("macrocall", "Name must not be an empty string!");
+    }
+    if (Utils.options.debug) {
+      console.log(`(hasdata: ${n})`);
+    }
+    return privateSave.hasData(n);
+  }, [String]);
+  Macros.add("cleardata", `Boolean`, function (_, n) {
+    n = n.trim();
+    if (n === "") {
+      return TwineError.create("macrocall", "Name must not be an empty string!");
+    }
+    if (Utils.options.debug) {
+      console.log(`(cleardata: ${n})`);
+    }
+    return privateSave.clearData(n);
+  }, [String]);
+
+:: StoryStylesheet [stylesheet]
+/*
+      // TABLE OF CONTENT
+  // I   - BASE FIXES
+  // II  - HEADER/FOOTER
+  // III - POPUPS
+  // IV  - SETTINGS RELATED CODE
+  // V   - MEDIA RESIZE
+*/
+
+  /***** BASE FIXES *****/
+/*
+  These fixes are mainly because I wanted the guide to look a certain way. 
+  You can disregard them in your own project.
+
+  Includes:
+  - fixed header/footer (resize of passage)
+  - moved background to body (avoid blank space during scrolling)
+  - changed the cursor for relevant interactive elements
+*/
+body {
+  background: black;
+  color: white;
+}
+tw-story {
+  background: unset;
+  color: unset;
+}
+tw-sidebar {
+  z-index: 100;
+}
+
+tw-dialog {
+  border-radius: 8px;
+}
+
+select, input[type="checkbox"], label {
+  cursor: pointer;
+}
+
+  /***** HEADER/FOOTER *****/
+/*
+  While colours are set in the settings, I'm just leaving these as a backup/testing purposes.
+  The background is needed, or you'd see the passage text under it. (correct color in the SETTING section)
+*/
+tw-header, tw-footer {
+  display:block;
+  position: fixed;
+  background: black;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+tw-header {
+  top: 0;
+  border-bottom: 1px white dotted;
+  font-size: 2em;
+  padding: 10px;
+}
+tw-footer {
+  bottom:0;
+  border-top: 1px white dotted;
+  font-size: 1.5em;
+  padding: 3px;
+}
+
+  /***** POPUPS *****/
+/*
+  This is the code for the custom popups.
+  Again the black background is for backup loading
+*/
+.popup {
+  width: max-content;
+  height: max-content;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  visibility: hidden;
+  display:none;
+
+  background: black;
+  outline: 1px solid darkred;
+}
+/* 
+  With every custom popup you create, you need to add the new ID below, or it won't open. 
+*/
+#popup-dictionary.open, #popup-save.open, #popup-settings.open, #popup-credits.open, #popup-save1.open {
+  visibility: visible;
+  z-index: 110;
+  display: block;
+}
+#popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+  line-height: 0.5em;
+}
+#popup-close tw-hook {
+  margin-left: 15px;
+}
+#popup-close tw-link {
+  color: darkred;
+}
+#popup-close tw-link:hover {
+  color: white;
+  text-shadow: 0px 0px 20px red;
+}
+
+#popup-title {
+  text-align: center;
+  margin: 0.2em 50px 0.3em;
+  line-height: 0.8em;
+}
+.popup hr {
+  border: none;
+  border-bottom: 2px dotted;
+}
+#popup-body {
+  overflow: auto;
+  padding: 1% 2% 3%;
+  width: 100%;
+  height: max-content;
+  margin: auto;
+  max-height: 75vh;
+  max-width: 600px;
+}
+  /* Popup Specific */
+.fake-button {
+  font-weight: bold;
+  color: grey;
+  cursor: not-allowed;
+}
+imp-exp#saves {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+imp-exp#saves > * {
+  padding: 0 5px;
+}
+
+table#settings td {
+  min-width: 200px;
+  text-align: right;
+}
+
+table#settings th {
+  text-align: right;
+  width: 150px;
+}
+
+#dictionary-table {
+  border-collapse: collapse;
+}
+
+#dictionary-table th, #dictionary-table td {
+  padding-inline: 0.5em
+}
+
+#dictionary-table thead th {
+  border-bottom: 3px double black;
+}
+
+#dictionary-table tbody tr + tr td {
+  border-top: 1px solid black;
+}
+
+#dictionary-table .translation-editor > :first-child {
+  display: inline-block !important;
+  width: unset !important;
+  margin-right: 0.25em;
+}
+
+  /***** SETTINGS *****/
+/*
+  Below is the code for any settings requiring a class.
+*/
+  /* Font Family */
+
+.serif tw-story {
+  font-family: serif;
+}
+.sansserif tw-story {
+  font-family: sans-serif;
+}
+.monospace tw-story {
+  font-family: monospace;
+}
+
+  /* Themes */
+
+body.light-theme {
+  background-color: white;
+  color: black;
+}
+body.dark-theme {
+  background-color: #242424;
+  color: #e8e7e7;
+}
+body.sepia-theme {
+  background-color: #F7F4F1;
+  color: #7b3012;
+}
+
+.light-theme tw-header, .light-theme tw-footer {
+  background: white;
+  border-color: black;
+}
+.dark-theme tw-header, .dark-theme tw-footer {
+  background: #242424;
+  border-color: white;
+}
+.sepia-theme tw-header, .sepia-theme tw-footer {
+  background: #F7F4F1;
+  border-color: black;
+}
+
+.light-theme tw-dialog {
+  background: white;
+  color: black;
+  border-color: black;
+}
+.dark-theme tw-dialog {
+  background: #242424;
+  color: #e8e7e7;
+  border-color: white;
+}
+.sepia-theme tw-dialog {
+  background: #F7F4F1;
+  color: #7b3012;
+  border-color: black;
+}
+
+.light-theme .popup {
+  background: white;
+}
+.dark-theme .popup {
+  background: #242424;
+}
+.sepia-theme .popup {
+  background: #F7F4F1;
+}
+
+.light-theme #popup-close tw-link:hover {
+  color: red;
+}
+.sepia-theme #popup-close tw-link:hover {
+  color: red;
+}
+
+.light-theme tw-story select {
+  background: white;
+}
+.dark-theme tw-story select {
+  background: #222;
+}
+.sepia-theme tw-story select {
+  background: white;
+}
+
+.light-theme tw-link {
+  color: #3559c4;
+}
+.dark-theme tw-link {
+  color: #6487ee;
+}
+.sepia-theme tw-link {
+  color: #3559c4;
+}
+
+.light-theme tw-link:hover {
+  color: darkred;
+}
+.dark-theme tw-link:hover {
+  color: #43d0ff;
+}
+.sepia-theme tw-link:hover {
+  color: #048b00;
+}
+
+.theme-limited {
+   display: contents;
+}
+
+.light-theme .theme-limited:not([data-theme~="light"]) {
+  display: none;
+}
+.dark-theme .theme-limited:not([data-theme~="dark"]) {
+  display: none;
+}
+.sepia-theme .theme-limited:not([data-theme~="sepia"]) {
+  display: none;
+}
+
+  /***** MOBILE *****/
+/*
+  Because I added a header and footer, and it's messing with stuff.
+  And this is the UGLIEST way of doing mobile accessibility.
+    What really should be done is:
+      - reduce the font of the header/footer as you decrease the width
+      - *then* mess around with the padding of tw-story
+    (this would really not be an issue with tw-sidebar wasn't nested inside tw-story, but that's a rant for another template)
+*/
+@media screen and (max-width: 1000px) {
+  tw-story {
+    padding: 9% 20% 5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  tw-story {
+    padding: 16% 5%;
+  }
+  .popup {
+    max-width: 97%;
+  }
+}
+@media screen and (max-width: 375px) {
+  tw-story {
+    padding: 35% 5%;
+  }
+}
+
+  /***** OTHER *****/
+/*
+  Below is the code for any settings requiring a class.
+*/
+/*This code is so I could display the examples*/
+pre {
+  width: fit-content;
+  padding: 0 1em 1em;
+  border-radius: 6px;
+}
+.light-theme pre, .sepia-theme pre {
+  background: lavender;
+}
+.dark-theme pre {
+  background: #333357;
+}
+
+
