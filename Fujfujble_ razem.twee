@@ -54,7 +54,9 @@ Kari Mata....
 
 
 :: Autorzy {"position":"150,275","size":"100,100"}
-Gra przygotowana w ramach (link-repeat: "Growego Dżemu Przygód Reksia 2026")[(open-url: "https://itch.io/jam/prgj-2026-growy-dem-przygd-reksia")] przez zespół w składzie: (link-repeat: "''Valiola''")[(open-url: "https://valiola.itch.io/")] i (link-repeat: "''Dove''")[(open-url: "https://dove6.itch.io/")].
+Gra przygotowana w ramach (link-repeat: "Growego Dżemu Przygód Reksia 2026")[(open-url: "https://itch.io/jam/prgj-2026-growy-dem-przygd-reksia")] przez zespół w składzie: (link-repeat: "''Valiola''")[(open-url: "https://valiola.itch.io/")] i (link-repeat: "''Dove''")[(open-url: "https://dove6.itch.io/")]. Przy korekcie tekstu pomógł Donat98. Grafika tytułowa pochodzi z gry "Reksio i Kapitan Nemo" stworzonej przez AidemMedia.
+
+Zapraszamy na serwer Discord (link-repeat: "Przygody Reksia")[(open-url: "https://discord.gg/9ayeUaZ3Jv")]!
 <hr>
 
 The ''Save System and Settings'' template was created by (link-repeat: "manonamora ⎘")[(open-url:"https://manonamora.itch.io/")] on Twine 2 with Harlowe (v3.3.9).
@@ -243,7 +245,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 
 :: Zmienne [startup] {"position":"25,25","size":"100,100"}
 {
-    (set: const-type $wersjaGry to "0.8.24+2353")
+    (set: const-type $wersjaGry to "0.8.25+0003")
 
   <!-- Dane nagłówka -->
     (set: const-type $numerDniaStart to 1)
@@ -443,27 +445,27 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 
 
 :: dead2 [dead-end 2-run] {"position":"1000,2300","size":"100,100"}
-Niestety, szybkie przemknięcie się koło szambolan nie było dobrym pomysłem. Istoty te cechowały sie nadzwyczajnie dobrym słuchem. Gdy tylko Kari Mata Hari próbowała się przekraść wokół nich, natychmiast zdali sobie sprawę z jej obecności.
+Niestety, przemknięcie obok Szambolan nie było dobrym pomysłem. Istoty te cechowały się nadzwyczajnie dobrym słuchem. Gdy tylko Kari Mata Hari spróbowała wcielić swój plan w życie, natychmiast zdały sobie sprawę z jej obecności.
 
-Suczka z łatwością została obezwładniona, Nie miała szans w starciu z czwórką dorosłych szambolan.  Znalazła się z powrotem w ohydnej, obleśnej celi. 
+Suczka z łatwością została obezwładniona. Nie miała szans w starciu z czwórką dorosłych Szambolan. Znalazła się z powrotem w ohydnej, obleśnej celi. 
 
 Kari Mata Hari aż do końca swoich dni nie miała więcej szans na ucieczkę. Co mogła zrobić lepiej? Czy z tego przeklętego jądra ciemności nie było ucieczki? A może po prostu los nie był jej przychylny? Tego na pewno nie dowie się już w tym wcieleniu.
 
 KONIEC
 
-($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
+($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa.")
 
 
 :: dead3 [dead-end 2-run] {"position":"1700,2300","size":"100,100"}
-Kari Mata po wejściu do kosza nagle poczuła, że ktoś ją podnosi. Po dłuższej chwili, została gwałtownie wyrzucona z kosza. Spełniła się jej największa obawa. Dwójka szambolan patrzyła na nia z góry swoimi małymi, czarnymi oczami.
+Kari Mata po wejściu do kosza nagle poczuła, że ktoś ją podnosi. Po dłuższej chwili została gwałtownie wyrzucona z kosza. Spełniła się jej największa obawa. Zobaczyła nad sobą dwójkę Szambolan. Z ich ryjków dobiegało złowrogie warczenie.
 
-Suczka z łatwością została obezwładniona, Nie miała szans w starciu z dwójką dorosłych szambolan.  Znalazła się z powrotem w ohydnej, obleśnej celi. 
+Suczka z łatwością została obezwładniona. Nie miała szans w starciu z dwójką dorosłych Szambolan. Znalazła się z powrotem w ohydnej, obleśnej celi. 
 
 Kari Mata Hari aż do końca swoich dni nie miała więcej szans na ucieczkę. Co mogła zrobić lepiej? Czy z tego przeklętego jądra ciemności nie było ucieczki? A może po prostu los nie był jej przychylny? Tego na pewno nie dowie się już w tym wcieleniu.
 
 KONIEC
 
-($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
+($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa.")
 
 
 :: deadend1 [dead-end] {"position":"1350,900","size":"100,100"}
@@ -474,30 +476,30 @@ Istota następnie otworzyła celę suczki i zamachnęła się, by wymierzyć cio
 
 KONIEC
 
-($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
+($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa.")
 
 
 :: end1 [dead-end] {"position":"2275,2775","size":"100,100"}
-Z minuty na minutę idąc w wyznaczonym kierunku chód Kari Maty stawał się coraz wolniejszy. Oddech stawał się coraz cięższy a ciało odmawiało posłuszeństwa. 
-W końcu ciało bohaterki podddało się i upadło bezwiednie na ziemię. Kilka dni funkcjonowania w ciagłym stresie przed wykryciem, bez regularnego dostępu do pożywienia znacząco osłabiło organizm suczki. 
+Kari Mata szła w wyznaczonym kierunku. Z minuty na minutę jej chód stawał się coraz wolniejszy. Oddech robił się coraz cięższy, a ciało odmawiało posłuszeństwa. 
+W końcu dało za wygraną i upadło bezwiednie na ziemię. Kilka dni funkcjonowania w ciągłym stresie przed wykryciem, bez regularnego dostępu do pożywienia, znacząco osłabiło organizm suczki. 
 
 Mata Hari nie wiedziała, ile czasu leżała tak bezsilnie na ziemi. Każda chwila spędzona na mokrym, brudnym bajorze wydawała jej się wiecznością. 
 
-Naraz poczuła, że ktoś ją podnosi. Usłyszała ostatkiem sił znajomy obcy język z wieloma bulgoczącymi dźwiękami po czym straciła przytomność. 
+Naraz poczuła, że ktoś ją podnosi. Usłyszała ostatkiem sił znajomy obcy język z wieloma bulgoczącymi dźwiękami, po czym straciła przytomność. 
 
-Gdy sie ocknęła, stanęła twarzą w twarz z liczną gromada Szambolan wpatrujących się w nia jak w obrazek. Próbowała się ruszyć. Nie mogła. Jej ręce i nogi były przywiązane do pala wbitego w ziemię. 
+Gdy sie ocknęła, stała twarzą w twarz z liczną gromada Szambolan wpatrujących się w nią jak w obrazek. Próbowała się ruszyć. Nie mogła. Jej ręce i nogi były przywiązane do pala wbitego w ziemię. 
 
 Naraz zobaczyła blask. Ktoś rozpalił pochodnię. Jednocześnie tłum Szambolan zaczął recytować:
 
-- ($wypiszRuby: "bogini") ($wypiszRuby: "być") ($wypiszRuby: "dobre"). ($wypiszRuby: "bogini") ($wypiszRuby: "zostać") ($wypiszRuby: "wioska"). ($wypiszRuby: "bogini") ($wypiszRuby: "być") ($wypiszRuby: "dobre"). ($wypiszRuby: "bogini") ($wypiszRuby: "zostać") ($wypiszRuby: "wioska").
+"($wypiszRuby: "bogini") ($wypiszRuby: "być") ($wypiszRuby: "dobre"). ($wypiszRuby: "bogini") ($wypiszRuby: "zostać") ($wypiszRuby: "wioska"). ($wypiszRuby: "bogini") ($wypiszRuby: "być") ($wypiszRuby: "dobre"). ($wypiszRuby: "bogini") ($wypiszRuby: "zostać") ($wypiszRuby: "wioska")"
 
-Przerażona Kari Mata zamknęła oczy, przygotowując sie na najgorsze. 
+Przerażona Kari Mata zamknęła oczy, przygotowując się na najgorsze. 
 
 Co mogła zrobić lepiej? Czy z tego przeklętego jądra ciemności nie było ucieczki? A może po prostu los nie był jej przychylny? Tego na pewno nie dowie się już w tym wcieleniu.
 
 KONIEC
 
-($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
+($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa.")
 
 
 :: escapemap {"position":"1100,700","size":"100,100"}
@@ -510,35 +512,35 @@ Podobno mowa jest srebrem, a milczenie złotem, lecz w tym wypadku bohaterka stw
 
 
 :: firstszambo {"position":"975,1250","size":"100,100"}
-Kari Mata wyjrzała na powierzchnię. Na szczęście krajobraz wokół niej już nie przypominał słynnego obrazu "Kair Nocą". Na zewnątrz panował półmrok, w którym względnie łatwo było kobiecie rozeznać się. Znajdowała się w pewnego rodzaju wiosce ukrytej w liściach gęstej dżungli. Z żalem stwierdziła, że wszędobylski smród nadal sie utrzymywał i był jeszcze gorszy niż w więzieniu, z którego się wydostała. 
+Kari Mata wyjrzała na zewnątrz. Wokół panował półmrok, w którym dziewczynie było nieco łatwiej rozeznać się niż w ciemnej celi. Ze wstępnych obserwacji wynikało, że znajdowała się w pewnego rodzaju wiosce ukrytej w liściach gęstej dżungli. Z żalem stwierdziła, że wszędobylski smród nadal się utrzymywał i był jeszcze gorszy niż w więzieniu, z którego się wydostała. 
 
-Nim zdążyła obmyśleć swój kolejny ruch, naraz usłyszała znajomy obcy język. W przypływie adrenaliny suczka postanowiła...
+Nim zdążyła obmyślić swój kolejny ruch, naraz usłyszała znajomy obcy język. W przypływie adrenaliny suczka postanowiła...
 
 [[....rozejrzeć się za kryjówką i poczekać, aż ją miną.->szambopass]]
 [[...szybko pobiec w kierunku przeciwnym od tego, z którego dobiegają głosy.->firstszambodeath]]
 
 
 :: firstszambodeath [dead-end] {"position":"1200,1350","size":"100,100"}
-Nie było czasu do stracenia. Ktoś sie zbliżał i na pewno nie miał wobec bohaterki dobrych zamiarów. Trzeba było szybko uciekać.
+Nie było czasu do stracenia. Ktoś się zbliżał i na pewno nie miał wobec bohaterki dobrych zamiarów. Trzeba było szybko uciekać.
 
-W panicznym biegu Kari Mata nastąpiła na coś, co wydało dość głośny dźwięk. Przystanęła na chwilę zaalarmowana nagłym zrobieniem hałasu po czym wznowiła ucieczkę.
-Niestety, zwróciła na siebie tym niefortunnym momentem uwage istot, od których uciekała. Z łatwością ją dogoniły po czym zabrały z powrotem do ohydnej, obleśnej celi. Kari Mata Hari aż do końca swoich dni nie miała więcej szans na ucieczkę.
+W panicznym biegu Kari Mata nastąpiła na coś, co wydało dość głośny dźwięk. Przystanęła na chwilę zaalarmowana nagłym hałasem, po czym wznowiła ucieczkę.
+Niestety, tym niefortunnym momentem zwróciła na siebie uwagę istot, od których uciekała. Z łatwością ją dogoniły, po czym zabrały z powrotem do ohydnej, obleśnej celi. Kari Mata Hari aż do końca swoich dni nie znalazła kolejnej szansy na ucieczkę z więzienia.
 
 KONIEC
 
-($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
+($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa.")
 
 
 :: hahabeka {"position":"1225,900","size":"100,100"}
 - ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre") - istota potrząsnęła głową i głośno się zaśmiała. Kari Mata Hari stwierdziła, że pewnie musiała powiedzieć coś wyjątkowo głupiego.
 
-[[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz->escapemap]]
+[[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz.->escapemap]]
 
 
 :: hahaneutral {"position":"1100,900","size":"100,100"}
 - ($wypiszRuby: "haha")! ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "więzienie")! - zaśmiała się głośno istota. Coś, co powiedziała nasza bohaterka, musiało ją bardzo mocno rozbawić.
 
-[[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz->escapemap]]
+[[Kari Mata Hari nie poddała się i postanowiła spróbować jeszcze raz.->escapemap]]
 
 
 :: look {"position":"700,500","size":"100,100"}
@@ -790,18 +792,18 @@ Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejsc
 
 
 :: szambopass {"position":"900,1600","size":"100,100"}
-Nie chcąc ryzykować wykrycia i ponownego wsadzenia do więzienia Kari Mata ukryła sie za najbliższymi krzakami, jakie zauważyła. Miała nadzieję, że to wystarczy, by pozostać niewidoczną.
+Nie chcąc ryzykować wykrycia i ponownego wsadzenia do więzienia Kari Mata ukryła się za najbliższymi krzakami, jakie zauważyła. Miała nadzieję, że to wystarczy, by pozostać niewidoczną.
 
-Suczka poczekała cierpliwie na nadejście właścicieli głosów, które przed chwila słyszała. Pomiędzy liściami w krzakach była dogodna luka służąca bohaterce za obserwacje otoczenia.  Kari Mata postanowiła jej użyć niczym lornetki.
+Suczka poczekała cierpliwie na nadejście właścicieli głosów, które przed chwilą słyszała. Pomiędzy liśćmi w krzakach była dogodna luka, służąca bohaterce za punkt obserwacyjny otoczenia.  Kari Mata postanowiła jej użyć niczym lornetki.
 
 Wtem dostrzegła zza krzaków właścicieli dziwnego narzecza. Jej oczom ukazały się istoty, które Kari Mata Hari znała tylko z baśni i legend. Myślała początkowo, że śni.
-Stworzenia charakteryzowały się dużym, masywnym cielskiem pokrytym łuskami. Na łuskach tych nawarstwiała się obrzydliwa breja w odcieniach ciemnego brązu. Ta maź wręcz ociekała z nich, gdy się przemieszczały. Jedyna rzecz, która odznaczała się na ciemnym tle ich sylwetek był ich jasny pysk. Głęboko osadzone ciemne oczy i wydłużony nos, przypominajacy małą trąbę nadawał im groteskowego wyglądu. Stwory przybliżyły się do krzaków i Mata Hari prawie zwymiotowała. Ciężko było wytrzymać zapach jednej takiej istoty, ale dwie koło siebie? Tego było niemal już za wiele!
+Stworzenia charakteryzowały się dużym, masywnym cielskiem pokrytym łuskami. Na łuskach tych nawarstwiała się obrzydliwa breja w odcieniach ciemnego brązu. Ta maź wręcz ociekała z nich, gdy się przemieszczały. Jedyna rzecz, która odznaczała się na ciemnym tle ich sylwetek był ich jasny pysk. Głęboko osadzone ciemne oczy i wydłużony nos, przypominający małą trąbę nadawał im groteskowego wyglądu. Stwory przybliżyły się do krzaków i Mata Hari prawie zwymiotowała. Ciężko było wytrzymać zapach jednej takiej istoty, ale dwie koło siebie? Tego było niemal już za wiele!
 
-Kobiecie ciężko było w to uwierzyć, ale miała już pewność, że ma do czynienia z Szambolanami z Szambo-La - istotami znanymi z mieszkania w całkowitej ciemności i wydzielającej cuchnąca woń. Kto by pomyślał, że w opowiastkach mających na celu postraszyć niegrzeczne szczeniaki kryje się odrobina prawdy... 
+Dziewczynie ciężko było w to uwierzyć, ale miała już pewność, że ma do czynienia z Szambolanami z Szambo-La - istotami znanymi z mieszkania w całkowitej ciemności i wydzielającej cuchnąca woń. Kto by pomyślał, że w opowiastkach mających na celu postraszyć niegrzeczne szczeniaki kryje się odrobina prawdy... 
 
-Szczęśliwie dla niej, Szambolanie byli zbyt zajęci rozmową i ciagnięciem wozu, z którego wystawały smacznie wyglądające ryby. Spokojnie minęli suczkę i udali się w kierunku znanym tylko im.
+Szczęśliwie dla niej, Szambolanie byli zbyt zajęci rozmową i ciągnięciem wozu, z którego wystawały smacznie wyglądające ryby. Spokojnie minęli suczkę i udali się w kierunku znanym tylko im.
 
-[[Kari Mata po oddaleniu się Szambolan postanowiła chwilę odpocząć, by zebrać siły. Następnie rozejrzała się po okolicy->😴]] 
+[[Kari Mata po oddaleniu się Szambolan postanowiła chwilę odpocząć, by zebrać siły. Następnie rozejrzała się po okolicy.->😴]] 
 
 [[Kari Mata postanowiła sprawdzić, skąd przyszli Szambolanie.->rzeka]]
 
@@ -929,15 +931,15 @@ Z wielkim trudem Kari Mata Hari połykała kolejne kęsy najgorszego dania jakie
 
 KONIEC 
 
-($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa")
+($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa.")
 
 
 :: tastetalk {"position":"800,900","size":"100,100"}
-- ($wypiszRuby: "jedzenie") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")? - powtórzyła po postaci Kari Mata starając się imitować ten dziwny akcent
+- ($wypiszRuby: "jedzenie") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")? - powtórzyła po postaci Kari Mata starając się imitować ten dziwny akcent.
 
 - ($wypiszRuby: "jedzenie")... - odparła postać wskazując na miskę bohaterki. Następnie wypowiedziała "($wypiszRuby: "niedobre")", wydając z siebie taki dźwięk, jak wydaje niedorosłe młode, któremu nie smakuje dana potrawa po czym jeszcze raz się zaśmiała i powróciła do podpierania ściany.
 
-Kari Mata Hari stwierdziła, że nie jest już specjalnie głodna i [[postanowiła zrobić coś innego->Intro]]
+Kari Mata Hari stwierdziła, że nie jest już specjalnie głodna i [[postanowiła zrobić coś innego.->Intro]]
 
 
 :: trueend [tresc] {"position":"1900,2300","size":"100,100"}
