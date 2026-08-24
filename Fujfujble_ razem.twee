@@ -25,32 +25,33 @@ Fujfujble! razem
 
 
 :: 4nie {"position":"1400,500","size":"100,100"}
-- ($wypiszRuby: "ja") ($wypiszRuby: "pies")?? - zaśmiała się istota i pokiwała głową na boki po czym wskazała na bohaterke. - ($wypiszRuby: "ty") ($wypiszRuby: "pies")!
+- ($wypiszRuby: "ja") ($wypiszRuby: "pies")??? - zaryczała istota. Po jej prześmiewczym tonie głosu bohaterka domyśliła się że wskazała błędnie. Stwór wystawił łapę w stronę bohaterki i powiedział: ($wypiszRuby: "ty") ($wypiszRuby: "pies")!
 
-Kari Mata posłała nerwowy uśmiech i skinęła głowa mając nadzieję, że podniesienie kącików ust do góry jest uniwersalną oznaką braku złych zamiarów. A przynajmniej powinien tak myśleć jegomość, z którym próbowała się porozumieć.
+Kari Mata posłała nerwowy uśmiech i skinęła głową. Miała nadzieję, że podniesienie kącików ust do góry jest uniwersalną oznaką braku złych zamiarów. A przynajmniej powinien tak myśleć jegomość, z którym próbowała się porozumieć.
 
 Kari Mata....
 
-[[...postanowiła zapytać o coś innego->shakegates]] 
-[[...postanowiła zrobić cos innego->talk]]
+[[...postanowiła zapytać o coś innego.->shakegates]] 
+[[...postanowiła zrobić cos innego.->talk]]
+
 
 
 :: 4tak {"position":"1400,375","size":"100,100"}
-- ($wypiszRuby: "pies")! ($wypiszRuby: "pies")! - zaśmiała się istota i pokiwała głową w góre i w dół. Mata Hari postanowiła założyć, że ten sposób potwierdzenia informacji powinien być uniwersalny w każdej kulturze.
+- ($wypiszRuby: "pies")! ($wypiszRuby: "pies")! - zaśmiała się istota i pokiwała głową w górę i w dół. Mata Hari postanowiła założyć po tonie głosu rozmówcy, że istota potwierdza jej przypuszczenia.
 
 Kari Mata....
 
-[[...postanowiła zapytać o coś innego->shakegates]] 
-[[...postanowiła zrobić cos innego->talk]]
+[[...postanowiła zapytać o coś innego.->shakegates]] 
+[[...postanowiła zrobić cos innego.->talk]]
 
 
 :: 9 {"position":"1300,700","size":"100,100"}
-Istota zaśmiała się i potrząsnęła metalowymi kratami, piskliwym głosem mówiąc przy tym ($wypiszRuby: "cela"). Kari Mata Hari pomyślała, że pewnie z niej sie nabija.
+Istota zaśmiała się i potrząsnęła metalowymi kratami, piskliwym głosem mówiąc przy tym: ($wypiszRuby: "cela"). Kari Mata Hari pomyślała, że pewnie nabija się z niej.
 
 Kari Mata....
 
-[[...postanowiła zapytać o coś innego->shakegates]] 
-[[...postanowiła zrobić cos innego->talk]]
+[[...postanowiła zapytać o coś innego.->shakegates]] 
+[[...postanowiła zrobić cos innego.->talk]]
 
 
 :: Autorzy {"position":"150,275","size":"100,100"}
@@ -250,7 +251,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 
 :: Zmienne [startup] {"position":"25,25","size":"100,100"}
 {
-    (set: const-type $wersjaGry to "0.8.24+1958")
+    (set: const-type $wersjaGry to "0.8.24+2013")
 
   <!-- Dane nagłówka -->
     (set: const-type $numerDniaStart to 1)
