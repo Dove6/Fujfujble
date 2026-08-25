@@ -134,7 +134,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
     [<tw-footer>{
       (if: (passage:)'s name is not "Start")[{=
           (if: (passage:)'s name is not "Słownik")[[[SŁOWNIK->Słownik]] — ]
-          ($rozpocznijNowaGre: "RESET GRY") —  
+          ($rozpocznijNowaGre: "NOWA GRA") —  
       ]
       (link-repeat: "USTAWIENIA")[
         <script>$(".popup").removeClass("open");$("#popup-settings").addClass("open");</script>
@@ -183,7 +183,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 
 :: Słownik {"position":"150,400","size":"100,100"}
 (link-goto: "Powrót", (history: )'s last)
-(link-repeat: "Wyczyść słownik")[($wyczyscTlumaczenia: )(rerun: ?pola)]
+(link-repeat: "Wyczyść słownik (reset zapisu)")[($wyczyscTlumaczenia: )(rerun: ?pola)]
 
 |pola>[{=
 <table id="dictionary-table">
@@ -245,7 +245,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
 
 :: Zmienne [startup] {"position":"25,25","size":"100,100"}
 {
-    (set: const-type $wersjaGry to "0.8.25+0003")
+    (set: const-type $wersjaGry to "0.8.25+1103")
 
   <!-- Dane nagłówka -->
     (set: const-type $numerDniaStart to 1)
@@ -288,6 +288,7 @@ Kari Mata Hari postanowiła nie czekać na ratunek i wziąć sprawy w swoje łap
         (a: "jutro", "fu-tfu"),
         (a: "dobre", "blefuj"),
         (a: "kretyn", "fu-fuj"),
+        (a: "haha", "haha"),
     ))
     (set: const-type $slowaSzambolanskie to (altered: _slowo via _slowo's 2nd, ...$slowa))
     (set: $tlumaczeniaGracza to (altered: _entry via "", ...$slowa))
@@ -814,7 +815,7 @@ Suczka podeszła do krat i wytężyła swój zmysł wzroku. Dostrzegła w niewie
 Kari Mata postanowiła...
 
 [[...potrząsnąć kratami, by hałas doszedł do uszu istoty.->shakegates]]
-[[...spróbować przechyrzyć istotę.->escapemap]]
+[[...spróbować przechytrzyć istotę.->escapemap]]
 [[...zrobić coś innego.->Intro]]
 
 
