@@ -651,7 +651,7 @@ Nasza bohaterka ponownie postanowiła się zapuścić do części wioski zamiesz
 
 ]\
 (if: $numerDnia is 2)[\
-Gdy Kari Mata patrzyła na część wioski zamieszkałą przez zwykłych Szambolan, do jej uszu doszedł pewien odgłos. Mógł pochodzić tylko z warsztatu Szambolana trudniącego się wyrobem rzeczy z metalu. Nie namyślając się długo, suczka postanowiła na palcach podejść do źródła dźwięku.
+Gdy Kari Mata patrzyła na część wioski zamieszkałą przez zwykłych Szambolan, do jej uszu doszedł pewien odgłos. Mógł pochodzić tylko z warsztatu Szambolanina trudniącego się wyrobem rzeczy z metalu. Nie namyślając się długo, suczka postanowiła na palcach podejść do źródła dźwięku.
 
 Po chwili zauważyła krępego Szambolana o mocno pomarszczonym ryjku, ubranego w fartuch. W jednej łapie trzymał ciężki młot, a w drugiej szczypce kowalskie. W szczypcach znajdował się kawał metalu, który był poddawany obróbce. Rytmiczne uderzenia młota sprawiały, że element stopniowo zmieniał swój kształt. Naraz szambolański Kowal przerwał prace, wnikliwie popatrzył na swoją robótkę i krzyknął:
 
@@ -793,7 +793,7 @@ Wyróżniająca się chatka od samego początku przykuwała uwagę Kari Maty. Da
 
 Podejrzewając, że ta chata stanowi prawdopodobnie centrum wioski, suczka zbliżała się do niej ze szczególną ostrożnością. Przemykając od krzaka do krzaka, wstrzymywała oddech. Miała wrażenie, że nawet cichy szmer może zdradzić jej pozycję w panującym półmroku.
 
-Ku zdziwieniu bohaterki, koło chaty nie było ani jednego Szambolana. Dodało jej to odwagi do podejścia bliżej. Zajrzała do środka chaty przez jedno z okien. W pomieszczeniu znajdował się wysoki Szambolan z misterną ozdobą na głowie, wykonaną z roślinności znajdującej się w wiosce. Jego stopy ozdabiała prosta biżuteria z glinki. Nie tylko wygląd, ale również zachowanie istoty Kari Mata uznała za osobliwe. Dziwny układ taneczny, który wykonywał wokół świec ułożonych w okrąg, podnosząc przy tym do góry trzymaną laskę, przyprawiał bohaterkę o gęsią skórkę. Było w nim coś, co przypominało rytuał religijny, a jednocześnie obrządek pogański. Przez to skojarzenie Kari Mata postanowiła nadać mu w myślach ksywkę "szaman".
+Ku zdziwieniu bohaterki, koło chaty nie było ani jednego Szambolanina. Dodało jej to odwagi do podejścia bliżej. Zajrzała do środka chaty przez jedno z okien. W pomieszczeniu znajdował się wysoki Szambolanin z misterną ozdobą na głowie, wykonaną z roślinności znajdującej się w wiosce. Jego stopy ozdabiała prosta biżuteria z glinki. Nie tylko wygląd, ale również zachowanie istoty Kari Mata uznała za osobliwe. Dziwny układ taneczny, który wykonywał wokół świec ułożonych w okrąg, podnosząc przy tym do góry trzymaną laskę, przyprawiał bohaterkę o gęsią skórkę. Było w nim coś, co przypominało rytuał religijny, a jednocześnie obrządek pogański. Przez to skojarzenie Kari Mata postanowiła nadać mu w myślach ksywkę "szaman".
 
 ](else: )[\
 W chacie szamana Kari Mata zauważyła samego jej właściciela odprawiającego swoje codzienne rytuały. Skupienie, z jakim je wykonywał, było godne podziwu. Kari Mata stwierdziła, że nawet stado przebiegających |1>[słoni](click-replace: ?1, (action: "mouseover"))[kretosłoni] nie mogłoby go rozproszyć.
@@ -873,7 +873,7 @@ Bohaterka stwierdziła, że spróbuje zostać jeszcze przez chwilę w tym miejsc
 
 ]]))\
 (if: $liczbaOdwiedzin's ((passage: )'s name) is 0)[\
-Pójście tam, gdzie udali się Szambolanie-rybacy zaprowadziło Kari Matę Hari na mały, lecz gwarny szambolański targ. Ukryta między krzakami bohaterka wytężyła wzrok w półmroku panującym w wiosce, by dostrzec coś, co mogłoby jej się przydać, by przetrwać w obozie nieprzyjaciela.
+Pójście tam, gdzie udali się Szambolanie rybacy zaprowadziło Kari Matę Hari na mały, lecz gwarny szambolański targ. Ukryta między krzakami bohaterka wytężyła wzrok w półmroku panującym w wiosce, by dostrzec coś, co mogłoby jej się przydać, by przetrwać w obozie nieprzyjaciela.
 
 Na bazarze można było zaobserwować rozmaite stoiska: z jedzeniem, z biżuterią, ze środkami do pielęgnacji... Oczywiście w rozumieniu szambolańskim, a więc odmiennym od reszty świata. Kari Mata kojarzyła z opowieści, że Szambolanie nie znosili czystości. Im ktoś był brudniejszy, tym cieszył się większym prestiżem. Nie zdziwił jej wobec tego fakt, że przy stoisku z "kosmetykami" śmierdziało najbardziej...
 
@@ -890,7 +890,7 @@ Burczący żołądek Kari Maty stawał się coraz głośniejszy. Bohaterka wiedz
 
 Dostrzegła, że na tyłach straganu świeże ryby były niechlujnie układane na stosach. Stosów tych ryb było kilka. Każdy z nich cechował się innym poziomem zepsucia. 
 
-Kari Mata Hari postanowiła zakraść się ostrożnie do tego, gdzie ryby były najświeższe. Odczekała chwilę. Szambolanie-rybacy, dokładnie ci sami, których spotkała po wydostaniu się z celi, odłożyli wszystkie świeże ryby z koszów, które znajdowały się na pchanym wcześniej przez nich wozie. Następnie udali się do stosu tych bardziej zgniłych i zaczęli je układać na swoim straganie.
+Kari Mata Hari postanowiła zakraść się ostrożnie do tego, gdzie ryby były najświeższe. Odczekała chwilę. Szambolanie rybacy, dokładnie ci sami, których spotkała po wydostaniu się z celi, odłożyli wszystkie świeże ryby z koszów, które znajdowały się na pchanym wcześniej przez nich wozie. Następnie udali się do stosu tych bardziej zgniłych i zaczęli je układać na swoim straganie.
 
 Upewniając się, że jest bezpiecznie, Kari Mata szybko wzięła pierwszą z brzegu rybę i powróciła do ukrycia. Natychmiast ją spałaszowała. Głód został chwilowo zaspokojony.
 \(set: bool-type $zauwazoneKosze to true)
@@ -900,7 +900,7 @@ Biegnący Szambolanin dość pokaźnej postury biegał od straganu do straganu w
 
 - ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "wioska")? ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "wioska")? - każdemu ze sprzedawców zadawał to samo pytanie.
 
-Na słowie "($wypiszRuby: "wioska")" starał się pokazać swoimi łapami teren znajdujący się dookoła niego. Suczka rozpoznała w pytającym Szambolana, który pilnował ją, gdy była w celi. Domyśliła się, że to właśnie jej szuka.
+Na słowie "($wypiszRuby: "wioska")" starał się pokazać swoimi łapami teren znajdujący się dookoła niego. Suczka rozpoznała w pytającym Szambolanina, który pilnował ją, gdy była w celi. Domyśliła się, że to właśnie jej szuka.
 
 Szambolanie odpowiadali przecząco. Kari Mata lekko odetchnęła z ulgą. Ukrywanie się musiało jej wychodzić całkiem dobrze.
 
@@ -908,7 +908,7 @@ Szambolanie odpowiadali przecząco. Kari Mata lekko odetchnęła z ulgą. Ukrywa
 Bohaterka zaobserwowała za straganem rybaków puste kosze po rybach. Upewniając się, że nikogo nie ma w ich pobliżu przyjrzała im się z bliska. Kosze były na tyle duże i głębokie, że suczka spokojnie mogła się w nich zmieścić, gdyby tylko mogła.
 
 ](else-if: $numerDnia is 3 and $poraDnia is "wieczór" and $zauwazoneKosze)[\
-Bohaterka dostrzegła, jak Szambolanie, którzy zwykle trudnią się rybactwem, wyciągają ryby z koszów. Tym razem jednak koszów było znacznie więcej. Przy takiej ilości żaden Szambolan nie dałby rady unieść ich samodzielnie. Dlatego nie zdziwił suczki fakt, że puste kosze rybacy zaczęli układać na wózki. Wózki te były bardzo prosto skonstruowane. Składały się na nie zwykłe deski większych rozmiarów doczepione do czterech kół. 
+Bohaterka dostrzegła, jak Szambolanie, którzy zwykle trudnią się rybactwem, wyciągają ryby z koszów. Tym razem jednak koszów było znacznie więcej. Przy takiej ilości żaden Szambolanin nie dałby rady unieść ich samodzielnie. Dlatego nie zdziwił suczki fakt, że puste kosze rybacy zaczęli układać na wózki. Wózki te były bardzo prosto skonstruowane. Składały się na nie zwykłe deski większych rozmiarów doczepione do czterech kół. 
 
 Naraz Szambolanie układający kosze usłyszeli, jak prawdopodobnie ktoś ich woła. Kari Mata wywnioskowała to, ponieważ rybacy, słysząc głos innego przedstawiciela swojego gatunku, zostawili wozy i poszli w stronę, skąd głos dobiegał.
 
@@ -996,7 +996,7 @@ Suczka obudziła się w momencie, gdy wózek wjechał na wystający korzeń. Poj
 
 Było już rano. Przed sobą widziała dwójkę Szambolan ciągnących wóz z koszami (i przy okazji nią samą) w kierunku bramy wyjściowej.
 
-Gdy przed nią stanęli, dyskretnie przyjrzała się sytuacji. Miała wrażenie, że kontrola wózka Szambolan-rybaków trwała wieczność.
+Gdy przed nią stanęli, dyskretnie przyjrzała się sytuacji. Miała wrażenie, że kontrola wózka Szambolan rybaków trwała wieczność.
 
 - ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "dobre")! ($wypiszRuby: "ty") ($wypiszRuby: "iść") ($wypiszRuby: "rzeka")! - rzekł strażnik i Szambolanie przejechali ze swoim ładunkiem (i przy okazji z Kari Matą) w stronę rzeki. 
 
