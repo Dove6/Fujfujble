@@ -18,7 +18,8 @@ Fujfujble! razem
     "header": "orange",
     "dead-end": "red",
     "lokacja": "yellow",
-    "hub": "yellow"
+    "hub": "yellow",
+    "true-end": "green"
   },
   "zoom": 0.6
 }
@@ -114,7 +115,7 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
       </tw-header>
   ]
   <!--Ustawienia wyglądu-->
-  (if: $chosenTheme is "Dark Theme")[
+  (if: $chosenTheme is "ciemny")[
     <script>settingThemeChange(1)</script>
   ](else:)[
     <script>settingThemeChange(0)</script>
@@ -133,7 +134,7 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
 :: St00pka [footer] {"position":"25,275","size":"100,100"}
 {(append: ?SideBar)
     [<tw-footer>{
-      (if: (passage:)'s name is not "Start")[{=
+      (if: (passage:)'s name is not "Start" and (history: )'s length > 0)[{=
           (if: (passage:)'s name is not "Słownik")[[[SŁOWNIK->Słownik]] — ]
           ($rozpocznijNowaGre: "NOWA GRA") —  
       ]
@@ -186,8 +187,8 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
 (if: (history: ) is not an empty)[(link-goto: "Powrót", (history: )'s last)]
 (link-repeat: "Wyczyść słownik (TRWALE)")[($wyczyscTlumaczenia: )(rerun: ?pola)]
 
-<small>Ikona 💾 służy do zapisu stanu tłumaczenia danego słowa, 🔄 przywraca jego ostatnio zapisany stan, a 🗑️ usuwa tłumaczenie.
-(text-color: red)[Pamiętaj o zapisaniu słowa przed opuszczeniem strony - nie zostanie to zrobione automatycznie.] </small>
+<small>Ikona $ikonaZapisu służy do zapisu stanu tłumaczenia danego słowa, $ikonaPrzywrocenia przywraca jego ostatnio zapisany stan, a $ikonaUsuniecia usuwa tłumaczenie.
+(text-color: red)[Pamiętaj o zapisaniu słowa przed opuszczeniem strony! Nie zostanie to zrobione automatycznie.] </small>
 
 |pola>[{=
 <table id="dictionary-table">
@@ -228,10 +229,11 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
       <td>
         (dropdown: 2bind $chosenTheme, "jasny", "ciemny")
         <span class="mini-buttons">
-          (link-repeat: "✔")[
-            (if: $chosenTheme is "ciemny")[
+          (link-repeat: "✔")[{=
+            ($zapiszMotyw: $chosenTheme)
+            (if: $chosenTheme is "ciemny")[{=
               <script>settingThemeChange(1)</script>
-            ](else:)[
+            ](else:)[{=
               <script>settingThemeChange(0)</script>
             ]
           ]
@@ -241,8 +243,16 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
     <tr>
       <th>Rozmiar tekstu:</th>
       <td><span class="mini-buttons">
-        (link-repeat: "−")[(set: $fontSize to it - 0.1)<script>settingFontSize($fontSize);</script>] / 
-        (link-repeat: "+")[(set: $fontSize to it + 0.1)<script>settingFontSize($fontSize);</script>]
+        (link-repeat: "−")[{=
+            (set: $fontSize to it - 0.1)
+            ($zapiszRozmiarTekstu: $fontSize)
+            <script>settingFontSize($fontSize);</script>
+        ] / 
+        (link-repeat: "+")[{=
+            (set: $fontSize to it + 0.1)
+            ($zapiszRozmiarTekstu: $fontSize)
+            <script>settingFontSize($fontSize);</script>
+        ]
       </span></td>
     </tr>
   </table>
@@ -255,6 +265,9 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
     (set: const-type $wersjaGry to "0.8.27+0014")
 
   <!-- Dane nagłówka -->
+    (set: const-type $domyslnyMotyw to "jasny")
+    (set: const-type $domyslnyRozmiarTekstu to 1.5)
+
     (set: const-type $numerDniaStart to 1)
     (set: const-type $poraDniaStart to "noc")
     (set: num-type $numerDnia to $numerDniaStart)
@@ -315,16 +328,19 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
         (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
         (out: )[]
     ]))
+    (set: $ikonaZapisu to "💾")
+    (set: $ikonaPrzywrocenia to "🔄")
+    (set: $ikonaUsuniecia to "🗑️")
     (set: $edytujTlumaczenieNr to (macro: num-type _nrSlowa, [
         (out: )[{=
           <div class="translation-editor">
             (input: 2bind _doWypisania, "X", $tlumaczeniaGracza's _nrSlowa)
-            (link-repeat: "💾")[{=
+            (link-repeat: $ikonaZapisu)[{=
                 (set: $tlumaczeniaGracza's _nrSlowa to _doWypisania)
                 (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
             ]
-            (link-repeat: "🔄")[(set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)]
-            (link-repeat: "🗑️")[{=
+            (link-repeat: $ikonaPrzywrocenia)[(set: _doWypisania to $tlumaczeniaGracza's _nrSlowa)]
+            (link-repeat: $ikonaUsuniecia)[{=
                 (set: $tlumaczeniaGracza's _nrSlowa to "")
                 (set: _doWypisania to "")
                 (store-data: "tlumaczenieGracza", $tlumaczeniaGracza)
@@ -395,10 +411,26 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
 
   <!-- For Settings Autoload -->
     (set: $lastpassage to "Start")
-    (set: $chosenTheme to "Bright Theme")
     (set: $chosenFront to "Sans-Serif")
-    (set: $fontSize to 1.5)
     (set: $setNamingSaves to "Autoname")
+
+    (set: $zapiszMotyw to (macro: str-type _motyw, [
+        (store-data: "chosenTheme", _motyw)
+        (out: )[]
+    ]))
+    (set: $zapiszRozmiarTekstu to (macro: num-type _rozmiarTekstu, [
+        (store-data: "fontSize", _rozmiarTekstu)
+        (out: )[]
+    ]))
+
+    (if: not (has-data: "chosenTheme"))[
+        ($zapiszMotyw: $domyslnyMotyw)
+    ]
+    (if: not (has-data: "fontSize"))[
+        ($zapiszRozmiarTekstu: $domyslnyRozmiarTekstu)
+    ]
+    (set: $chosenTheme to (load-data: "chosenTheme"))
+    (set: $fontSize to (load-data: "fontSize"))
 
   <!-- Rzeczy zależne od motywu -->
     (set: $jesliCiemnyMotyw to (macro: any-type _jesliCiemny, any-type _jesliJasny, [(out: )[{=
@@ -418,6 +450,13 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
     ])
     
   <!-- Koniec gry i zapis -->
+    (set: $stylZakonczenia to (text-style: "bold")+(text-size: 1.5)+(align: "=><="))
+    (set: $dobreZakonczenie to (macro: [
+        (out: )+$stylZakonczenia+(text-color: green)[DOBRE ZAKOŃCZENIE]
+    ]))
+    (set: $zleZakonczenie to (macro: [
+        (out: )+$stylZakonczenia+(text-color: red)[ZŁE ZAKOŃCZENIE]
+    ]))
     (set: $rozpocznijNowaGre to (macro: str-type _tekstPrzycisku, [
         (out: )[(link: _tekstPrzycisku)[
             (store-data: "wyczyscZapis", true)
@@ -460,9 +499,7 @@ Suczka z łatwością została obezwładniona. Nie miała szans w starciu z czw�
 
 Kari Mata Hari aż do końca swoich dni nie miała więcej szans na ucieczkę. Co mogła zrobić lepiej? Czy z tego przeklętego jądra ciemności nie było ucieczki? A może po prostu los nie był jej przychylny? Tego na pewno nie dowie się już w tym wcieleniu.
 
-KONIEC
-
-($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa.")
+($zleZakonczenie: )
 
 
 :: dead3 [dead-end 2-run] {"position":"1700,2300","size":"100,100"}
@@ -472,9 +509,7 @@ Suczka z łatwością została obezwładniona. Nie miała szans w starciu z dwó
 
 Kari Mata Hari aż do końca swoich dni nie miała więcej szans na ucieczkę. Co mogła zrobić lepiej? Czy z tego przeklętego jądra ciemności nie było ucieczki? A może po prostu los nie był jej przychylny? Tego na pewno nie dowie się już w tym wcieleniu.
 
-KONIEC
-
-($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa.")
+($zleZakonczenie: )
 
 
 :: deadend1 [dead-end] {"position":"1350,900","size":"100,100"}
@@ -483,9 +518,7 @@ KONIEC
 
 Istota następnie otworzyła celę suczki i zamachnęła się, by wymierzyć cios. Mata Hari nie zdążyła niestety zrobić uniku. Gwałtowne uderzenie sprawiło, że Kari osunęła się na ziemię i straciła przytomność. Niestety, miała jej już nigdy nie odzyskać.
 
-KONIEC
-
-($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa.")
+($zleZakonczenie: )
 
 
 :: end1 [dead-end] {"position":"2275,2775","size":"100,100"}
@@ -506,9 +539,7 @@ Przerażona Kari Mata zamknęła oczy, przygotowując się na najgorsze.
 
 Co mogła zrobić lepiej? Czy z tego przeklętego jądra ciemności nie było ucieczki? A może po prostu los nie był jej przychylny? Tego na pewno nie dowie się już w tym wcieleniu.
 
-KONIEC
-
-($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa.")
+($zleZakonczenie: )
 
 
 :: escapemap {"position":"1100,700","size":"100,100"}
@@ -536,9 +567,7 @@ Nie było czasu do stracenia. Ktoś się zbliżał i na pewno nie miał wobec bo
 W panicznym biegu Kari Mata nastąpiła na coś, co wydało dość głośny dźwięk. Przystanęła na chwilę zaalarmowana nagłym hałasem, po czym wznowiła ucieczkę.
 Niestety, tym niefortunnym momentem zwróciła na siebie uwagę istot, od których uciekała. Z łatwością ją dogoniły, po czym zabrały z powrotem do ohydnej, obleśnej celi. Kari Mata Hari aż do końca swoich dni nie znalazła kolejnej szansy na ucieczkę z więzienia.
 
-KONIEC
-
-($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa.")
+($zleZakonczenie: )
 
 
 :: hahabeka {"position":"1225,900","size":"100,100"}
@@ -944,9 +973,7 @@ Z wielkim trudem Kari Mata Hari połykała kolejne kęsy najgorszego dania, jaki
 
 - ($wypiszRuby: "pies")?! ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")! - zaczął ktoś przed jej celą krzyczeć w tym niezrozumiałym przez nią języku. Choć nie zdawała sobie z tego sprawy, były to ostatnie słowa, jakie usłyszała w swoim pieskim życiu.
 
-KONIEC 
-
-($rozpocznijNowaGre: "Kliknij tutaj, by zacząć przygodę od nowa.")
+($zleZakonczenie: )
 
 
 :: tastetalk {"position":"800,900","size":"100,100"}
@@ -999,7 +1026,7 @@ Był to statek, ale nie byle jaki. Łódź przypominająca kształtem rybę był
 [[Kari Mata Hari postanowiła podejść bliżej statku…->trueendkoniec]]
 
 
-:: trueendkoniec {"position":"1900,2700","size":"100,100"}
+:: trueendkoniec [true-end] {"position":"1900,2700","size":"100,100"}
 Podchodząc bliżej statku, Kari Mata dostrzegła, jak ktoś z niego wychodzi.
 
 Był to postawny kogut, ubrany w niebieski marynarski mundur. Na głowie miał kapitańską czapkę z wygrawerowaną na broszce literką "N".
@@ -1013,7 +1040,7 @@ Kari Mata Hari zastygła w bezruchu. Mimo że rozumiała, co mówi do niej kogut
 
 - Nieważne dokąd, byle jak najdalej od tego śmierdzącego miejsca - odparła Kari Mata Hari, wdrapując się na statek z pomocą koguta.
 
-DOBRE ZAKOŃCZENIE
+($dobreZakonczenie: )
 
 
 :: wioskamapa [hub] {"position":"1200,1700","size":"100,100"}
