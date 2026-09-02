@@ -264,7 +264,7 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
 
 :: Zmienne [startup] {"position":"25,25","size":"100,100"}
 {
-    (set: const-type $wersjaGry to "0.8.27+0014")
+    (set: const-type $wersjaGry to "1.0.3+2609021804")
 
   <!-- Dane nagłówka -->
     (set: const-type $domyslnyMotyw to "jasny")
