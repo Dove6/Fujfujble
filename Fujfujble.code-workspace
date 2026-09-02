@@ -5,7 +5,8 @@
 		}
 	],
 	"settings": {
-		"twee3LanguageTools.storyformat.current": "harlowe-3"
+		"twee3LanguageTools.storyformat.current": "harlowe-3",
+		"twee3LanguageTools.passage.list": true
 	},
 	"extensions": {
 		"recommendations": [

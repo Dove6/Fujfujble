@@ -445,10 +445,10 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
     ]]))
     
     (set: $obrazekOkladkaDark to [{=
-      <img width="100%" src="https://i.imgur.com/8wlDaQT.png" />
+      <img width="100%" src="./intro_dark.png" />
     ])
     (set: $obrazekOkladkaLight to [{=
-      <img width="100%" src="https://i.imgur.com/0cwGc2h.png" />
+      <img width="100%" src="./intro_light.png" />
     ])
     
   <!-- Koniec gry i zapis -->
