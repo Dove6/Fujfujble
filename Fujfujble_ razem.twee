@@ -653,7 +653,7 @@ Nasza bohaterka ponownie postanowiła się zapuścić do części wioski zamiesz
 (if: $numerDnia is 2)[\
 Gdy Kari Mata patrzyła na część wioski zamieszkałą przez zwykłych Szambolan, do jej uszu doszedł pewien odgłos. Mógł pochodzić tylko z warsztatu Szambolana trudniącego się wyrobem rzeczy z metalu. Nie namyślając się długo, suczka postanowiła na palcach podejść do źródła dźwięku.
 
-Po chwili zauważyła krępego Szambolana o mocno pomarszczonym ryjku. Istota była ubrana w fartuch. W jednej łapie trzymała ciężki młot a w drugiej szczypce kowalskie. W szczypcach znajdował się kawał metalu, który był poddawany obróbce. Rytmicznie uderzał młotem w kawał stali, który pod wpływem narzędzia zmieniał swój kształt. Naraz szambolański Kowal przerwał prace, wnikliwie popatrzył na swoją robótkę i krzyknął:
+Po chwili zauważyła krępego Szambolana o mocno pomarszczonym ryjku, ubranego w fartuch. W jednej łapie trzymał ciężki młot, a w drugiej szczypce kowalskie. W szczypcach znajdował się kawał metalu, który był poddawany obróbce. Rytmiczne uderzenia młota sprawiały, że element stopniowo zmieniał swój kształt. Naraz szambolański Kowal przerwał prace, wnikliwie popatrzył na swoją robótkę i krzyknął:
 
 - ($wypiszRuby: "metal") ($wypiszRuby: "być") ($wypiszRuby: "niedobre")!
 
@@ -806,7 +806,7 @@ Dziś szaman gościł u siebie kilku młodych Szambolan. Suczka spostrzegła, ż
 - ($wypiszRuby: "bogini") ($wypiszRuby: "być") ($wypiszRuby: "dobre")! ($wypiszRuby: "bogini") ($wypiszRuby: "zostać") ($wypiszRuby: "wioska")! - powtórzyli z werwą za szamanem pozostali Szambolanie.
 
 ](else-if: $numerDnia is 3 and $poraDnia is "wieczór")[\
-Kari Mata zauważyła, jak po dłuższej chwili medytacji kapłan wstaje i podchodzi do prostego ołtarzyka. Na nim znajdowały się świece, które dawały słabe oświetlenie na figurkę ulepioną z gliny znajdującą się między nimi. Figurka ta wydawała się Kari Macie pewnego rodzaju ikoną religijną. Przedstawiała sylwetkę suczki w bojowej pozie ubranej w piękne szaty. W jednej ze swoich ośmiu rąk dzierżyła włócznie. Groźne spojrzenie, jakie posyłała ta wojowniczka, skłaniało Kari Matę raczej do odwracania wzroku. Mimo to Szaman już od dłuższej pozostawał w głębokim ukłonie, powtarzając jak mantrę:
+Kari Mata zauważyła, jak po dłuższej chwili medytacji kapłan wstaje i podchodzi do prostego ołtarzyka. Na nim znajdowały się świece, które dawały słabe oświetlenie na figurkę ulepioną z gliny znajdującą się między nimi. Figurka ta wydawała się Kari Macie pewnego rodzaju ikoną religijną. Przedstawiała sylwetkę suczki w bojowej pozie ubranej w piękne szaty. W jednej ze swoich ośmiu rąk dzierżyła włócznie. Groźne spojrzenie, jakie posyłała ta wojowniczka, skłaniało Kari Matę raczej do odwracania wzroku. Mimo to Szaman już od dłuższej chwili pozostawał w głębokim ukłonie, powtarzając jak mantrę:
 
 - ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "bogini"). ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "bogini"). ($wypiszRuby: "pies") ($wypiszRuby: "być") ($wypiszRuby: "bogini").
 
@@ -1053,7 +1053,7 @@ Kari Mata Hari zastygła w bezruchu. Mimo że rozumiała, co mówi do niej kogut
 (if: $liczbaOdwiedzin's ((passage: )'s name) is 0)[\
 Przez narastający głód nie było jej dane długo odpocząć. Jeśli miała mieć siły na znalezienie stąd wyjścia, musiała poszukać tu czegoś jadalnego. Pozostał też oczywiście nade wszystko problem znalezienia drogi ucieczki. Kari Mata zakładała, że nie będzie to szczenięco proste. Dlatego musiała zebrać informacje, rozeznać się w terenie i spróbować jakoś zrozumieć ten dziwny język. Przynajmniej w części jej się to już udało. Suczka wiedziała jednak, że to dopiero początek jej zmagań z tym dziwnym światem, który znany był jej tylko z mitów i legend.
 
-Kobieta rozejrzała się zza zarośli. Mogła dostrzec kilka strategicznych punktów w okolicy wartych zbadania. Na pierwszy plan wysunęła jej się chatka, która wyróżniała się spośród innych, które ją otaczały. Była większa, bardziej skąpana w brązowym mule i posiadała więcej okien niż pozostałe. Kari Mata zauważyła również placyk, gdzie chatki były ułożone na kształt okręgu. Na środku placu była przestrzeń przeznaczona na palenisko. Istniała jeszcze jedna możliwość - suczka mogła się udać tam, gdzie poszli Szambolanie, którzy ją minęli.
+Kobieta rozejrzała się zza zarośli. Mogła dostrzec w okolicy kilka strategicznych punktów wartych zbadania. Na pierwszy plan wysunęła jej się chatka, która wyróżniała się spośród innych, które ją otaczały. Była większa, bardziej skąpana w brązowym mule i posiadała więcej okien niż pozostałe. Kari Mata zauważyła również placyk, gdzie chatki były ułożone na kształt okręgu. Na środku placu była przestrzeń przeznaczona na palenisko. Istniała jeszcze jedna możliwość - suczka mogła się udać tam, gdzie poszli Szambolanie, którzy ją minęli.
 
 Kari Mata postanowiła...
 
