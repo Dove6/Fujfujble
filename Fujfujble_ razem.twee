@@ -970,6 +970,17 @@ Poruszenie wywołane tajemniczym hałasem było odczuwalne wśród mieszkańców
 
 Ta pierwsza przytaknęła głową i zabrała się z powrotem do swoich obowiązków.
 
+](else-if: $numerDnia is 5 and $poraDnia is "rano")[\
+Dziś Kari Mata ponownie zaobserwowała rozmowę matki i dziecka. O ile suczka dobrze się orientowała, rozmowa również dotyczyła tej samej sprawy, co poprzednio:
+
+- ($wypiszRuby: "ja") ($wypiszRuby: "iść") ($wypiszRuby: "rzeka")? - powiedział malec, akcentując koniec zdania pytająco. Pod pachą trzymał coś, co przypominało zestaw |1>[płetwonurka](click-replace: ?1, (action: "mouseover"))[szambonurka].
+
+Mama małego Szambolanina przytaknęła głową.
+
+- ($wypiszRuby: "ty") ($wypiszRuby: "być") ($wypiszRuby: "dobre"). ($wypiszRuby: "iść") ($wypiszRuby: "rzeka") - odpowiedziała malcowi.
+
+Dziecko podskoczyło uradowane i popędziło w stronę wyjścia z wioski. Kari Mata Hari uśmiechnęła się. Jak niewiele trzeba czasem do szczęścia...
+
 ](else: )[\
 Dziś w części mieszkalnej było nader spokojnie. Kari Mata Hari nie odnotowała niczego przydatnego podczas tej wizyty.
 
@@ -1039,6 +1050,12 @@ Bohaterka postanowiła...
     ](else: )[\
         (if:  $numerDnia is 4)[\
 Zaaferowani strażnicy pilnowali bramy ze zdwojonym zaangażowaniem, czasem niespokojnie wyglądając przez nią na zewnątrz. Suczka nie zauważyła, by ktokolwiek wchodził lub wychodził.
+
+        ](else-if:  $numerDnia is 5 and $poraDnia is "rano")[\
+Dziś suczka zauważyła, że dwójce Szambolan rybaków towarzyszy mały, drobny Szambolanin o dziecinnym usposobieniu. Dziecko wesoło truchtało za rybakami, próbując im dotrzymać kroku. Gdy cała trójka przechodziła przez bramę, Kari Mata słyszała, jak malec radośnie wołał: "($wypiszRuby: "ja") ($wypiszRuby: "być") ($wypiszRuby: "dobre")! ($wypiszRuby: "ja") ($wypiszRuby: "iść") ($wypiszRuby: "rzeka")!" Bohaterka uśmiechnęła się. Miała nadzieję, że przejście przez bramę również u niej będzie wiązało się z wielką radością.
+
+        ](else-if:  $numerDnia is 5 and $poraDnia is "wieczór")[\
+Dziś Kari Mata miała wrażenie, że rybacy są jeszcze bardziej zadowoleni ze swoich połowów niż zwykle. Kosze wręcz uginały się od świeżo złowionych ryb. Towarzyszył im mały Szambolanin, wesoło drepczący ze swoim własnym małym koszyczkiem z kilkoma rybami w środku w jednej ręcę. W drugiej trzymał ociekający wodą prowizoryczny zestaw |1>[płetwonurka](click-replace: ?1, (action: "mouseover"))[szambonurka]. Suczka pomyślała, że zarówno wyprawa nad rzekę rybaków jak i malucha musiała być niezwykle udana.
 
         ](else-if:  $poraDnia is "rano")[\
 Suczka, czatując w krzakach na cień szansy, by wyślizgnąć się niepostrzeżenie z wioski przez bramę w kierunku rzeki, odnotowała pewne zwyczaje Szambolan. Między innymi każdego ranka dwójka Szambolan wychodziła przez bramę z pustymi koszami. Przed wyjściem przechodzili kontrolę z rąk strażników. Musieli przy tym odpowiedzieć na kilka pytań, których bohaterka nie słyszała ze względu na odległość.
@@ -1129,6 +1146,9 @@ Na te słowa goście skłonili się i opuścili chatę szamana.
 
 ](else-if: $numerDnia is 4)[\
 Kari Mata przestała odnotowywać w myślach jak długo już szaman żarliwie się modlił. Jego modlitwa przerywana była raz po raz pojedynczymi westchnięciami, gdy wznosił ręce ku niebu.
+
+](else-if: $numerDnia is 5)[\
+Kari Mata tym razem była świadkiem żarliwej modlitwy Szamana. Na prowizorycznym ołtarzyku znajdowały się nowe rzeczy. Modlitwa Szamana była dla odmiany bardzo entuzjastyczna. Bardzo częste ukłony w kierunku ołtarza utwierdziły suczkę w przekonaniu, że charakter modlitwy musi być dziękczynny. Tylko za co?
 
 ](else: )[\
 Dziś w chatce szamana było nader spokojnie. Kari Mata Hari nie odnotowała niczego przydatnego podczas tej wizyty.
@@ -1233,6 +1253,13 @@ Dziś Kari Mata podsłuchała rozmowę dwóch Szambolan - sprzedawcy i klienta. 
 
 Wtem rozmowę Szambolan przerwało dobiegające z oddali buczenie. Słychać je było wyraźnie mimo oczywistej odległości od źródła. Klient dobił targu i czym prędzej oddalił się z nieświeżą rybą w ręku. Sprzedawca tymczasem pozostał w miejscu, ale rozglądał się wokół wyraźnie zaniepokojony.
     ]\
+
+](else-if: $numerDnia is 5 and $poraDnia is "rano")[\
+Na stoisku, gdzie zwykle nadgniłe ryby były schludnie rozłożone, tym razem nie było nic. Każdy klient przechodzący koło straganu pytał dokładnie o to samo:
+- ($wypiszRuby: "ryba")? ($wypiszRuby: "ryba")?
+- ($wypiszRuby: "jutro")! ($wypiszRuby: "jutro")! - odpowiadał przepraszającym tonem sprzedawca.
+
+Kari Mata Hari pomyślała, że ostatnio z jakiegoś powodu rybacy nie przynieśli nowej partii ryb, więc ich zapasy musiały się szybko skończyć. Niestety, suczka nie domyślała się, dlaczego...
 
 ](else: )[\
 Dziś na straganie było nader spokojnie. Kari Mata Hari nie odnotowała niczego przydatnego podczas tej wizyty.
