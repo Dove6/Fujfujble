@@ -179,7 +179,7 @@ const submitRow = () => {
     if (guess.join("") === password.join("")) {
         result.won = true;
         console.log(result);
-        window.open("https://milka82.itch.io/superheros-i-dating-simulator", "_blank").focus();
+        window.open("https://milka82.itch.io/superheros-i-dating-simulator", "_blank");
     }
     currentRow++;
     currentColumn = 0;
@@ -202,12 +202,13 @@ document.addEventListener("keyup", evt => {
     } else if (evt.key === 'Enter') {
         submitRow();
     }
-}); 
+});
 })();
 </script>
 
 
 :: Intro {"position":"800,300","size":"100,100"}
+(if: ($czyZapisanoTlumaczenia: ))[($wczytajTlumaczenia: )]\
 (if: $liczbaOdwiedzin's ((passage: )'s name) is 0)[\
 "Oślepłam."
 To pierwsze słowo, które pojawiło się w myślach Kari Maty Hari, gdy się ocknęła.
@@ -396,7 +397,7 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
 
 :: Zmienne [startup] {"position":"25,25","size":"100,100"}
 {
-    (set: const-type $wersjaGry to "1.1.0+2609161747")
+    (set: const-type $wersjaGry to "1.1.0+2609162012")
 
   <!-- Dane nagłówka -->
     (set: const-type $domyslnyMotyw to "jasny")
@@ -579,7 +580,8 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
         (out-data: (has-data: "tlumaczenieGracza"))
     ]))
     (set: $wczytajTlumaczenia to (macro: [
-        (set: $tlumaczeniaGracza to (load-data: "tlumaczenieGracza"))
+        (set: _tymczasoweTlumaczenia to (load-data: "tlumaczenieGracza"))
+        (set: $tlumaczeniaGracza to (altered: _nr via (cond: $tlumaczeniaGracza's _nr's length > 0, $tlumaczeniaGracza's _nr, _tymczasoweTlumaczenia's _nr), ...(range: 1, $tlumaczeniaGracza's length)))
         (out: )[]
     ]))
  
@@ -824,6 +826,7 @@ Tym kimś był postawny kogut ubrany w niebieski marynarski mundur. Na głowie m
 Kari Mata nie była już jednak w stanie usłyszeć, czego nie przypuszczał tajemniczy nieznajomy. Straciła przytomność.
 
 ($dobreZakonczenie: )
+(text-size: 0.75)+(align: "=><=")[Dziękujemy za grę! Koniecznie podziel się z nami zawartością swojego słownika ;DD]
 
 
 :: goodfail [dead-end] {"position":"2400,2500","size":"100,100"}
@@ -888,7 +891,7 @@ Stolik chybotał się jeszcze chwilę. Coś spadło z niego i zabrzęczało w ko
 <!-- mapanoc3a -->
 <!-- mapanoc 3b -->
 }\
-Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. (cond: $ekwipunek contains "błoto", "Ociekająca ''błotem'' ", "")Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksplorację tej przedziwnie cuchnącej wioski. Rozejrzała się jeszcze po kryjówce.(cond: $ekwipunek contains "sandały", " Na nogach miała szambolańskie ''sandały''.", "")(cond: $ekwipunek contains "kosz", " Obok leżał skradziony rybakom ''kosz''.", "")
+Nastał późny wieczór. Odgłosy życia Szambo-La powoli ustawały. (cond: $ekwipunek contains "błoto", "Ociekająca ''błotem'' ", "")Kari Mata po krótkim odpoczynku postanowiła wznowić swoją eksplorację tej przedziwnie cuchnącej wioski. Rozejrzała się jeszcze po kryjówce.(cond: $ekwipunek contains "kosz", " Obok leżał skradziony rybakom ''kosz''.", "")
 
 Nie namyślając się długo, bohaterka postanowiła...
 (if: "szaman" is not in $odwiedzoneDzis)[
@@ -978,19 +981,11 @@ Posłanie, na którym usiadła Kari Mata Hari, było zaskakująco miękkie. Boha
 
 Suczka przyłożyła łapę do ściany. Wzrok nie spłatał jej figla. Na ścianie faktycznie były wyryte jakieś słowa.
 
-(if: ($czyZapisanoTlumaczenia: ))[\
-    ($wczytajTlumaczenia: )\
-    ($zaktualizujTlumaczenie: "być", "być")\
-Bohaterka postarała się zapamiętać ryciny znajdujące się na ścianie. Miała nadzieję, że jej to pomoże.
-//(Wszystkie poprzednie zapiski w słowniku zostały przywrócone).//
-
-](else: )[\
-    ($zaktualizujTlumaczenie: "być", "być")\
+($zaktualizujTlumaczenie: "być", "być")\
 Całość wiadomości prezentowała się następująco:
 ($wypiszRuby: "być")
 Nie było to wiele, lecz dało bohaterce do zrozumienia, że przed nią też ktoś tu był więziony.
 
-]\
 Kari Mata w końcu stwierdziła, że ma dość leżenia i [[postanowiła zrobić coś innego->Intro]].
 
 
@@ -1045,7 +1040,7 @@ Zaaferowani strażnicy pilnowali bramy ze zdwojonym zaangażowaniem, czasem nies
 Suczka, czatując w krzakach na cień szansy, by wyślizgnąć się niepostrzeżenie z wioski przez bramę w kierunku rzeki, odnotowała pewne zwyczaje Szambolan. Między innymi każdego ranka dwójka Szambolan wychodziła przez bramę z pustymi koszami. Przed wyjściem przechodzili kontrolę z rąk strażników. Musieli przy tym odpowiedzieć na kilka pytań, których bohaterka nie słyszała ze względu na odległość.
 
         ](else: )[\
-Suczka, czatując w krzakach na cień szansy, by wyślizgnąć się niepostrzeżenie z wioski przez bramę w kierunku rzeki, odnotowała pewne zwyczaje Szambolan. Zauważyła, że każdego wieczoru przez bramę wchodzi dwójka Szambolan z koszami pełnymi świeżych ryb. Kierowali się zawsze w stronę wioskowego targu.
+Suczka, czatując w krzakach na cień szansy, by wyślizgnąć się niepostrzeżenie z wioski przez bramę w kierunku rzeki, odnotowała pewne zwyczaje Szambolan. Zauważyła, że każdego wieczoru przez bramę wchodzi dwójka Szambolan z koszami pełnymi świeżych ryb. Zadowoleni z połowu wydawali z siebie radosne odgłosy - jeden bardziej dziewczęcym głosem podobnym do głosu Kari Maty, a drugi głębszym, basowym. Kierowali się zawsze w stronę wioskowego targu.
 
         ]\
 Niestety, dziś nie było dane Kari Macie zobaczyć, co znajduje się po drugiej stronie palisady. Postanowiła (link-goto: "wrócić do swojej kryjówki i odpocząć", (cond: $poraDnia is "rano", "mapanoc", "sen")).<!-- [[mapanoc]] [[sen]] -->
@@ -1242,15 +1237,13 @@ Dziś na straganie było nader spokojnie. Kari Mata Hari nie odnotowała niczego
 (if: $numerDnia is 2 and $poraDnia is "rano")[\
 [[...zaspokoić ''głód'' wziętą ze stosu ''świeżą rybą'' i udać się na odpoczynek.->🐟]]
 [[...zignorować ssanie w żołądku i zamiast ryby zabrać jeden z ''koszów'', a następnie udać się na odpoczynek.->🧺]]
-[[...zignorować ssanie w żołądku i zamiast ryby zabrać ''parę sandałów'', a następnie udać się na odpoczynek.->👡]]
+(link-goto: "...zignorować ssanie w żołądku i udać się na spoczynek.", (cond: $poraDnia is "rano", "mapanoc", "sen"))<!-- [[mapanoc]] [[sen]] -->
 ](else-if: $numerDnia is 3 and $poraDnia is "rano")[\
 [[...zwędzić (cond: $ekwipunek contains "ryba", "kolejną ", "")''świeżą rybę'' celem zaspokojenia ''głodu'' i udać się na odpoczynek.->🐟]]
     (if: $ekwipunek does not contain "kosz")[\
 [[...(cond: $ekwipunek does not contain "ryba", "zignorować ssanie w żołądku i zamiast ryby ", "")podprowadzić jeden z ''koszów'', a następnie udać się na odpoczynek.->🧺]]
     ]\
-    (if: $ekwipunek does not contain "sandały")[\
-[[...(cond: $ekwipunek does not contain "ryba", "zignorować ssanie w żołądku i zamiast ryby ", "")zwinąć ''parę sandałów'', a następnie udać się na odpoczynek.->👡]]
-    ]\
+(link-goto: (cond: $ekwipunek does not contain "ryba", "...zignorować ssanie w żołądku i udać się na spoczynek.", "...udać się na spoczynek"), (cond: $poraDnia is "rano", "mapanoc", "sen"))<!-- [[mapanoc]] [[sen]] -->
 ](else-if: $numerDnia is 3 and $poraDnia is "wieczór")[\
 [[...schować się w jednym z koszów.->dead3]]
 (link-goto: "...zostawić kosze w spokoju, następnie wrócić do swojej \"bazy\", by odpocząć.", (cond: $poraDnia is "rano", "mapanoc", "sen"))<!-- [[mapanoc]] [[sen]] -->
@@ -1470,7 +1463,7 @@ Dziewczyna rozejrzała się zza zarośli. Mogła dostrzec w okolicy kilka strate
 Kari Mata postanowiła...
 
 ](else: )[\
-Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. (cond: $ekwipunek contains "błoto", "Ociekająca ''błotem'' ", "")Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozejrzała się uważnie po swoim otoczeniu.(cond: $ekwipunek contains "sandały", " Na nogach miała szambolańskie ''sandały''.", "")(cond: $ekwipunek contains "kosz", " Obok leżał skradziony rybakom ''kosz''.", "")
+Kolejny dzień i kolejna okazja, by pozyskać więcej informacji. (cond: $ekwipunek contains "błoto", "Ociekająca ''błotem'' ", "")Kari Mata Hari po krótkim, niespokojnym śnie wstała i rozejrzała się uważnie po swoim otoczeniu.(cond: $ekwipunek contains "kosz", " Obok leżał skradziony rybakom ''kosz''.", "")
 
     (if: $numerDnia is $limitDni)[\
 Suczka czuła się naprawdę źle. Brak regularnego dostępu do pokarmu, środków czystości i innych rzeczy, które mogły zaspokoić jej podstawowe potrzeby fizjologiczne, dawał się jej mocno we znaki. Mimo wszystko z wielkim trudem postanowiła nie poddawać się i zrobić kolejny krok w stronę wolności.
@@ -1495,11 +1488,6 @@ Bohaterka zdecydowała...
 :: 🐟 {"position":"1675,2300","size":"100,100"}
 (set: $limitDni to it + 1)
 (set: $ekwipunek to it + (a: "ryba"))
-(redirect: (cond: $poraDnia is "rano", "mapanoc", "sen")).<!-- [[mapanoc]] [[sen]] -->
-
-
-:: 👡 {"position":"1925,2300","size":"100,100"}
-(set: $ekwipunek to it + (a: "sandały"))
 (redirect: (cond: $poraDnia is "rano", "mapanoc", "sen")).<!-- [[mapanoc]] [[sen]] -->
 
 
