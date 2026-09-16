@@ -1421,7 +1421,7 @@ Kari Mata namyśliła się chwilę i...
 (dropdown: bind _wyraz3, ..._opcje)
 (dropdown: bind _wyraz4, ..._opcje)
 </ruby> - (link-repeat: "wyjaśniła.")[{=
-    (goto: (cond: ($sprawdzZdanie: (a: "być", "niedobre"), (a: "ty", "ja", "więzienie", "pies", "bogini", "metal", "wioska", "jutro") or ($sprawdzZdanie: (a: "zostać", "wioska"), (a: "ty", "ja", "więzienie", "pies", "bogini", "metal", "niedobre", "jutro"), _wyraz1, _wyraz2, _wyraz3, _wyraz4), "vibepass", "vibefail"))<!-- [[vibepass]] [[vibefail]] -->
+    (goto: (cond: ($sprawdzZdanie: (a: "być", "niedobre"), (a: "ty", "ja", "więzienie", "pies", "bogini", "metal", "wioska", "jutro"), _wyraz1, _wyraz2, _wyraz3, _wyraz4) or ($sprawdzZdanie: (a: "zostać", "wioska"), (a: "ty", "ja", "więzienie", "pies", "bogini", "metal", "niedobre", "jutro"), _wyraz1, _wyraz2, _wyraz3, _wyraz4), "vibepass", "vibefail"))<!-- [[vibepass]] [[vibefail]] -->
 ]
 
 ($wypiszSkryptPodgladuZdania: )
