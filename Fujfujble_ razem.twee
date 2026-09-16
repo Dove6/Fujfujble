@@ -397,7 +397,7 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
 
 :: Zmienne [startup] {"position":"25,25","size":"100,100"}
 {
-    (set: const-type $wersjaGry to "1.1.0+2609162012")
+    (set: const-type $wersjaGry to "1.1.0+2609162031")
 
   <!-- Dane nagłówka -->
     (set: const-type $domyslnyMotyw to "jasny")
@@ -581,7 +581,11 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
     ]))
     (set: $wczytajTlumaczenia to (macro: [
         (set: _tymczasoweTlumaczenia to (load-data: "tlumaczenieGracza"))
-        (set: $tlumaczeniaGracza to (altered: _nr via (cond: $tlumaczeniaGracza's _nr's length > 0, $tlumaczeniaGracza's _nr, _tymczasoweTlumaczenia's _nr), ...(range: 1, $tlumaczeniaGracza's length)))
+        (for: each _nr, ...(range: 1, _tymczasoweTlumaczenia's length))[
+            (if: $tlumaczeniaGracza's _nr's length is 0)[
+                (set: $tlumaczeniaGracza's _nr to _tymczasoweTlumaczenia's _nr)
+            ]
+        ]
         (out: )[]
     ]))
  
