@@ -85,6 +85,128 @@ The ''Save System and Settings'' template was created by (link-repeat: "manonamo
 <h5>You can find my other Twine templates and guides (link-repeat: "here ⎘")[(open-url:"https://itch.io/c/2917452/")]
 
 
+:: Fujble {"position":"100,550","size":"100,100"}
+[[Powrót->Słownik]]
+
+<table id="wordle-container">
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+</table>
+
+<script>
+(function() {
+const backButton = Array.from(document.querySelectorAll("tw-link")).filter(e => e.innerText === "Powrót")[0];
+const result = { won: false, lost: false };
+backButton.addEventListener("click", () => lost = false);
+const password = Array.from("BAGNO");
+const guess = [];
+const rows = Array.from(document.querySelectorAll("#wordle-container tr"));
+let currentRow = 0;
+let currentColumn = 0;
+const removeLetter = () => {
+    if (currentColumn === 0) {
+        return;
+    }
+    currentColumn--;
+    rows[currentRow].querySelectorAll("td")[currentColumn].innerText = "";
+    guess.pop();
+};
+const putLetter = (letter) => {
+    if (currentColumn >= 5) {
+        return;
+    }
+    rows[currentRow].querySelectorAll("td")[currentColumn].innerText = letter;
+    guess.push(letter);
+    currentColumn++;
+};
+const submitRow = () => {
+    if (currentColumn < 5) {
+        return;
+    }
+    const greenMatches = guess.map((e, i) => e === password[i]);
+    const leftoverLetters = password.filter((e, i) => !greenMatches[i]);
+    Array.from(rows[currentRow].querySelectorAll("td")).forEach((e, i) => {
+        if (greenMatches[i]) {
+            e.classList.add("correct");
+        } else if (leftoverLetters.indexOf(guess[i]) >= 0) {
+            e.classList.add("wrong-position");
+            leftoverLetters.splice(leftoverLetters.indexOf(guess[i]), 1);
+            console.log(leftoverLetters);
+        } else {
+            e.classList.add("wrong");
+        }
+    });
+    if (guess.join("") === password.join("")) {
+        result.won = true;
+        console.log(result);
+        window.open("https://milka82.itch.io/superheros-i-dating-simulator", "_blank").focus();
+    }
+    currentRow++;
+    currentColumn = 0;
+    guess.splice(0);
+    if (currentRow >= 6) {
+        result.lost = true;
+        console.log(result);
+        backButton.click();
+    }
+};
+document.addEventListener("keyup", evt => {
+    console.log(result);
+    if (result.won || result.lost) {
+        return;
+    }
+    if (evt.key.match(/^[a-z]$/)) {
+        putLetter(evt.key.match(/^([a-z])$/)[1].toUpperCase());
+    } else if (evt.key === 'Backspace') {
+        removeLetter();
+    } else if (evt.key === 'Enter') {
+        submitRow();
+    }
+}); 
+})();
+</script>
+
+
 :: Intro {"position":"800,300","size":"100,100"}
 (if: $liczbaOdwiedzin's ((passage: )'s name) is 0)[\
 "Oślepłam."
@@ -221,7 +343,7 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
 <tr><td>($wypiszSzambolanskiNr: 12)</td><td>($edytujTlumaczenieNr: 12)</td></tr>
 <tr><td>($wypiszSzambolanskiNr: 13)</td><td>($edytujTlumaczenieNr: 13)</td></tr>
 <tr><td>($wypiszSzambolanskiNr: 14)</td><td>($edytujTlumaczenieNr: 14)</td></tr>
-<tr><td>($wypiszSzambolanskiNr: 15)</td><td>($edytujTlumaczenieNr: 15)</td></tr>
+<tr><td>|wordleInit>[($wypiszSzambolanskiNr: 15)]</td><td>($edytujTlumaczenieNr: 15)</td></tr>
 <tr><td>($wypiszSzambolanskiNr: 16)</td><td>($edytujTlumaczenieNr: 16)</td></tr>
 <tr><td>($wypiszSzambolanskiNr: 17)</td><td>($edytujTlumaczenieNr: 17)</td></tr>
 <tr><td>($wypiszSzambolanskiNr: 18)</td><td>($edytujTlumaczenieNr: 18)</td></tr>
@@ -229,6 +351,7 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
 </tbody>
 </table>
 ]
+(mouseover-goto: ?wordleInit, "Fujble")<!-- [[Fujble]] -->
 
 
 :: Ustawienia {"position":"150,150","size":"100,100"}
@@ -1901,4 +2024,26 @@ pre {
 
 section.user-dictionary-lookup {
   display: none;
+}
+
+#wordle-container td {
+  width: 1.5em;
+  height: 1.5em;
+  background: white;
+  border: 0.05em solid black;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#wordle-container td.correct {
+  background: forestgreen;
+}
+
+#wordle-container td.wrong-position {
+  background: gold;
+}
+
+#wordle-container td.wrong {
+  background: silver;
 }
