@@ -231,7 +231,7 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
 {
   <!-- Autozapis -->
   (if: (passage:)'s name is "Start")[($wczytajAutozapis: )]
-  (else: )[($zapiszAutozapis: )]
+  (else-if: (passage:)'s name is not "Fujble")[($zapiszAutozapis: )]<!-- [[Fujble]] -->
   <!-- Liczba odwiedzin -->
     (if: (passage:)'s name is not in (a: "Start", "Słownik") and (history: )'s length > 0)[(set: $liczbaOdwiedzin's (history: )'s last to it + 1)]<!-- [[Start]] [[Słownik]] -->
     (if: "lokacja" is in (passage: )'s tags)[(set: $odwiedzoneDzis to it + (a: (passage: )'s name))]
@@ -317,7 +317,8 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
 
 
 :: Słownik {"position":"150,400","size":"100,100"}
-(if: (history: ) is not an empty)[(link-goto: "Powrót", (history: )'s last)
+(set: _bezFujble to (find: _entry where all of (a: "Fujble", (passage: )'s name) is not _entry, ...(history: )))<!-- [[Fujble]] -->\
+(if: _bezFujble is not an empty)[(link-goto: "Powrót", _bezFujble's last)
 ]\
 (link-repeat: "Wyczyść słownik (TRWALE)")[($wyczyscTlumaczenia: )(rerun: ?pola)]
 
@@ -397,7 +398,7 @@ Suczka zdała sobie sprawę, że znajduje się w celi. Prawdopodobnie została u
 
 :: Zmienne [startup] {"position":"25,25","size":"100,100"}
 {
-    (set: const-type $wersjaGry to "1.1.0+2609162031")
+    (set: const-type $wersjaGry to "1.1.1+2609171531")
 
   <!-- Dane nagłówka -->
     (set: const-type $domyslnyMotyw to "jasny")
